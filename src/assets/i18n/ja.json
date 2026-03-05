@@ -1,0 +1,82 @@
+{
+    "NAV": {
+        "HOME": "ホーム",
+        "ABOUT": "概要",
+        "SKILLS": "スキル",
+        "PROJECTS": "プロジェクト",
+        "CONTACT": "お問い合わせ",
+        "EXPERIENCES": "経験"
+    },
+
+    "HERO": {
+        "GREETING": "こんにちは",
+        "I_AM": "私は",
+        "NAME": "カント・シー・トゥー・ライン",
+        "SUBTITLE": "ミャンマー、ヤンゴン出身の情熱的なフルスタック開発者兼問題解決者",
+        "DESCRIPTION": "違いを生む美しいデジタル体験を創り出します。 exceptionalなウェブサイトとアプリケーションの構築を専門としています。",
+        "CONTACT_ME": "お問い合わせ",
+        "VIEW_WORK": "作品を見る"
+    },
+
+    "SKILLS": {
+        "TITLE": "スキル",
+        "SUBTITLE": "使用技術",
+        "YEARS_EXP": "経験年数",
+        "TECHNOLOGIES": "技術スタック",
+        "PROJECTS": "プロジェクト数",
+        "PASSION": "情熱"
+    },
+
+    "ABOUT": {
+        "TITLE": "自己紹介",
+        "HELLO": "こんにちは、",
+        "YEARS": "年",
+        "PROJECTS": "プロジェクト",
+        "CLIENTS": "クライアント",
+        "YEARS_EXP": "の経験",
+        "DOWNLOAD_CV": "履歴書をダウンロード"
+    },
+
+    "PROJECTS": {
+        "TITLE": "プロジェクト",
+        "SUBTITLE": "最近の作品と実験",
+        "VIEW_GITHUB": "GitHubを見る",
+        "LIVE_DEMO": "ライブデモ",
+        "COMING_SOON": "準備中",
+        "VIEW_ALL": "すべてのプロジェクトを見る"
+    },
+
+    "CONTACT": {
+        "TITLE": "お問い合わせ",
+        "SUBTITLE": "お気軽にご連絡ください",
+        "GITHUB": "GitHub",
+        "LINKEDIN": "LinkedIn",
+        "EMAIL": "メール",
+        "PHONE": "電話",
+        "FOLLOW_ME": "フォローする",
+        "NAME_PLACEHOLDER": "お名前",
+        "EMAIL_PLACEHOLDER": "メールアドレス",
+        "SUBJECT_PLACEHOLDER": "件名",
+        "MESSAGE_PLACEHOLDER": "メッセージ",
+        "SEND_MESSAGE": "送信",
+        "SENDING": "送信中..."
+    },
+
+    "EXPERIENCE": {
+        "TITLE": "職務経験",
+        "SUBTITLE": "プロフェッショナルな経歴"
+    },
+
+    "FOOTER": {
+      "DESCRIPTION": "最新テクノロジーで革新的なソリューションを構築",
+      "QUICK_LINKS": "クイックリンク",
+      "CONTACT": "連絡先",
+      "NEWSLETTER": "ニュースレター",
+      "NEWSLETTER_TEXT": "新着プロジェクトの情報を受け取る",
+      "EMAIL_PLACEHOLDER": "メールアドレス",
+      "RIGHTS_RESERVED": "全著作権所有",
+      "PRIVACY": "プライバシーポリシー",
+      "TERMS": "利用規約",
+      "COOKIES": "クッキー"
+    }
+}

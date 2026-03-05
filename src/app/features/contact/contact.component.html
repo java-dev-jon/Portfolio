@@ -1,0 +1,55 @@
+<section id="contact" class="contact" [ngClass]="{ 'dark-contact': theme.darkMode() }">
+  <div class="contact-container">
+    <div class="section-header">
+      <h2 class="section-title">
+        <i class="fas fa-envelope"></i>
+        {{ 'CONTACT.TITLE' | translate }}
+      </h2>
+      <div class="section-subtitle">{{ 'CONTACT.SUBTITLE' | translate }}</div>
+      <div class="title-decoration"></div>
+    </div>
+
+    <div class="contact-content">
+      <!-- Contact Info Cards -->
+      <div class="contact-info">
+        <div class="info-card" *ngFor="let contact of contactMethods">
+          <div class="info-icon" [ngClass]="contact.iconClass">
+            <i [class]="contact.icon"></i>
+          </div>
+          <div class="info-details">
+            <h3 class="info-title">{{ contact.title | translate }}</h3>
+            <a [href]="contact.link" class="info-value" [attr.target]="contact.target">
+              {{ contact.value }}
+            </a>
+          </div>
+        </div>
+
+        <!-- Social Links -->
+        <div class="social-section">
+          <h3 class="social-title">{{ 'CONTACT.FOLLOW_ME' | translate }}</h3>
+          <div class="social-grid">
+            <a [href]="social.github" target="_blank" class="social-card github">
+              <i class="fab fa-github"></i>
+              <span>GitHub</span>
+            </a>
+            <a [href]="social.linkedin" target="_blank" class="social-card linkedin">
+              <i class="fab fa-linkedin"></i>
+              <span>LinkedIn</span>
+            </a>
+            <a [href]="'mailto:' + social.email" class="social-card email">
+              <i class="fas fa-envelope"></i>
+              <span>Email</span>
+            </a>
+            <a [href]="'tel:' + social.phone" class="social-card phone">
+              <i class="fas fa-phone"></i>
+              <span>Call</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      
+    </div>
+  </div>
+</section>

@@ -1,0 +1,39 @@
+<nav class="navbar" [ngClass]="{ 'scrolled': scrolled, 'dark-nav': theme.darkMode() }">
+  <div class="logo">
+    <img src="assets/img/jon-logo.jpg" alt="Profile" class="logo-pic">
+  </div>
+
+  <button class="mobile-btn" (click)="toggleMobile()" [attr.aria-label]="'Toggle menu'">
+    <span class="hamburger" [ngClass]="{ 'active': mobileOpen }"></span>
+  </button>
+
+  <ul class="nav-menu" [ngClass]="{ 'open': mobileOpen }">
+    <li class="nav-item" *ngFor="let section of sections">
+      <a class="nav-link" (click)="scrollTo(section.id)">
+        {{ section.label | translate }}
+      </a>
+    </li>
+
+    <li class="nav-item dropdown">
+      <button class="lang-btn" (click)="toggleLang()" [attr.aria-label]="'Change language'">
+        <span class="globe-icon">🌐</span>
+        <span class="lang-code">{{ translate.currentLang | uppercase }}</span>
+      </button>
+      <div class="dropdown-menu" *ngIf="langOpen" [ngClass]="{ 'dark-dropdown': theme.darkMode() }">
+        <button class="dropdown-item" (click)="changeLang('en')">
+          <span class="flag">🇬🇧</span> English
+        </button>
+        <button class="dropdown-item" (click)="changeLang('ja')">
+          <span class="flag">🇯🇵</span> 日本語
+        </button>
+      </div>
+    </li>
+
+    <li class="nav-item">
+      <button class="theme-btn" (click)="theme.toggle()" [attr.aria-label]="'Toggle theme'">
+        <span class="theme-icon">{{ theme.darkMode() ? '☀️' : '🌙' }}</span>
+        <span class="theme-text">{{ theme.darkMode() ? 'Light' : 'Dark' }}</span>
+      </button>
+    </li>
+  </ul>
+</nav>

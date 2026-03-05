@@ -1,0 +1,83 @@
+<section id="about" class="about" [ngClass]="{ 'dark-about': theme.darkMode() }">
+  <div class="about-container">
+    <div class="section-header">
+      <h2 class="section-title">{{ 'ABOUT.TITLE' | translate }}</h2>
+      <div class="title-decoration"></div>
+    </div>
+
+    <div class="about-content">
+      <div class="about-text">
+        
+        <div class="about-contact">
+          <a [href]="social.github" target="_blank" class="social-link" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a [href]="social.linkedin" target="_blank" class="social-link" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a [href]="'mailto:' + social.email" class="social-link" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a [href]="'tel:' + social.phone" class="social-link" aria-label="Phone">
+            <i class="fas fa-phone"></i>
+          </a>
+        </div>
+
+        <div class="about-description">
+          <p class="description-text">
+            As a Java Fullstack Developer, I specialize in full-cycle application development — from architecting 
+            <span class="highlight">resilient backend systems</span> using Java, Spring Boot, and Hibernate, 
+            to creating <span class="highlight">responsive and engaging user interfaces</span> with AngularJS, HTML, and CSS.
+          </p>
+          
+          <p class="description-text">
+            I have hands-on experience building robust 
+            <span class="highlight">RESTful APIs</span>, managing relational databases like 
+            <span class="highlight">MySQL</span>, and maintaining clean code with 
+            <span class="highlight">Git version control</span>.
+          </p>
+          
+          <p class="description-text">
+            My strength lies in bridging backend logic with frontend experience, ensuring seamless integration 
+            and performance. I'm passionate about solving real-world problems through code, constantly learning 
+            new technologies, and contributing to innovative solutions that align with business goals while 
+            enhancing user satisfaction.
+          </p>
+        </div>
+
+        <div class="about-cta">
+          <button class="btn-download" (click)="downloadResume()">
+            <span>{{ 'ABOUT.DOWNLOAD_CV' | translate }}</span>
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="about-image">
+        <div class="footer-section">
+        <h3 class="footer-title">{{ 'FOOTER.CONTACT' | translate }}</h3>
+        <ul class="footer-contact">
+          <li>
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Yangon, Myanmar</span>
+          </li>
+          <li>
+            <i class="fas fa-phone"></i>
+            <a href="tel:{{ social.phone }}">{{ social.phone }}</a>
+          </li>
+          <li>
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:{{ social.email }}">{{ social.email }}</a>
+          </li>
+          <li>
+            <i class="fas fa-globe"></i>
+            <span>Available for work</span>
+          </li>
+        </ul>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>

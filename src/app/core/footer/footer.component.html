@@ -1,0 +1,36 @@
+<footer class="footer" [ngClass]="{ 'dark-footer': theme.darkMode() }">
+  <div class="footer-container">
+    <div class="footer-bottom">
+      <div class="footer-bottom-content">
+
+        <p class="copyright">
+          © {{ currentYear }} <span class="highlight">DevJon</span>. {{ 'FOOTER.RIGHTS_RESERVED' | translate }}
+        </p>
+
+        <div class="footer-social">
+          <a [href]="social.github" target="_blank" class="social-link" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a [href]="social.linkedin" target="_blank" class="social-link" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a [href]="'mailto:' + social.email" class="social-link" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a [href]="'tel:' + social.phone" class="social-link" aria-label="Phone">
+            <i class="fas fa-phone"></i>
+          </a>
+        </div>
+
+
+        <div class="footer-bottom-links">
+          <a href="#" class="bottom-link">{{ 'FOOTER.PRIVACY' | translate }}</a>
+          <span class="separator">•</span>
+          <a href="#" class="bottom-link">{{ 'FOOTER.TERMS' | translate }}</a>
+          <span class="separator">•</span>
+          <a href="#" class="bottom-link">{{ 'FOOTER.COOKIES' | translate }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

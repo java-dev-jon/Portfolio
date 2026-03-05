@@ -1,0 +1,80 @@
+<section id="skills" class="skills" [ngClass]="{ 'dark-skills': theme.darkMode() }">
+  <div class="skills-container">
+    <div class="section-header">
+      <h2 class="section-title">{{ 'SKILLS.TITLE' | translate }}</h2>
+      <p class="section-description">
+        Specializing in <span class="highlight">Microfinance</span> open-source banking and financial technology solutions, 
+        building robust backend systems with <span class="highlight">Java/Spring Boot</span> and creating 
+        responsive frontend interfaces with <span class="highlight">Angular</span>
+      </p>
+      <div class="title-decoration"></div>
+    </div>
+
+    <!-- Tab Navigation -->
+    <div class="skills-tabs">
+      <button class="tab-btn" [ngClass]="{ 'active': activeTab === 'technical' }" (click)="switchTab('technical')">
+        <span class="tab-icon">💻</span>
+        <span class="tab-label">TECHNICAL</span>
+        <span class="tab-indicator"></span>
+      </button>
+      <button class="tab-btn" [ngClass]="{ 'active': activeTab === 'language' }" (click)="switchTab('language')">
+        <span class="tab-icon">🗣️</span>
+        <span class="tab-label">LANGUAGE</span>
+        <span class="tab-indicator"></span>
+      </button>
+      <button class="tab-btn" [ngClass]="{ 'active': activeTab === 'soft' }" (click)="switchTab('soft')">
+        <span class="tab-icon">🤝</span>
+        <span class="tab-label">SOFT SKILLS</span>
+        <span class="tab-indicator"></span>
+      </button>
+    </div>
+
+    <!-- Tab Content -->
+    <div class="tab-content">
+      <!-- Technical Skills -->
+      <div class="tab-pane" [ngClass]="{ 'active': activeTab === 'technical' }">
+        <div class="skills-grid">
+          <div class="skill-bubble" *ngFor="let skill of technicalSkills; let i = index" 
+               [style.animation-delay]="i * 0.05 + 's'">
+            <div class="bubble-icon">{{ getSkillEmoji(skill) }}</div>
+            <div class="bubble-name">{{ skill }}</div>
+            <div class="bubble-glow"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Language Skills -->
+      <div class="tab-pane" [ngClass]="{ 'active': activeTab === 'language' }">
+        <div class="languages-grid">
+          <div class="language-card" *ngFor="let language of languages; let i = index" 
+               [style.animation-delay]="i * 0.1 + 's'">
+            <div class="card-glow"></div>
+            <div class="card-flag">{{ getLanguageEmoji(language) }}</div>
+            <div class="card-info">
+              <h3 class="card-name">{{ language.name }}</h3>
+              <div class="card-level">
+                <span class="level-text">{{ language.level }}</span>
+                <div class="level-bar">
+                  <div class="level-fill" [style.width]="getLanguageLevel(language)"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Soft Skills -->
+      <div class="tab-pane" [ngClass]="{ 'active': activeTab === 'soft' }">
+        <div class="soft-skills-grid">
+          <div class="soft-card" *ngFor="let skill of softSkills; let i = index" 
+               [style.animation-delay]="i * 0.1 + 's'">
+            <div class="soft-icon-wrapper">
+              <span class="soft-icon">{{ skill.emoji }}</span>
+            </div>
+            <span class="soft-name">{{ skill.name }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

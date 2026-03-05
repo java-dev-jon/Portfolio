@@ -1,0 +1,82 @@
+{
+    "NAV": {
+        "HOME": "Home",
+        "ABOUT": "About",
+        "SKILLS": "Skills",
+        "PROJECTS": "Projects",
+        "CONTACT": "Contact",
+        "EXPERIENCES": "Experiences"
+    },
+
+    "HERO": {
+        "GREETING": "Hi",
+        "I_AM": "I'm",
+        "NAME": "Khant Si Thu Hlaing",
+        "SUBTITLE": "A passionate Fullstack Developer And Problem Solver from Yangon, Myanmar",
+        "DESCRIPTION": "I craft beautiful digital experiences that make a difference. Specialized in building exceptional websites and applications.",
+        "CONTACT_ME": "Contact Me",
+        "VIEW_WORK": "View Work"
+    },
+
+    "SKILLS": {
+        "TITLE": "My Skills",
+        "SUBTITLE": "Technologies I work with",
+        "YEARS_EXP": "Years Experience",
+        "TECHNOLOGIES": "Technologies",
+        "PROJECTS": "Projects",
+        "PASSION": "Passion"
+    },
+
+    "ABOUT": {
+        "TITLE": "About Me",
+        "HELLO": "Hello, I'm",
+        "YEARS": "Years",
+        "PROJECTS": "Projects",
+        "CLIENTS": "Clients",
+        "YEARS_EXP": "Years Experience",
+        "DOWNLOAD_CV": "Download CV"
+    },
+
+    "PROJECTS": {
+        "TITLE": "My Projects",
+        "SUBTITLE": "Recent work and experiments",
+        "VIEW_GITHUB": "View GitHub",
+        "LIVE_DEMO": "Live Demo",
+        "COMING_SOON": "Coming Soon",
+        "VIEW_ALL": "View All Projects"
+    },
+
+    "CONTACT": {
+        "TITLE": "Contact Me",
+        "SUBTITLE": "Get in touch with me",
+        "GITHUB": "GitHub",
+        "LINKEDIN": "LinkedIn",
+        "EMAIL": "Email",
+        "PHONE": "Phone",
+        "FOLLOW_ME": "Follow Me",
+        "NAME_PLACEHOLDER": "Your Name",
+        "EMAIL_PLACEHOLDER": "Your Email",
+        "SUBJECT_PLACEHOLDER": "Subject",
+        "MESSAGE_PLACEHOLDER": "Your Message",
+        "SEND_MESSAGE": "Send Message",
+        "SENDING": "Sending..."
+    },
+
+    "EXPERIENCE": {
+        "TITLE": "Work Experience",
+        "SUBTITLE": "My professional journey"
+    },
+
+    "FOOTER": {
+        "DESCRIPTION": "Building innovative solutions with modern technologies",
+        "QUICK_LINKS": "Quick Links",
+        "CONTACT": "Contact Info",
+        "NEWSLETTER": "Newsletter",
+        "NEWSLETTER_TEXT": "Subscribe to get updates on new projects",
+        "EMAIL_PLACEHOLDER": "Your email",
+        "RIGHTS_RESERVED": "All rights reserved",
+        "PRIVACY": "Privacy Policy",
+        "TERMS": "Terms of Service",
+        "COOKIES": "Cookies"
+    }
+}

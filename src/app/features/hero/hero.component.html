@@ -1,0 +1,50 @@
+<section id="hero" class="hero" [ngClass]="{ 'dark-hero': theme.darkMode() }">
+  <div class="hero-container">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1 class="hero-name">
+          <span class="accent">{{ 'HERO.NAME' | translate }}</span>
+        </h1>
+        <h3 class="hero-subtitle">{{ 'HERO.SUBTITLE' | translate }}</h3>
+        <h2 class="typewriter">
+          {{ typedText }}<span class="blinking-cursor">|</span>
+        </h2>
+        
+        <div class="hero-buttons">
+          <button class="btn-primary" (click)="scrollTo('about')">
+            <span>{{ 'HERO.CONTACT_ME' | translate }}</span>
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+            </svg>
+          </button>
+          <button class="btn-secondary" (click)="scrollTo('experience')">
+            <span>{{ 'HERO.VIEW_WORK' | translate }}</span>
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M2 12h20M12 2l10 10-10 10"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <div class="image-container" [ngClass]="{ 'dark-image': theme.darkMode() }">
+          <img src="assets/img/pic.jpg" alt="Profile Picture" class="profile-pic">
+          <div class="image-backdrop"></div>
+          <div class="image-decoration"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator" (click)="scrollTo('about')">
+      <div class="mouse">
+        <div class="wheel"></div>
+      </div>
+      <div class="arrow">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+</section>
