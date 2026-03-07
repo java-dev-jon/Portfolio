@@ -477,29 +477,3 @@
   }
 }
 
-/* Small phones */
-@media (max-width: 480px) {
-  .nav-menu {
-    width: 100%;
-    max-width: none;
-    padding: 4rem 1rem 1.5rem;
-  }
-
-  .logo-pic {
-    width: 35px;
-    height: 35px;
-  }
-
-  .nav-link {
-    font-size: 1rem;
-    padding: 0.7rem;
-  }
-
-  .dropdown-item {
-    padding: 0.7rem;
-  }
-
-  .lang-btn, .theme-btn {
-    padding: 0.7rem;
-  }
-}

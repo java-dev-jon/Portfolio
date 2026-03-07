@@ -45,36 +45,28 @@
 
       <!-- Language Skills -->
       <div class="tab-pane" [ngClass]="{ 'active': activeTab === 'language' }">
-        <div class="languages-grid">
-          <div class="language-card" *ngFor="let language of languages; let i = index" 
+        <div class="skills-grid">
+          <div class="skill-bubble" *ngFor="let language of languages; let i = index" 
                [style.animation-delay]="i * 0.1 + 's'">
-            <div class="card-glow"></div>
-            <div class="card-flag">{{ getLanguageEmoji(language) }}</div>
-            <div class="card-info">
-              <h3 class="card-name">{{ language.name }}</h3>
-              <div class="card-level">
-                <span class="level-text">{{ language.level }}</span>
-                <div class="level-bar">
-                  <div class="level-fill" [style.width]="getLanguageLevel(language)"></div>
-                </div>
-              </div>
-            </div>
+            <div class="bubble-icon">{{ getLanguageEmoji(language) }}</div>
+            <div class="bubble-name">{{ language.name }}</div>
+            <div class="bubble-glow"></div>
           </div>
         </div>
       </div>
 
       <!-- Soft Skills -->
       <div class="tab-pane" [ngClass]="{ 'active': activeTab === 'soft' }">
-        <div class="soft-skills-grid">
-          <div class="soft-card" *ngFor="let skill of softSkills; let i = index" 
+        <div class="skills-grid">
+          <div class="skill-bubble" *ngFor="let skill of softSkills; let i = index" 
                [style.animation-delay]="i * 0.1 + 's'">
-            <div class="soft-icon-wrapper">
-              <span class="soft-icon">{{ skill.emoji }}</span>
-            </div>
-            <span class="soft-name">{{ skill.name }}</span>
+            <div class="bubble-icon">{{ skill.emoji }}</div>
+            <div class="bubble-name">{{ skill.name }}</div>
+            <div class="bubble-glow"></div>
           </div>
         </div>
       </div>
+      
     </div>
   </div>
 </section>

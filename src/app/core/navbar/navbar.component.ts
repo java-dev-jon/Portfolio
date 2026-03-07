@@ -41,8 +41,13 @@ export class NavbarComponent {
     }
   }
 
-  toggleLang() { 
-    this.langOpen = !this.langOpen; 
+  // toggleLang() { 
+  //   this.langOpen = !this.langOpen; 
+  // }
+  toggleLang() {
+    const newLang = this.translate.currentLang === 'en' ? 'ja' : 'en';
+    this.translate.use(newLang);
+    this.mobileOpen = !this.mobileOpen;
   }
 
   changeLang(lang: string) {

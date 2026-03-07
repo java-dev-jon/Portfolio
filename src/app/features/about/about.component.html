@@ -7,22 +7,6 @@
 
     <div class="about-content">
       <div class="about-text">
-        
-        <div class="about-contact">
-          <a [href]="social.github" target="_blank" class="social-link" aria-label="GitHub">
-            <i class="fab fa-github"></i>
-          </a>
-          <a [href]="social.linkedin" target="_blank" class="social-link" aria-label="LinkedIn">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a [href]="'mailto:' + social.email" class="social-link" aria-label="Email">
-            <i class="fas fa-envelope"></i>
-          </a>
-          <a [href]="'tel:' + social.phone" class="social-link" aria-label="Phone">
-            <i class="fas fa-phone"></i>
-          </a>
-        </div>
-
         <div class="about-description">
           <p class="description-text">
             As a Java Fullstack Developer, I specialize in full-cycle application development — from architecting 
@@ -56,27 +40,41 @@
       </div>
 
       <div class="about-image">
-        <div class="footer-section">
-        <h3 class="footer-title">{{ 'FOOTER.CONTACT' | translate }}</h3>
-        <ul class="footer-contact">
-          <li>
-            <i class="fas fa-map-marker-alt"></i>
-            <span>Yangon, Myanmar</span>
-          </li>
-          <li>
-            <i class="fas fa-phone"></i>
-            <a href="tel:{{ social.phone }}">{{ social.phone }}</a>
-          </li>
-          <li>
+        <div class="about-contact">
+          <a [href]="social.github" target="_blank" class="social-link" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a [href]="social.linkedin" target="_blank" class="social-link" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a [href]="'mailto:' + social.email" class="social-link" aria-label="Email">
             <i class="fas fa-envelope"></i>
-            <a href="mailto:{{ social.email }}">{{ social.email }}</a>
-          </li>
-          <li>
-            <i class="fas fa-globe"></i>
-            <span>Available for work</span>
-          </li>
-        </ul>
-      </div>
+          </a>
+          <a [href]="'tel:' + social.phone" class="social-link" aria-label="Phone">
+            <i class="fas fa-phone"></i>
+          </a>
+        </div>
+        <div class="footer-section">
+          <h3 class="footer-title">{{ 'FOOTER.CONTACT' | translate }}</h3>
+          <ul class="footer-contact">
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Yangon, Myanmar</span>
+            </li>
+            <li>
+              <i class="fas fa-phone"></i>
+              <a href="tel:{{ social.phone }}">{{ social.phone }}</a>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:{{ social.email }}">{{ social.email }}</a>
+            </li>
+            <li>
+              <i class="fas fa-globe"></i>
+              <span>Available for work</span>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>

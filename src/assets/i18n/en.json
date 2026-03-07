@@ -38,8 +38,8 @@
     },
 
     "PROJECTS": {
-        "TITLE": "My Projects",
-        "SUBTITLE": "Recent work and experiments",
+        "TITLE": "My Own Projects",
+        "SUBTITLE": "My Own Projects and Experiments",
         "VIEW_GITHUB": "View GitHub",
         "LIVE_DEMO": "Live Demo",
         "COMING_SOON": "Coming Soon",

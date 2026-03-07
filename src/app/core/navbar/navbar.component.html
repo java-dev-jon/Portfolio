@@ -14,7 +14,7 @@
       </a>
     </li>
 
-    <li class="nav-item dropdown">
+    <!-- <li class="nav-item dropdown">
       <button class="lang-btn" (click)="toggleLang()" [attr.aria-label]="'Change language'">
         <span class="globe-icon">🌐</span>
         <span class="lang-code">{{ translate.currentLang | uppercase }}</span>
@@ -27,6 +27,13 @@
           <span class="flag">🇯🇵</span> 日本語
         </button>
       </div>
+    </li> -->
+
+    <li class="nav-item">
+      <button class="lang-btn" (click)="toggleLang()" [attr.aria-label]="'Change language'">
+        <span class="globe-icon">🌐</span>
+        <span class="lang-code">{{ translate.currentLang | uppercase }}</span>
+      </button>
     </li>
 
     <li class="nav-item">
