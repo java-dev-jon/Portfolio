@@ -3,11 +3,18 @@ import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
 import { ThemeService } from 'src/app/core/   theme.service';
 
+interface Achievement {
+  icon: string;
+  title: string;
+  description: string;
+}
+
 interface Experience {
   title: string;
   company: string;
   duration: string;
   responsibilities?: string[];
+  achievements?: Achievement[]; // Added this
 }
 
 @Component({
@@ -53,21 +60,28 @@ export class ExperienceComponent {
         "Collaborated with a global team on feature development and bug fixes.",
         "Gained experience in open-source development workflows and community contributions."
       ]
+    },
+    {
+      title: "Junior Java Developer",
+      company: "Myanmar Software Integrated Solutions (MSIS)",
+      duration: "Aug 2025 - now",
+      responsibilities: [
+        "Contributed to open-source financial technology solutions using Java.",
+        "Optimized <strong>Mifos database schemas</strong> for performance."
+      ],
+      achievements: [ // Now clearly defined in the data
+        { icon: '🔄', title: 'Odoo Integration', description: 'Implemented seamless integration between Mifos and Odoo.' },
+        { icon: '📧', title: 'Mail Integration', description: 'Developed email reporting jobs and verification systems.' },
+        { icon: '💰', title: 'Savings Module', description: 'Implemented Month-end Accrue and Interest Posting.' }
+      ]
     }    
   ];
 
   constructor(public theme: ThemeService) {}
 
-  getTechStack(title: string): string[] {
-    switch(title) {
-      case 'JAVA Development Intern':
-        return ['Java', 'Spring Boot', 'AngularJS', 'Git', 'MySQL'];
-      case 'MIFOS':
-        return ['Java', 'Mifos', 'Odoo', 'MySQL', 'REST APIs'];
-      case 'Junior Java Developer':
-        return ['Java', 'Spring Boot', 'MySQL', 'REST APIs', 'Git'];
-      default:
-        return ['Java', 'Spring Boot'];
-    }
+  getTechStack(exp: Experience): string[] {
+    // Pass the whole object to make logic easier
+    if (exp.company.includes('MSIS')) return ['Java', 'Spring Boot', 'MySQL', 'REST APIs'];
+    return ['Java', 'Spring Boot'];
   }
 }

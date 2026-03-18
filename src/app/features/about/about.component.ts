@@ -21,6 +21,9 @@ export class AboutComponent {
   };
 
   downloadResume() {
-    window.open('/assets/resume.pdf', '_blank'); // add cv form
+    const link = document.createElement('a');
+    link.href = 'assets/KhantSiThuHlaingCVForm.pdf';
+    link.download = 'Khant-Si-Thu-Hlaing-CV.pdf';
+    link.click();
   }
 }
