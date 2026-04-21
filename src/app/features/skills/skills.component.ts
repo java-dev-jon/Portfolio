@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
-import { ThemeService } from 'src/app/core/   theme.service';
+import { ThemeService } from 'src/app/core/theme.service';
 
 @Component({
   selector: 'app-skills',

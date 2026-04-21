@@ -2,7 +2,7 @@ import { Component, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
-import { ThemeService } from '../   theme.service';
+import { ThemeService } from '../theme.service';
 
 @Component({
   selector: 'app-footer',

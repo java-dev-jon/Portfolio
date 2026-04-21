@@ -1,7 +1,7 @@
 import { Component, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
-import { ThemeService } from '../   theme.service';
+import { ThemeService } from '../theme.service';
 
 @Component({
   selector: 'app-navbar',
