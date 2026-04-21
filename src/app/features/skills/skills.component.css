@@ -235,22 +235,81 @@
 
 @media (max-width: 780px) {
   .skills-tabs {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: stretch;
+    padding-bottom: 0.3rem;
   }
 
   .tab-btn {
-    justify-content: flex-start;
+    min-width: 0;
+    justify-content: center;
   }
 }
 
 @media (max-width: 560px) {
+  .skills-tabs {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.55rem;
+    padding-inline: 0;
+  }
+
   .tab-btn {
-    min-height: 3.25rem;
-    padding-inline: 1rem;
+    min-height: 4.25rem;
+    min-width: 0;
+    padding: 0.7rem 0.5rem;
+    flex-direction: column;
+    gap: 0.35rem;
+    border-radius: 1rem;
+  }
+
+  .skills-grid {
+    justify-content: center;
+    gap: 0.7rem;
   }
 
   .skill-bubble {
-    width: 100%;
-    justify-content: center;
+    width: auto;
+    min-height: 3rem;
+    padding: 0.75rem 1rem;
+    border-radius: 1.1rem;
+    justify-content: flex-start;
+  }
+
+  .tab-icon {
+    font-size: 1rem;
+    line-height: 1;
+  }
+
+  .tab-label {
+    font-size: 0.72rem;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+    text-align: center;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+
+  .tab-indicator {
+    inset: auto 0.7rem 0.45rem;
+  }
+
+  .bubble-name {
+    font-size: 0.88rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .skills-tabs {
+    gap: 0.45rem;
+  }
+
+  .tab-btn {
+    min-height: 4rem;
+    padding: 0.65rem 0.4rem;
+  }
+
+  .tab-label {
+    font-size: 0.68rem;
   }
 }
