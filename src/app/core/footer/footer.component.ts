@@ -18,7 +18,7 @@ export class FooterComponent {
 
   social = {
     github: 'https://github.com/CallMe-JON',
-    linkedin: 'https://linkedin.com/in/yourusername',
+    linkedin: 'https://linkedin.com/in/khant-si-thu-hlaing-5a97893a1',
     email: 'khantsithuhlaing1@gmail.com',
     phone: '+95 9455477047'
   };

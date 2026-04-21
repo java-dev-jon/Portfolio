@@ -55,8 +55,8 @@ export class ExperienceComponent {
       duration: "Aug 2025 - now",
       responsibilities: [
         "Contributed to the development of open-source financial technology solutions using Java.",
-        "Designed and optimized <strong>Mifos database schemas</strong> for new features and performance improvements.",
-        "Developed and maintained <strong>Mifos reports</strong> to provide key insights into financial operations.",
+        "Designed and optimized Mifos database schemas  for new features and performance improvements.",
+        "Developed and maintained Mifos reports to provide key insights into financial operations.",
         "Collaborated with a global team on feature development and bug fixes.",
         "Gained experience in open-source development workflows and community contributions."
       ]
@@ -67,7 +67,7 @@ export class ExperienceComponent {
       duration: "Aug 2025 - now",
       responsibilities: [
         "Contributed to open-source financial technology solutions using Java.",
-        "Optimized <strong>Mifos database schemas</strong> for performance."
+        "Optimized Mifos database schemas for performance."
       ],
       achievements: [ // Now clearly defined in the data
         { icon: '🔄', title: 'Odoo Integration', description: 'Implemented seamless integration between Mifos and Odoo.' },
