@@ -33,7 +33,7 @@ export class NavbarComponent {
 
   toggleMobile() {
     this.mobileOpen = !this.mobileOpen;
-    document.body.style.overflow = this.mobileOpen ? 'hidden' : 'auto';
+    this.setPageScrollLock(this.mobileOpen);
   }
 
   toggleLang() {
@@ -42,7 +42,7 @@ export class NavbarComponent {
 
     if (this.mobileOpen) {
       this.mobileOpen = false;
-      document.body.style.overflow = 'auto';
+      this.setPageScrollLock(false);
     }
   }
 
@@ -57,7 +57,7 @@ export class NavbarComponent {
       block: 'start'
     });
     this.mobileOpen = false;
-    document.body.style.overflow = 'auto';
+    this.setPageScrollLock(false);
   }
 
   @HostListener('window:scroll')
@@ -69,7 +69,22 @@ export class NavbarComponent {
   onResize() {
     if (window.innerWidth > 768 && this.mobileOpen) {
       this.mobileOpen = false;
-      document.body.style.overflow = 'auto';
+      this.setPageScrollLock(false);
     }
+  }
+
+  private setPageScrollLock(isLocked: boolean) {
+    document.body.classList.toggle('is-scroll-locked', isLocked);
+    document.documentElement.classList.toggle('is-scroll-locked', isLocked);
+    document.body.style.touchAction = isLocked ? 'none' : 'pan-y pinch-zoom';
+    document.documentElement.style.touchAction = isLocked ? 'none' : 'pan-y pinch-zoom';
+    document.body.scrollLeft = 0;
+    document.documentElement.scrollLeft = 0;
+    window.scrollTo({ left: 0, top: window.scrollY, behavior: 'auto' });
+    requestAnimationFrame(() => {
+      document.body.scrollLeft = 0;
+      document.documentElement.scrollLeft = 0;
+      window.scrollTo({ left: 0, top: window.scrollY, behavior: 'auto' });
+    });
   }
 }

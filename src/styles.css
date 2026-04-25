@@ -32,11 +32,15 @@ body {
   padding: 0;
   min-height: 100%;
   width: 100%;
-  overflow-x: hidden;
+  max-width: 100%;
+  overflow-x: hidden !important;
+  overscroll-behavior-x: none;
   scroll-behavior: smooth;
 }
 
 body {
+  position: relative;
+  touch-action: pan-y pinch-zoom;
   font-family: "Segoe UI Variable", "Segoe UI", "Trebuchet MS", sans-serif;
   background:
     radial-gradient(circle at top left, rgba(37, 99, 235, 0.05), transparent 32%),
@@ -46,9 +50,24 @@ body {
   line-height: 1.6;
 }
 
+app-root {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden !important;
+  overscroll-behavior-x: none;
+}
+
+html.is-scroll-locked,
+body.is-scroll-locked {
+  overflow-y: hidden !important;
+  overscroll-behavior: none;
+}
+
 section {
   position: relative;
   isolation: isolate;
+  overflow-x: hidden;
 }
 
 img {

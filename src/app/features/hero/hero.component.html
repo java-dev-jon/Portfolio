@@ -109,7 +109,7 @@
           ></textarea>
         </label>
 
-        <button class="contact-submit" type="submit" [disabled]="contactFormRef.invalid">
+        <button class="contact-submit" type="submit" [disabled]="contactFormRef.invalid || isSubmitting">
           {{ 'HERO.CONTACT_SEND' | translate }}
         </button>
       </form>

@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { ThemeService } from 'src/app/core/theme.service';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { Subscription } from 'rxjs';
+import emailjs from 'emailjs-com';
 
 @Component({
   selector: 'app-hero',
@@ -15,6 +16,9 @@ import { Subscription } from 'rxjs';
 export class HeroComponent {
   typedText = '';
   isContactDialogOpen = false;
+  isSubmitting = false;
+  private readonly recipientEmail = 'khantsithuhlaing1@gmail.com';
+
   contactForm = {
     name: '',
     email: '',
@@ -29,7 +33,7 @@ export class HeroComponent {
   social = {
     github: 'https://github.com/java-dev-jon',
     linkedin: 'https://linkedin.com/in/khant-si-thu-hlaing-5a97893a1',
-    email: 'khantsithuhlaing1@gmail.com',
+    email: this.recipientEmail,
     phone: '+95 455477047'
   };
 
@@ -67,29 +71,25 @@ export class HeroComponent {
   }
 
   submitContactForm() {
-    const subject = this.translate.instant('HERO.CONTACT_SUBJECT', {
-      name: this.contactForm.name || this.translate.instant('HERO.CONTACT_DEFAULT_NAME')
-    });
-
-    const body = [
-      `${this.translate.instant('HERO.CONTACT_NAME_LABEL')}: ${this.contactForm.name}`,
-      `${this.translate.instant('HERO.CONTACT_EMAIL_LABEL')}: ${this.contactForm.email}`,
-      `${this.translate.instant('HERO.CONTACT_PHONE_LABEL')}: ${this.contactForm.phone || '-'}`,
-      '',
-      `${this.translate.instant('HERO.CONTACT_MESSAGE_LABEL')}:`,
-      this.contactForm.message
-    ].join('\n');
-
-    window.location.href =
-      `mailto:${this.social.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-
-    this.contactForm = {
-      name: '',
-      email: '',
-      phone: '',
-      message: ''
+    this.isSubmitting = true;
+    const templateParams = {
+      name: this.contactForm.name,
+      email: this.contactForm.email,
+      phone: this.contactForm.phone || '-',
+      message: this.contactForm.message
     };
-    this.closeContactDialog();
+
+    emailjs.send(
+      'service_o9ksyte',     //  Gmail service ID
+      'template_okfs9ef',    // The template  created
+      templateParams,
+      '3kavd0_edwwu1bX6D'         // EmailJS public key
+    ).then(() => {
+      this.contactForm = { name: '', email: '', phone: '', message: '' };
+      this.closeContactDialog();
+    }).catch(error => {
+      console.error('EmailJS error:', error);
+    });
   }
 
   private updateTexts() {
@@ -143,11 +143,18 @@ export class HeroComponent {
   }
 
   private setPageScrollLock(isLocked: boolean) {
-    const overflowValue = isLocked ? 'hidden' : 'auto';
-    document.body.style.overflow = overflowValue;
-    document.documentElement.style.overflow = overflowValue;
-    document.body.style.touchAction = isLocked ? 'none' : 'auto';
-    document.documentElement.style.touchAction = isLocked ? 'none' : 'auto';
+    document.body.classList.toggle('is-scroll-locked', isLocked);
+    document.documentElement.classList.toggle('is-scroll-locked', isLocked);
+    document.body.style.touchAction = isLocked ? 'none' : 'pan-y pinch-zoom';
+    document.documentElement.style.touchAction = isLocked ? 'none' : 'pan-y pinch-zoom';
+    document.body.scrollLeft = 0;
+    document.documentElement.scrollLeft = 0;
+    window.scrollTo({ left: 0, top: window.scrollY, behavior: 'auto' });
+    requestAnimationFrame(() => {
+      document.body.scrollLeft = 0;
+      document.documentElement.scrollLeft = 0;
+      window.scrollTo({ left: 0, top: window.scrollY, behavior: 'auto' });
+    });
   }
 
   scrollTo(sectionId: string) {
