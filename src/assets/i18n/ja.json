@@ -23,7 +23,16 @@
     "VIEW_WORK": "作品を見る",
     "ROLE_FULL_STACK": "フルスタック開発者",
     "ROLE_PROBLEM_SOLVER": "問題解決者",
-    "PROFILE_ALT": "プロフィール画像"
+    "PROFILE_ALT": "プロフィール画像",
+    "CONTACT_DIALOG_TITLE": "お問い合わせ",
+    "CONTACT_NAME_LABEL": "名前",
+    "CONTACT_EMAIL_LABEL": "メール",
+    "CONTACT_PHONE_LABEL": "電話",
+    "CONTACT_MESSAGE_LABEL": "メッセージ",
+    "CONTACT_SEND": "つながりましょう",
+    "CONTACT_SUBJECT": "{{name}} さんからのポートフォリオお問い合わせ",
+    "CONTACT_DEFAULT_NAME": "訪問者",
+    "CLOSE_CONTACT": "お問い合わせダイアログを閉じる"
   },
   "SKILLS": {
     "TITLE": "スキル",
@@ -137,9 +146,7 @@
       "OPEN_SOURCE_2": "新機能と性能改善のためにMifosデータベーススキーマを設計・最適化しました。",
       "OPEN_SOURCE_3": "金融業務の重要な洞察を提供するMifosレポートを開発・保守しました。",
       "OPEN_SOURCE_4": "グローバルチームと協力し、機能開発と不具合修正を進めました。",
-      "OPEN_SOURCE_5": "オープンソース開発のワークフローとコミュニティ貢献の経験を積みました。",
-      "ACHIEVEMENT_1": "Javaを用いたオープンソース金融ソリューションに貢献しました。",
-      "ACHIEVEMENT_2": "Mifosデータベーススキーマを性能向上のために最適化しました。"
+      "OPEN_SOURCE_5": "オープンソース開発のワークフローとコミュニティ貢献の経験を積みました。"
     },
     "ACHIEVEMENTS": {
       "ODOO": {

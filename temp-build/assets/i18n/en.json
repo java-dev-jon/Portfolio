@@ -23,7 +23,16 @@
     "VIEW_WORK": "View Work",
     "ROLE_FULL_STACK": "Full Stack Developer",
     "ROLE_PROBLEM_SOLVER": "Problem Solver",
-    "PROFILE_ALT": "Profile picture"
+    "PROFILE_ALT": "Profile picture",
+    "CONTACT_DIALOG_TITLE": "Contact Me",
+    "CONTACT_NAME_LABEL": "Name",
+    "CONTACT_EMAIL_LABEL": "Email",
+    "CONTACT_PHONE_LABEL": "Phone",
+    "CONTACT_MESSAGE_LABEL": "Message",
+    "CONTACT_SEND": "Let's Connect",
+    "CONTACT_SUBJECT": "Portfolio contact from {{name}}",
+    "CONTACT_DEFAULT_NAME": "a visitor",
+    "CLOSE_CONTACT": "Close contact dialog"
   },
   "SKILLS": {
     "TITLE": "My Skills",
@@ -137,9 +146,7 @@
       "OPEN_SOURCE_2": "Designed and optimized Mifos database schemas for new features and performance improvements.",
       "OPEN_SOURCE_3": "Developed and maintained Mifos reports to provide key insights into financial operations.",
       "OPEN_SOURCE_4": "Collaborated with a global team on feature development and bug fixes.",
-      "OPEN_SOURCE_5": "Gained experience in open-source development workflows and community contributions.",
-      "ACHIEVEMENT_1": "Contributed to open-source financial technology solutions using Java.",
-      "ACHIEVEMENT_2": "Optimized Mifos database schemas for performance."
+      "OPEN_SOURCE_5": "Gained experience in open-source development workflows and community contributions."
     },
     "ACHIEVEMENTS": {
       "ODOO": {

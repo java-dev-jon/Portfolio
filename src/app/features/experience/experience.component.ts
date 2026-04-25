@@ -27,29 +27,6 @@ interface Experience {
 export class ExperienceComponent {
   experienceData: Experience[] = [
     {
-      titleKey: 'EXPERIENCE.ROLES.JAVA_INTERN',
-      company: 'Myanmar Software Integrated Solutions (MSIS)',
-      durationKey: 'EXPERIENCE.DURATIONS.APR_2025_JUN_2025',
-      responsibilities: [
-        'EXPERIENCE.RESPONSIBILITIES.INTERN_1',
-        'EXPERIENCE.RESPONSIBILITIES.INTERN_2',
-        'EXPERIENCE.RESPONSIBILITIES.INTERN_3',
-        'EXPERIENCE.RESPONSIBILITIES.INTERN_4',
-        'EXPERIENCE.RESPONSIBILITIES.INTERN_5'
-      ]
-    },
-    {
-      titleKey: 'EXPERIENCE.ROLES.JUNIOR_JAVA_DEVELOPER',
-      company: 'Myanmar Software Integrated Solutions (MSIS)',
-      durationKey: 'EXPERIENCE.DURATIONS.JUN_2025_AUG_2025',
-      responsibilities: [
-        'EXPERIENCE.RESPONSIBILITIES.JUNIOR_1',
-        'EXPERIENCE.RESPONSIBILITIES.JUNIOR_2',
-        'EXPERIENCE.RESPONSIBILITIES.JUNIOR_3',
-        'EXPERIENCE.RESPONSIBILITIES.JUNIOR_4'
-      ]
-    },
-    {
       titleKey: 'EXPERIENCE.ROLES.JUNIOR_JAVA_DEVELOPER',
       company: 'Myanmar Software Integrated Solutions (MSIS)',
       durationKey: 'EXPERIENCE.DURATIONS.AUG_2025_PRESENT',
@@ -59,15 +36,6 @@ export class ExperienceComponent {
         'EXPERIENCE.RESPONSIBILITIES.OPEN_SOURCE_3',
         'EXPERIENCE.RESPONSIBILITIES.OPEN_SOURCE_4',
         'EXPERIENCE.RESPONSIBILITIES.OPEN_SOURCE_5'
-      ]
-    },
-    {
-      titleKey: 'EXPERIENCE.ROLES.JUNIOR_JAVA_DEVELOPER',
-      company: 'Myanmar Software Integrated Solutions (MSIS)',
-      durationKey: 'EXPERIENCE.DURATIONS.AUG_2025_PRESENT',
-      responsibilities: [
-        'EXPERIENCE.RESPONSIBILITIES.ACHIEVEMENT_1',
-        'EXPERIENCE.RESPONSIBILITIES.ACHIEVEMENT_2'
       ],
       achievements: [
         {
@@ -86,7 +54,30 @@ export class ExperienceComponent {
           descriptionKey: 'EXPERIENCE.ACHIEVEMENTS.SAVINGS.DESCRIPTION'
         }
       ]
-    }
+    },
+    {
+      titleKey: 'EXPERIENCE.ROLES.JUNIOR_JAVA_DEVELOPER',
+      company: 'Myanmar Software Integrated Solutions (MSIS)',
+      durationKey: 'EXPERIENCE.DURATIONS.JUN_2025_AUG_2025',
+      responsibilities: [
+        'EXPERIENCE.RESPONSIBILITIES.JUNIOR_1',
+        'EXPERIENCE.RESPONSIBILITIES.JUNIOR_2',
+        'EXPERIENCE.RESPONSIBILITIES.JUNIOR_3',
+        'EXPERIENCE.RESPONSIBILITIES.JUNIOR_4'
+      ]
+    },
+    {
+      titleKey: 'EXPERIENCE.ROLES.JAVA_INTERN',
+      company: 'Myanmar Software Integrated Solutions (MSIS)',
+      durationKey: 'EXPERIENCE.DURATIONS.APR_2025_JUN_2025',
+      responsibilities: [
+        'EXPERIENCE.RESPONSIBILITIES.INTERN_1',
+        'EXPERIENCE.RESPONSIBILITIES.INTERN_2',
+        'EXPERIENCE.RESPONSIBILITIES.INTERN_3',
+        'EXPERIENCE.RESPONSIBILITIES.INTERN_4',
+        'EXPERIENCE.RESPONSIBILITIES.INTERN_5'
+      ]
+    },
   ];
 
   constructor(public theme: ThemeService) {}
