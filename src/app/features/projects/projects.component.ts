@@ -4,8 +4,8 @@ import { TranslateModule } from '@ngx-translate/core';
 import { ThemeService } from 'src/app/core/theme.service';
 
 interface Project {
-  name: string;
-  description: string;
+  nameKey: string;
+  descriptionKey: string;
   githubLink: string;
   liveDemoLink: string;
   image: string;
@@ -21,28 +21,27 @@ interface Project {
 export class ProjectsComponent {
   projects: Project[] = [
     {
-      name: "Movie Website",
-      description: "A comprehensive movie management system featuring user authentication, role-based access control, and dynamic content presentation. Developed with Spring Boot for robust backend services and AngularJS for an interactive frontend.",
-      githubLink: "https://github.com/CallMe-JON/movie-website",
-      liveDemoLink: "",
-      image: "assets/img/movie-website.jpg"
+      nameKey: 'PROJECTS.ITEMS.MOVIE_WEBSITE.NAME',
+      descriptionKey: 'PROJECTS.ITEMS.MOVIE_WEBSITE.DESCRIPTION',
+      githubLink: 'https://github.com/CallMe-JON/movie-website',
+      liveDemoLink: '',
+      image: 'assets/img/movie-website.jpg'
     },
     {
-      name: "E-Commerce Platform",
-      description: "An intuitive e-commerce solution with product listings, shopping cart functionality, and secure checkout processes. Built using Spring Boot for scalable backend operations and AngularJS for a seamless user experience.",
-      githubLink: "https://github.com/CallMe-JON/E-commerce-Platform",
-      liveDemoLink: "",
-      image: "assets/img/ecommerce-platform.jpg"
+      nameKey: 'PROJECTS.ITEMS.ECOMMERCE.NAME',
+      descriptionKey: 'PROJECTS.ITEMS.ECOMMERCE.DESCRIPTION',
+      githubLink: 'https://github.com/CallMe-JON/E-commerce-Platform',
+      liveDemoLink: '',
+      image: 'assets/img/ecommerce-platform.jpg'
     }
   ];
 
   constructor(public theme: ThemeService) {}
 
-  getProjectTech(projectName: string): string[] {
-    // Assign technologies based on project name
-    if (projectName.includes('Movie')) {
+  getProjectTech(projectNameKey: string): string[] {
+    if (projectNameKey.includes('MOVIE')) {
       return ['Java', 'Spring Boot', 'AngularJS', 'MySQL'];
-    } else if (projectName.includes('E-Commerce')) {
+    } else if (projectNameKey.includes('ECOMMERCE')) {
       return ['Java', 'Spring Boot', 'AngularJS', 'MySQL', 'REST API'];
     }
     return ['Java', 'Spring Boot', 'AngularJS'];

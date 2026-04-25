@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { ThemeService } from 'src/app/core/theme.service';
 
 @Component({
@@ -63,24 +63,24 @@ export class ContactComponent {
     message: ''
   };
 
-  constructor(public theme: ThemeService) {}
+  constructor(
+    public theme: ThemeService,
+    private translate: TranslateService
+  ) {}
 
   onSubmit() {
     this.isSubmitting = true;
-    
-    // Simulate form submission
+
     setTimeout(() => {
       console.log('Form submitted:', this.formData);
       this.isSubmitting = false;
-      // Reset form
       this.formData = {
         name: '',
         email: '',
         subject: '',
         message: ''
       };
-      // Show success message (you can add a toast notification here)
-      alert('Message sent successfully!');
+      alert(this.translate.instant('CONTACT.MESSAGE_SENT'));
     }, 1500);
   }
 }

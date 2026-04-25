@@ -9,7 +9,7 @@
         <h2 class="typewriter">
           {{ typedText }}<span class="blinking-cursor">|</span>
         </h2>
-        
+
         <div class="hero-buttons">
           <button class="btn-primary" (click)="scrollTo('about')">
             <span>{{ 'HERO.CONTACT_ME' | translate }}</span>
@@ -28,14 +28,13 @@
 
       <div class="hero-image">
         <div class="image-container" [ngClass]="{ 'dark-image': theme.darkMode() }">
-          <img src="assets/img/pic.jpg" alt="Profile Picture" class="profile-pic">
+          <img src="assets/img/pic.jpg" [alt]="'HERO.PROFILE_ALT' | translate" class="profile-pic">
           <div class="image-backdrop"></div>
           <div class="image-decoration"></div>
         </div>
       </div>
     </div>
 
-    <!-- Scroll Indicator -->
     <div class="scroll-indicator" (click)="scrollTo('about')">
       <div class="mouse">
         <div class="wheel"></div>

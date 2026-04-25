@@ -3,8 +3,17 @@
     <img src="assets/img/jon-logo.jpg" alt="Profile" class="logo-pic">
   </div>
 
-  <button class="mobile-btn" (click)="toggleMobile()" [attr.aria-label]="'Toggle menu'">
-    <span class="hamburger" [ngClass]="{ 'active': mobileOpen }"></span>
+  <button
+    class="mobile-btn"
+    (click)="toggleMobile()"
+    [attr.aria-label]="(mobileOpen ? 'NAV.CLOSE_MENU' : 'NAV.OPEN_MENU') | translate"
+    [attr.aria-expanded]="mobileOpen"
+  >
+    <span class="mobile-icon" [ngClass]="{ 'active': mobileOpen }">
+      <span class="mobile-line"></span>
+      <span class="mobile-line"></span>
+      <span class="mobile-line"></span>
+    </span>
   </button>
 
   <ul class="nav-menu" [ngClass]="{ 'open': mobileOpen }">
@@ -14,32 +23,17 @@
       </a>
     </li>
 
-    <!-- <li class="nav-item dropdown">
-      <button class="lang-btn" (click)="toggleLang()" [attr.aria-label]="'Change language'">
-        <span class="globe-icon">🌐</span>
-        <span class="lang-code">{{ translate.currentLang | uppercase }}</span>
-      </button>
-      <div class="dropdown-menu" *ngIf="langOpen" [ngClass]="{ 'dark-dropdown': theme.darkMode() }">
-        <button class="dropdown-item" (click)="changeLang('en')">
-          <span class="flag">🇬🇧</span> English
-        </button>
-        <button class="dropdown-item" (click)="changeLang('ja')">
-          <span class="flag">🇯🇵</span> 日本語
-        </button>
-      </div>
-    </li> -->
-
     <li class="nav-item">
-      <button class="lang-btn" (click)="toggleLang()" [attr.aria-label]="'Change language'">
+      <button class="lang-btn" (click)="toggleLang()" [attr.aria-label]="'NAV.CHANGE_LANGUAGE' | translate">
         <span class="globe-icon">🌐</span>
         <span class="lang-code">{{ translate.currentLang | uppercase }}</span>
       </button>
     </li>
 
     <li class="nav-item">
-      <button class="theme-btn" (click)="theme.toggle()" [attr.aria-label]="'Toggle theme'">
+      <button class="theme-btn" (click)="theme.toggle()" [attr.aria-label]="'NAV.TOGGLE_THEME' | translate">
         <span class="theme-icon">{{ theme.darkMode() ? '☀️' : '🌙' }}</span>
-        <span class="theme-text">{{ theme.darkMode() ? 'Light' : 'Dark' }}</span>
+        <span class="theme-text">{{ (theme.darkMode() ? 'NAV.LIGHT_MODE' : 'NAV.DARK_MODE') | translate }}</span>
       </button>
     </li>
   </ul>

@@ -1,82 +1,172 @@
 {
-    "NAV": {
-        "HOME": "Home",
-        "ABOUT": "About",
-        "SKILLS": "Skills",
-        "PROJECTS": "Projects",
-        "CONTACT": "Contact",
-        "EXPERIENCES": "Experiences"
-    },
-
-    "HERO": {
-        "GREETING": "Hi",
-        "I_AM": "I'm",
-        "NAME": "Khant Si Thu Hlaing",
-        "SUBTITLE": "A passionate Fullstack Developer And Problem Solver from Yangon, Myanmar",
-        "DESCRIPTION": "I craft beautiful digital experiences that make a difference. Specialized in building exceptional websites and applications.",
-        "CONTACT_ME": "Contact Me",
-        "VIEW_WORK": "View Work"
-    },
-
-    "SKILLS": {
-        "TITLE": "My Skills",
-        "SUBTITLE": "Technologies I work with",
-        "YEARS_EXP": "Years Experience",
-        "TECHNOLOGIES": "Technologies",
-        "PROJECTS": "Projects",
-        "PASSION": "Passion"
-    },
-
-    "ABOUT": {
-        "TITLE": "About Me",
-        "HELLO": "Hello, I'm",
-        "YEARS": "Years",
-        "PROJECTS": "Projects",
-        "CLIENTS": "Clients",
-        "YEARS_EXP": "Years Experience",
-        "DOWNLOAD_CV": "Download CV"
-    },
-
-    "PROJECTS": {
-        "TITLE": "My Own Projects",
-        "SUBTITLE": "My Own Projects and Experiments",
-        "VIEW_GITHUB": "View GitHub",
-        "LIVE_DEMO": "Live Demo",
-        "COMING_SOON": "Coming Soon",
-        "VIEW_ALL": "View All Projects"
-    },
-
-    "CONTACT": {
-        "TITLE": "Contact Me",
-        "SUBTITLE": "Get in touch with me",
-        "GITHUB": "GitHub",
-        "LINKEDIN": "LinkedIn",
-        "EMAIL": "Email",
-        "PHONE": "Phone",
-        "FOLLOW_ME": "Follow Me",
-        "NAME_PLACEHOLDER": "Your Name",
-        "EMAIL_PLACEHOLDER": "Your Email",
-        "SUBJECT_PLACEHOLDER": "Subject",
-        "MESSAGE_PLACEHOLDER": "Your Message",
-        "SEND_MESSAGE": "Send Message",
-        "SENDING": "Sending..."
-    },
-
-    "EXPERIENCE": {
-        "TITLE": "Work Experience",
-        "SUBTITLE": "My professional journey"
-    },
-
-    "FOOTER": {
-        "DESCRIPTION": "Building innovative solutions with modern technologies",
-        "QUICK_LINKS": "Quick Links",
-        "CONTACT": "Contact Info",
-        "NEWSLETTER": "Newsletter",
-        "NEWSLETTER_TEXT": "Subscribe to get updates on new projects",
-        "EMAIL_PLACEHOLDER": "Your email",
-        "RIGHTS_RESERVED": "All rights reserved",
-        "PRIVACY": "Privacy Policy",
-        "TERMS": "Terms of Service",
-        "COOKIES": "Cookies"
+  "NAV": {
+    "HOME": "Home",
+    "ABOUT": "About",
+    "SKILLS": "Skills",
+    "PROJECTS": "Projects",
+    "CONTACT": "Contact",
+    "EXPERIENCES": "Experiences",
+    "OPEN_MENU": "Open menu",
+    "CLOSE_MENU": "Close menu",
+    "CHANGE_LANGUAGE": "Change language",
+    "TOGGLE_THEME": "Toggle theme",
+    "LIGHT_MODE": "Light",
+    "DARK_MODE": "Dark"
+  },
+  "HERO": {
+    "GREETING": "Hi",
+    "I_AM": "I'm",
+    "NAME": "Khant Si Thu Hlaing",
+    "SUBTITLE": "A passionate Fullstack Developer And Problem Solver from Yangon, Myanmar",
+    "DESCRIPTION": "I craft beautiful digital experiences that make a difference. Specialized in building exceptional websites and applications.",
+    "CONTACT_ME": "Contact Me",
+    "VIEW_WORK": "View Work",
+    "ROLE_FULL_STACK": "Full Stack Developer",
+    "ROLE_PROBLEM_SOLVER": "Problem Solver",
+    "PROFILE_ALT": "Profile picture"
+  },
+  "SKILLS": {
+    "TITLE": "My Skills",
+    "SUBTITLE": "Technologies I work with",
+    "YEARS_EXP": "Years Experience",
+    "TECHNOLOGIES": "Technologies",
+    "PROJECTS": "Projects",
+    "PASSION": "Passion",
+    "DESCRIPTION_START": "Specializing in",
+    "DESCRIPTION_MIDDLE": "open-source banking and financial technology solutions, building robust backend systems with",
+    "DESCRIPTION_END": "and creating responsive frontend interfaces with",
+    "HIGHLIGHT_MICROFINANCE": "Microfinance",
+    "HIGHLIGHT_BACKEND": "Java / Spring Boot",
+    "HIGHLIGHT_FRONTEND": "Angular",
+    "TAB_TECHNICAL": "Technical",
+    "TAB_LANGUAGE": "Language",
+    "TAB_SOFT": "Soft Skills",
+    "LANGUAGE_MYANMAR": "Myanmar",
+    "LANGUAGE_ENGLISH": "English",
+    "LANGUAGE_JAPANESE": "Japanese",
+    "SOFT_PROBLEM_SOLVING": "Problem Solving",
+    "SOFT_TEAM_COLLABORATION": "Team Collaboration",
+    "SOFT_COMMUNICATION": "Communication",
+    "SOFT_TIME_MANAGEMENT": "Time Management",
+    "SOFT_ADAPTABILITY": "Adaptability",
+    "SOFT_CRITICAL_THINKING": "Critical Thinking",
+    "SOFT_CREATIVITY": "Creativity",
+    "SOFT_LEADERSHIP": "Leadership"
+  },
+  "ABOUT": {
+    "TITLE": "About Me",
+    "HELLO": "Hello, I'm",
+    "YEARS": "Years",
+    "PROJECTS": "Projects",
+    "CLIENTS": "Clients",
+    "YEARS_EXP": "Years Experience",
+    "DOWNLOAD_CV": "Download CV",
+    "DESCRIPTION_1_START": "As a Java Fullstack Developer, I specialize in full-cycle application development from architecting",
+    "DESCRIPTION_1_HIGHLIGHT_1": "resilient backend systems",
+    "DESCRIPTION_1_MIDDLE": "using Java, Spring Boot, and Hibernate, to creating",
+    "DESCRIPTION_1_HIGHLIGHT_2": "responsive and engaging user interfaces",
+    "DESCRIPTION_1_END": "with AngularJS, HTML, and CSS.",
+    "DESCRIPTION_2_START": "I have hands-on experience building robust",
+    "DESCRIPTION_2_HIGHLIGHT_1": "RESTful APIs",
+    "DESCRIPTION_2_MIDDLE_1": "managing relational databases like",
+    "DESCRIPTION_2_HIGHLIGHT_2": "MySQL",
+    "DESCRIPTION_2_MIDDLE_2": "and maintaining clean code with",
+    "DESCRIPTION_2_HIGHLIGHT_3": "Git version control",
+    "DESCRIPTION_3": "My strength lies in bridging backend logic with frontend experience, ensuring seamless integration and performance. I'm passionate about solving real-world problems through code, constantly learning new technologies, and contributing to innovative solutions that align with business goals while enhancing user satisfaction.",
+    "LOCATION": "Yangon, Myanmar",
+    "AVAILABLE": "Available for work"
+  },
+  "PROJECTS": {
+    "TITLE": "My Own Projects",
+    "SUBTITLE": "My Own Projects and Experiments",
+    "VIEW_GITHUB": "View GitHub",
+    "LIVE_DEMO": "Live Demo",
+    "COMING_SOON": "Coming Soon",
+    "VIEW_ALL": "View All Projects",
+    "ITEMS": {
+      "MOVIE_WEBSITE": {
+        "NAME": "Movie Website",
+        "DESCRIPTION": "A comprehensive movie management system featuring user authentication, role-based access control, and dynamic content presentation. Developed with Spring Boot for robust backend services and AngularJS for an interactive frontend."
+      },
+      "ECOMMERCE": {
+        "NAME": "E-Commerce Platform",
+        "DESCRIPTION": "An intuitive e-commerce solution with product listings, shopping cart functionality, and secure checkout processes. Built using Spring Boot for scalable backend operations and AngularJS for a seamless user experience."
+      }
     }
+  },
+  "CONTACT": {
+    "TITLE": "Contact Me",
+    "SUBTITLE": "Get in touch with me",
+    "GITHUB": "GitHub",
+    "LINKEDIN": "LinkedIn",
+    "EMAIL": "Email",
+    "PHONE": "Phone",
+    "CALL": "Call",
+    "FOLLOW_ME": "Follow Me",
+    "NAME_PLACEHOLDER": "Your Name",
+    "EMAIL_PLACEHOLDER": "Your Email",
+    "SUBJECT_PLACEHOLDER": "Subject",
+    "MESSAGE_PLACEHOLDER": "Your Message",
+    "SEND_MESSAGE": "Send Message",
+    "SENDING": "Sending...",
+    "MESSAGE_SENT": "Message sent successfully!"
+  },
+  "EXPERIENCE": {
+    "TITLE": "Experience",
+    "SUBTITLE": "My professional journey",
+    "ROLES": {
+      "JAVA_INTERN": "Java Development Intern",
+      "JUNIOR_JAVA_DEVELOPER": "Junior Java Developer"
+    },
+    "DURATIONS": {
+      "APR_2025_JUN_2025": "April 2025 - June 2025",
+      "JUN_2025_AUG_2025": "June 2025 - August 2025",
+      "AUG_2025_PRESENT": "August 2025 - Present"
+    },
+    "RESPONSIBILITIES": {
+      "INTERN_1": "Built responsive front-end interfaces using HTML, CSS, and JavaScript.",
+      "INTERN_2": "Assisted in integrating AngularJS components with backend services.",
+      "INTERN_3": "Learned Git for version control and collaborative development.",
+      "INTERN_4": "Developed and maintained RESTful APIs using Spring Boot and Java.",
+      "INTERN_5": "Contributed to client projects under supervision.",
+      "JUNIOR_1": "Developed and maintained RESTful APIs using Spring Boot and Java.",
+      "JUNIOR_2": "Collaborated with senior developers on system design and implementation.",
+      "JUNIOR_3": "Assisted in database schema design and optimization with MySQL.",
+      "JUNIOR_4": "Participated in code reviews and adopted best practices for software development.",
+      "OPEN_SOURCE_1": "Contributed to the development of open-source financial technology solutions using Java.",
+      "OPEN_SOURCE_2": "Designed and optimized Mifos database schemas for new features and performance improvements.",
+      "OPEN_SOURCE_3": "Developed and maintained Mifos reports to provide key insights into financial operations.",
+      "OPEN_SOURCE_4": "Collaborated with a global team on feature development and bug fixes.",
+      "OPEN_SOURCE_5": "Gained experience in open-source development workflows and community contributions.",
+      "ACHIEVEMENT_1": "Contributed to open-source financial technology solutions using Java.",
+      "ACHIEVEMENT_2": "Optimized Mifos database schemas for performance."
+    },
+    "ACHIEVEMENTS": {
+      "ODOO": {
+        "TITLE": "Odoo Integration",
+        "DESCRIPTION": "Implemented seamless integration between Mifos and Odoo."
+      },
+      "MAIL": {
+        "TITLE": "Mail Integration",
+        "DESCRIPTION": "Developed email reporting jobs and verification systems."
+      },
+      "SAVINGS": {
+        "TITLE": "Savings Module",
+        "DESCRIPTION": "Implemented month-end accrue and interest posting."
+      }
+    }
+  },
+  "FOOTER": {
+    "DESCRIPTION": "Building innovative solutions with modern technologies",
+    "QUICK_LINKS": "Quick Links",
+    "CONTACT": "Contact Info",
+    "NEWSLETTER": "Newsletter",
+    "NEWSLETTER_TEXT": "Subscribe to get updates on new projects",
+    "EMAIL_PLACEHOLDER": "Your email",
+    "RIGHTS_RESERVED": "All rights reserved",
+    "PRIVACY": "Privacy Policy",
+    "TERMS": "Terms of Service",
+    "COOKIES": "Cookies",
+    "SUBSCRIBE_SUCCESS": "Thank you for subscribing!"
+  }
 }

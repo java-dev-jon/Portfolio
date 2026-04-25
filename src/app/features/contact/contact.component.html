@@ -10,7 +10,6 @@
     </div>
 
     <div class="contact-content">
-      <!-- Contact Info Cards -->
       <div class="contact-info">
         <div class="info-card" *ngFor="let contact of contactMethods">
           <div class="info-icon" [ngClass]="contact.iconClass">
@@ -24,32 +23,28 @@
           </div>
         </div>
 
-        <!-- Social Links -->
         <div class="social-section">
           <h3 class="social-title">{{ 'CONTACT.FOLLOW_ME' | translate }}</h3>
           <div class="social-grid">
             <a [href]="social.github" target="_blank" class="social-card github">
               <i class="fab fa-github"></i>
-              <span>GitHub</span>
+              <span>{{ 'CONTACT.GITHUB' | translate }}</span>
             </a>
             <a [href]="social.linkedin" target="_blank" class="social-card linkedin">
               <i class="fab fa-linkedin"></i>
-              <span>LinkedIn</span>
+              <span>{{ 'CONTACT.LINKEDIN' | translate }}</span>
             </a>
             <a [href]="'mailto:' + social.email" class="social-card email">
               <i class="fas fa-envelope"></i>
-              <span>Email</span>
+              <span>{{ 'CONTACT.EMAIL' | translate }}</span>
             </a>
             <a [href]="'tel:' + social.phone" class="social-card phone">
               <i class="fas fa-phone"></i>
-              <span>Call</span>
+              <span>{{ 'CONTACT.CALL' | translate }}</span>
             </a>
           </div>
         </div>
       </div>
-
-      <!-- Contact Form -->
-      
     </div>
   </div>
 </section>

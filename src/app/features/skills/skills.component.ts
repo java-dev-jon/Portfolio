@@ -11,28 +11,28 @@ import { ThemeService } from 'src/app/core/theme.service';
   styleUrls: ['./skills.component.css']
 })
 export class SkillsComponent {
-  activeTab: string = 'technical';
+  activeTab = 'technical';
 
   technicalSkills: string[] = [
-    "Java", "Spring Boot", "MySQL", "HTML", "CSS", 
-    "JavaScript", "AngularJS", "Angular", "Git", "Bootstrap"
+    'Java', 'Spring Boot', 'MySQL', 'HTML', 'CSS',
+    'JavaScript', 'AngularJS', 'Angular', 'Git', 'Bootstrap'
   ];
 
-  languages: { name: string, level: string }[] = [
-    { name: "Myanmar", level: "Native" },
-    { name: "English", level: "Professional" },
-    { name: "Japanese", level: "Intermediate" }    
+  languages: { name: string; nameKey: string; level: string }[] = [
+    { name: 'Myanmar', nameKey: 'SKILLS.LANGUAGE_MYANMAR', level: 'Native' },
+    { name: 'English', nameKey: 'SKILLS.LANGUAGE_ENGLISH', level: 'Professional' },
+    { name: 'Japanese', nameKey: 'SKILLS.LANGUAGE_JAPANESE', level: 'Intermediate' }
   ];
 
-  softSkills: { name: string, emoji: string }[] = [
-    { name: "Problem Solving", emoji: "🧩" },
-    { name: "Team Collaboration", emoji: "🤝" },
-    { name: "Communication", emoji: "💬" },
-    { name: "Time Management", emoji: "⏱️" },
-    { name: "Adaptability", emoji: "🔄" },
-    { name: "Critical Thinking", emoji: "🎯" },
-    { name: "Creativity", emoji: "🎨" },
-    { name: "Leadership", emoji: "👑" }
+  softSkills: { nameKey: string; emoji: string }[] = [
+    { nameKey: 'SKILLS.SOFT_PROBLEM_SOLVING', emoji: '🧩' },
+    { nameKey: 'SKILLS.SOFT_TEAM_COLLABORATION', emoji: '🤝' },
+    { nameKey: 'SKILLS.SOFT_COMMUNICATION', emoji: '💬' },
+    { nameKey: 'SKILLS.SOFT_TIME_MANAGEMENT', emoji: '⏱️' },
+    { nameKey: 'SKILLS.SOFT_ADAPTABILITY', emoji: '🔄' },
+    { nameKey: 'SKILLS.SOFT_CRITICAL_THINKING', emoji: '🎯' },
+    { nameKey: 'SKILLS.SOFT_CREATIVITY', emoji: '🎨' },
+    { nameKey: 'SKILLS.SOFT_LEADERSHIP', emoji: '👑' }
   ];
 
   constructor(public theme: ThemeService) {}
@@ -43,25 +43,34 @@ export class SkillsComponent {
 
   getSkillEmoji(skill: string): string {
     const emojiMap: { [key: string]: string } = {
-      'Java': '☕', 'Spring Boot': '🍃', 'MySQL': '🗄️', 'HTML': '🌐',
-      'CSS': '🎨', 'JavaScript': '📜', 'AngularJS': '🅰️', 'Angular': '⚡',
-      'Git': '📂', 'Bootstrap': '📱'
+      'Java': '☕',
+      'Spring Boot': '🍃',
+      'MySQL': '🗄️',
+      'HTML': '🌐',
+      'CSS': '🎨',
+      'JavaScript': '📜',
+      'AngularJS': '🅰️',
+      'Angular': '⚡',
+      'Git': '📂',
+      'Bootstrap': '📱'
     };
     return emojiMap[skill] || '💻';
   }
 
-  getLanguageEmoji(language: { name: string, level: string }): string {
+  getLanguageEmoji(language: { name: string; nameKey: string; level: string }): string {
     const emojiMap: { [key: string]: string } = {
-      'English': '🇬🇧', 'Japanese': '🇯🇵', 'Myanmar': '🇲🇲'
+      English: '🇬🇧',
+      Japanese: '🇯🇵',
+      Myanmar: '🇲🇲'
     };
     return emojiMap[language.name] || '🌐';
   }
 
-  getLanguageLevel(language: { name: string, level: string }): string {
+  getLanguageLevel(language: { name: string; nameKey: string; level: string }): string {
     const levelMap: { [key: string]: string } = {
-      'Native': '100%',
-      'Professional': '85%',
-      'Intermediate': '60%'
+      Native: '100%',
+      Professional: '85%',
+      Intermediate: '60%'
     };
     return levelMap[language.level] || '70%';
   }

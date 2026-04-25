@@ -1,82 +1,172 @@
 {
-    "NAV": {
-        "HOME": "ホーム",
-        "ABOUT": "概要",
-        "SKILLS": "スキル",
-        "PROJECTS": "プロジェクト",
-        "CONTACT": "お問い合わせ",
-        "EXPERIENCES": "経験"
-    },
-
-    "HERO": {
-        "GREETING": "こんにちは",
-        "I_AM": "私は",
-        "NAME": "カント・シー・トゥー・ライン",
-        "SUBTITLE": "ミャンマー、ヤンゴン出身の情熱的なフルスタック開発者兼問題解決者",
-        "DESCRIPTION": "違いを生む美しいデジタル体験を創り出します。 exceptionalなウェブサイトとアプリケーションの構築を専門としています。",
-        "CONTACT_ME": "お問い合わせ",
-        "VIEW_WORK": "作品を見る"
-    },
-
-    "SKILLS": {
-        "TITLE": "スキル",
-        "SUBTITLE": "使用技術",
-        "YEARS_EXP": "経験年数",
-        "TECHNOLOGIES": "技術スタック",
-        "PROJECTS": "プロジェクト数",
-        "PASSION": "情熱"
-    },
-
-    "ABOUT": {
-        "TITLE": "自己紹介",
-        "HELLO": "こんにちは、",
-        "YEARS": "年",
-        "PROJECTS": "プロジェクト",
-        "CLIENTS": "クライアント",
-        "YEARS_EXP": "の経験",
-        "DOWNLOAD_CV": "履歴書をダウンロード"
-    },
-
-    "PROJECTS": {
-        "TITLE": "プロジェクト",
-        "SUBTITLE": "最近の作品と実験",
-        "VIEW_GITHUB": "GitHubを見る",
-        "LIVE_DEMO": "ライブデモ",
-        "COMING_SOON": "準備中",
-        "VIEW_ALL": "すべてのプロジェクトを見る"
-    },
-
-    "CONTACT": {
-        "TITLE": "お問い合わせ",
-        "SUBTITLE": "お気軽にご連絡ください",
-        "GITHUB": "GitHub",
-        "LINKEDIN": "LinkedIn",
-        "EMAIL": "メール",
-        "PHONE": "電話",
-        "FOLLOW_ME": "フォローする",
-        "NAME_PLACEHOLDER": "お名前",
-        "EMAIL_PLACEHOLDER": "メールアドレス",
-        "SUBJECT_PLACEHOLDER": "件名",
-        "MESSAGE_PLACEHOLDER": "メッセージ",
-        "SEND_MESSAGE": "送信",
-        "SENDING": "送信中..."
-    },
-
-    "EXPERIENCE": {
-        "TITLE": "職務経験",
-        "SUBTITLE": "プロフェッショナルな経歴"
-    },
-
-    "FOOTER": {
-      "DESCRIPTION": "最新テクノロジーで革新的なソリューションを構築",
-      "QUICK_LINKS": "クイックリンク",
-      "CONTACT": "連絡先",
-      "NEWSLETTER": "ニュースレター",
-      "NEWSLETTER_TEXT": "新着プロジェクトの情報を受け取る",
-      "EMAIL_PLACEHOLDER": "メールアドレス",
-      "RIGHTS_RESERVED": "全著作権所有",
-      "PRIVACY": "プライバシーポリシー",
-      "TERMS": "利用規約",
-      "COOKIES": "クッキー"
+  "NAV": {
+    "HOME": "ホーム",
+    "ABOUT": "概要",
+    "SKILLS": "スキル",
+    "PROJECTS": "プロジェクト",
+    "CONTACT": "お問い合わせ",
+    "EXPERIENCES": "経験",
+    "OPEN_MENU": "メニューを開く",
+    "CLOSE_MENU": "メニューを閉じる",
+    "CHANGE_LANGUAGE": "言語を変更",
+    "TOGGLE_THEME": "テーマを切り替え",
+    "LIGHT_MODE": "ライト",
+    "DARK_MODE": "ダーク"
+  },
+  "HERO": {
+    "GREETING": "こんにちは",
+    "I_AM": "私は",
+    "NAME": "カント・シー・トゥー・フライン",
+    "SUBTITLE": "ミャンマー・ヤンゴン出身の情熱的なフルスタック開発者兼問題解決者",
+    "DESCRIPTION": "違いを生み出す美しいデジタル体験を作り出します。優れたウェブサイトとアプリケーションの構築を得意としています。",
+    "CONTACT_ME": "お問い合わせ",
+    "VIEW_WORK": "作品を見る",
+    "ROLE_FULL_STACK": "フルスタック開発者",
+    "ROLE_PROBLEM_SOLVER": "問題解決者",
+    "PROFILE_ALT": "プロフィール画像"
+  },
+  "SKILLS": {
+    "TITLE": "スキル",
+    "SUBTITLE": "使用技術",
+    "YEARS_EXP": "経験年数",
+    "TECHNOLOGIES": "技術スタック",
+    "PROJECTS": "プロジェクト数",
+    "PASSION": "情熱",
+    "DESCRIPTION_START": "",
+    "DESCRIPTION_MIDDLE": "オープンソースの銀行・金融テクノロジーソリューションに特化し、",
+    "DESCRIPTION_END": "を用いた堅牢なバックエンド構築と、",
+    "HIGHLIGHT_MICROFINANCE": "マイクロファイナンス",
+    "HIGHLIGHT_BACKEND": "Java / Spring Boot",
+    "HIGHLIGHT_FRONTEND": "Angular",
+    "TAB_TECHNICAL": "技術",
+    "TAB_LANGUAGE": "言語",
+    "TAB_SOFT": "ソフトスキル",
+    "LANGUAGE_MYANMAR": "ミャンマー語",
+    "LANGUAGE_ENGLISH": "英語",
+    "LANGUAGE_JAPANESE": "日本語",
+    "SOFT_PROBLEM_SOLVING": "問題解決",
+    "SOFT_TEAM_COLLABORATION": "チーム連携",
+    "SOFT_COMMUNICATION": "コミュニケーション",
+    "SOFT_TIME_MANAGEMENT": "時間管理",
+    "SOFT_ADAPTABILITY": "適応力",
+    "SOFT_CRITICAL_THINKING": "批判的思考",
+    "SOFT_CREATIVITY": "創造性",
+    "SOFT_LEADERSHIP": "リーダーシップ"
+  },
+  "ABOUT": {
+    "TITLE": "自己紹介",
+    "HELLO": "こんにちは、",
+    "YEARS": "年",
+    "PROJECTS": "プロジェクト",
+    "CLIENTS": "クライアント",
+    "YEARS_EXP": "の経験",
+    "DOWNLOAD_CV": "履歴書をダウンロード",
+    "DESCRIPTION_1_START": "Javaフルスタック開発者として、私は",
+    "DESCRIPTION_1_HIGHLIGHT_1": "信頼性の高いバックエンドシステム",
+    "DESCRIPTION_1_MIDDLE": "をJava、Spring Boot、Hibernateで設計し、",
+    "DESCRIPTION_1_HIGHLIGHT_2": "レスポンシブで魅力的なユーザーインターフェース",
+    "DESCRIPTION_1_END": "をAngularJS、HTML、CSSで構築するフルサイクル開発を得意としています。",
+    "DESCRIPTION_2_START": "また、",
+    "DESCRIPTION_2_HIGHLIGHT_1": "RESTful API",
+    "DESCRIPTION_2_MIDDLE_1": "の構築、",
+    "DESCRIPTION_2_HIGHLIGHT_2": "MySQL",
+    "DESCRIPTION_2_MIDDLE_2": "のようなリレーショナルデータベースの管理、そして",
+    "DESCRIPTION_2_HIGHLIGHT_3": "Gitによるバージョン管理",
+    "DESCRIPTION_3": "私の強みは、バックエンドロジックとフロントエンド体験を結びつけ、シームレスな連携と高いパフォーマンスを実現することです。コードを通じて実際の課題を解決することに情熱を持ち、新しい技術を学びながら、ビジネス目標に沿った革新的なソリューションでユーザー満足度の向上に貢献しています。",
+    "LOCATION": "ヤンゴン、ミャンマー",
+    "AVAILABLE": "お仕事のご相談が可能です"
+  },
+  "PROJECTS": {
+    "TITLE": "個人プロジェクト",
+    "SUBTITLE": "自分で取り組んだプロジェクトと実験",
+    "VIEW_GITHUB": "GitHubを見る",
+    "LIVE_DEMO": "ライブデモ",
+    "COMING_SOON": "準備中",
+    "VIEW_ALL": "すべてのプロジェクトを見る",
+    "ITEMS": {
+      "MOVIE_WEBSITE": {
+        "NAME": "映画ウェブサイト",
+        "DESCRIPTION": "ユーザー認証、ロールベースのアクセス制御、動的なコンテンツ表示を備えた包括的な映画管理システムです。堅牢なバックエンドにはSpring Boot、対話的なフロントエンドにはAngularJSを使用して開発しました。"
+      },
+      "ECOMMERCE": {
+        "NAME": "Eコマースプラットフォーム",
+        "DESCRIPTION": "商品一覧、ショッピングカート機能、安全なチェックアウトを備えた直感的なEコマースソリューションです。スケーラブルなバックエンド処理にSpring Boot、シームレスなユーザー体験にAngularJSを使用して構築しました。"
+      }
     }
+  },
+  "CONTACT": {
+    "TITLE": "お問い合わせ",
+    "SUBTITLE": "お気軽にご連絡ください",
+    "GITHUB": "GitHub",
+    "LINKEDIN": "LinkedIn",
+    "EMAIL": "メール",
+    "PHONE": "電話",
+    "CALL": "電話する",
+    "FOLLOW_ME": "フォローする",
+    "NAME_PLACEHOLDER": "お名前",
+    "EMAIL_PLACEHOLDER": "メールアドレス",
+    "SUBJECT_PLACEHOLDER": "件名",
+    "MESSAGE_PLACEHOLDER": "メッセージ",
+    "SEND_MESSAGE": "送信",
+    "SENDING": "送信中...",
+    "MESSAGE_SENT": "メッセージを送信しました。"
+  },
+  "EXPERIENCE": {
+    "TITLE": "経験",
+    "SUBTITLE": "私の職務経歴",
+    "ROLES": {
+      "JAVA_INTERN": "Java開発インターン",
+      "JUNIOR_JAVA_DEVELOPER": "ジュニアJava開発者"
+    },
+    "DURATIONS": {
+      "APR_2025_JUN_2025": "2025年4月 - 2025年6月",
+      "JUN_2025_AUG_2025": "2025年6月 - 2025年8月",
+      "AUG_2025_PRESENT": "2025年8月 - 現在"
+    },
+    "RESPONSIBILITIES": {
+      "INTERN_1": "HTML、CSS、JavaScriptを用いたレスポンシブなフロントエンド画面を構築しました。",
+      "INTERN_2": "AngularJSコンポーネントとバックエンドサービスの連携を支援しました。",
+      "INTERN_3": "Gitを用いたバージョン管理と共同開発を学びました。",
+      "INTERN_4": "Spring BootとJavaを用いたRESTful APIの開発・保守を行いました。",
+      "INTERN_5": "指導のもとでクライアント向けプロジェクトに貢献しました。",
+      "JUNIOR_1": "Spring BootとJavaを用いたRESTful APIの開発・保守を行いました。",
+      "JUNIOR_2": "システム設計と実装でシニア開発者と連携しました。",
+      "JUNIOR_3": "MySQLを用いたデータベース設計と最適化を支援しました。",
+      "JUNIOR_4": "コードレビューに参加し、ソフトウェア開発のベストプラクティスを取り入れました。",
+      "OPEN_SOURCE_1": "Javaを用いたオープンソースの金融テクノロジーソリューション開発に貢献しました。",
+      "OPEN_SOURCE_2": "新機能と性能改善のためにMifosデータベーススキーマを設計・最適化しました。",
+      "OPEN_SOURCE_3": "金融業務の重要な洞察を提供するMifosレポートを開発・保守しました。",
+      "OPEN_SOURCE_4": "グローバルチームと協力し、機能開発と不具合修正を進めました。",
+      "OPEN_SOURCE_5": "オープンソース開発のワークフローとコミュニティ貢献の経験を積みました。",
+      "ACHIEVEMENT_1": "Javaを用いたオープンソース金融ソリューションに貢献しました。",
+      "ACHIEVEMENT_2": "Mifosデータベーススキーマを性能向上のために最適化しました。"
+    },
+    "ACHIEVEMENTS": {
+      "ODOO": {
+        "TITLE": "Odoo連携",
+        "DESCRIPTION": "MifosとOdooのシームレスな連携を実装しました。"
+      },
+      "MAIL": {
+        "TITLE": "メール連携",
+        "DESCRIPTION": "メールレポートジョブと認証システムを開発しました。"
+      },
+      "SAVINGS": {
+        "TITLE": "貯蓄モジュール",
+        "DESCRIPTION": "月末引当と利息計上を実装しました。"
+      }
+    }
+  },
+  "FOOTER": {
+    "DESCRIPTION": "最新技術で革新的なソリューションを構築",
+    "QUICK_LINKS": "クイックリンク",
+    "CONTACT": "連絡先",
+    "NEWSLETTER": "ニュースレター",
+    "NEWSLETTER_TEXT": "新着プロジェクト情報を受け取る",
+    "EMAIL_PLACEHOLDER": "メールアドレス",
+    "RIGHTS_RESERVED": "無断転載を禁じます",
+    "PRIVACY": "プライバシーポリシー",
+    "TERMS": "利用規約",
+    "COOKIES": "クッキー",
+    "SUBSCRIBE_SUCCESS": "ご登録ありがとうございます。"
+  }
 }

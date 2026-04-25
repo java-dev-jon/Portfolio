@@ -20,8 +20,7 @@ export class NavbarComponent {
     { id: 'about', label: 'NAV.ABOUT' },
     { id: 'skills', label: 'NAV.SKILLS' },
     { id: 'projects', label: 'NAV.PROJECTS' },
-    { id: 'experience' , label: 'NAV.EXPERIENCES'}
-    // { id: 'contact', label: 'NAV.CONTACT' }
+    { id: 'experience', label: 'NAV.EXPERIENCES' }
   ];
 
   constructor(
@@ -32,22 +31,19 @@ export class NavbarComponent {
     this.translate.use('en');
   }
 
-  toggleMobile() { 
+  toggleMobile() {
     this.mobileOpen = !this.mobileOpen;
-    if (this.mobileOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'auto';
-    }
+    document.body.style.overflow = this.mobileOpen ? 'hidden' : 'auto';
   }
 
-  // toggleLang() { 
-  //   this.langOpen = !this.langOpen; 
-  // }
   toggleLang() {
     const newLang = this.translate.currentLang === 'en' ? 'ja' : 'en';
     this.translate.use(newLang);
-    this.mobileOpen = !this.mobileOpen;
+
+    if (this.mobileOpen) {
+      this.mobileOpen = false;
+      document.body.style.overflow = 'auto';
+    }
   }
 
   changeLang(lang: string) {
@@ -56,7 +52,7 @@ export class NavbarComponent {
   }
 
   scrollTo(id: string) {
-    document.getElementById(id)?.scrollIntoView({ 
+    document.getElementById(id)?.scrollIntoView({
       behavior: 'smooth',
       block: 'start'
     });

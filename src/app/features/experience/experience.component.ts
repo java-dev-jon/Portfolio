@@ -5,16 +5,16 @@ import { ThemeService } from 'src/app/core/theme.service';
 
 interface Achievement {
   icon: string;
-  title: string;
-  description: string;
+  titleKey: string;
+  descriptionKey: string;
 }
 
 interface Experience {
-  title: string;
+  titleKey: string;
   company: string;
-  duration: string;
+  durationKey: string;
   responsibilities?: string[];
-  achievements?: Achievement[]; // Added this
+  achievements?: Achievement[];
 }
 
 @Component({
@@ -27,61 +27,74 @@ interface Experience {
 export class ExperienceComponent {
   experienceData: Experience[] = [
     {
-      title: "JAVA Development Intern",
-      company: "Myanmar Software Integrated Solutions (MSIS)",
-      duration: "April 2025 - June 2025",
+      titleKey: 'EXPERIENCE.ROLES.JAVA_INTERN',
+      company: 'Myanmar Software Integrated Solutions (MSIS)',
+      durationKey: 'EXPERIENCE.DURATIONS.APR_2025_JUN_2025',
       responsibilities: [
-        "Built responsive front-end interfaces using HTML, CSS, and JavaScript.",
-        "Assisted in integrating AngularJS components with backend services.",
-        "Learned Git for version control and collaborative development.",
-        "Developed and maintained RESTful APIs using Spring Boot and Java.",
-        "Contributed to client projects under supervision."
+        'EXPERIENCE.RESPONSIBILITIES.INTERN_1',
+        'EXPERIENCE.RESPONSIBILITIES.INTERN_2',
+        'EXPERIENCE.RESPONSIBILITIES.INTERN_3',
+        'EXPERIENCE.RESPONSIBILITIES.INTERN_4',
+        'EXPERIENCE.RESPONSIBILITIES.INTERN_5'
       ]
     },
     {
-      title: "Junior Java Developer",
-      company: "Myanmar Software Integrated Solutions (MSIS)",
-      duration: "June 2025 - Aug 2025",
+      titleKey: 'EXPERIENCE.ROLES.JUNIOR_JAVA_DEVELOPER',
+      company: 'Myanmar Software Integrated Solutions (MSIS)',
+      durationKey: 'EXPERIENCE.DURATIONS.JUN_2025_AUG_2025',
       responsibilities: [
-        "Developed and maintained RESTful APIs using Spring Boot and Java.",
-        "Collaborated with senior developers on system design and implementation.",
-        "Assisted in database schema design and optimization with MySQL.",
-        "Participated in code reviews and adopted best practices for software development."
+        'EXPERIENCE.RESPONSIBILITIES.JUNIOR_1',
+        'EXPERIENCE.RESPONSIBILITIES.JUNIOR_2',
+        'EXPERIENCE.RESPONSIBILITIES.JUNIOR_3',
+        'EXPERIENCE.RESPONSIBILITIES.JUNIOR_4'
       ]
     },
     {
-      title: "Junior Java Developer",
-      company: "Myanmar Software Integrated Solutions (MSIS)",
-      duration: "Aug 2025 - now",
+      titleKey: 'EXPERIENCE.ROLES.JUNIOR_JAVA_DEVELOPER',
+      company: 'Myanmar Software Integrated Solutions (MSIS)',
+      durationKey: 'EXPERIENCE.DURATIONS.AUG_2025_PRESENT',
       responsibilities: [
-        "Contributed to the development of open-source financial technology solutions using Java.",
-        "Designed and optimized Mifos database schemas  for new features and performance improvements.",
-        "Developed and maintained Mifos reports to provide key insights into financial operations.",
-        "Collaborated with a global team on feature development and bug fixes.",
-        "Gained experience in open-source development workflows and community contributions."
+        'EXPERIENCE.RESPONSIBILITIES.OPEN_SOURCE_1',
+        'EXPERIENCE.RESPONSIBILITIES.OPEN_SOURCE_2',
+        'EXPERIENCE.RESPONSIBILITIES.OPEN_SOURCE_3',
+        'EXPERIENCE.RESPONSIBILITIES.OPEN_SOURCE_4',
+        'EXPERIENCE.RESPONSIBILITIES.OPEN_SOURCE_5'
       ]
     },
     {
-      title: "Junior Java Developer",
-      company: "Myanmar Software Integrated Solutions (MSIS)",
-      duration: "Aug 2025 - now",
+      titleKey: 'EXPERIENCE.ROLES.JUNIOR_JAVA_DEVELOPER',
+      company: 'Myanmar Software Integrated Solutions (MSIS)',
+      durationKey: 'EXPERIENCE.DURATIONS.AUG_2025_PRESENT',
       responsibilities: [
-        "Contributed to open-source financial technology solutions using Java.",
-        "Optimized Mifos database schemas for performance."
+        'EXPERIENCE.RESPONSIBILITIES.ACHIEVEMENT_1',
+        'EXPERIENCE.RESPONSIBILITIES.ACHIEVEMENT_2'
       ],
-      achievements: [ // Now clearly defined in the data
-        { icon: '🔄', title: 'Odoo Integration', description: 'Implemented seamless integration between Mifos and Odoo.' },
-        { icon: '📧', title: 'Mail Integration', description: 'Developed email reporting jobs and verification systems.' },
-        { icon: '💰', title: 'Savings Module', description: 'Implemented Month-end Accrue and Interest Posting.' }
+      achievements: [
+        {
+          icon: '🔄',
+          titleKey: 'EXPERIENCE.ACHIEVEMENTS.ODOO.TITLE',
+          descriptionKey: 'EXPERIENCE.ACHIEVEMENTS.ODOO.DESCRIPTION'
+        },
+        {
+          icon: '📧',
+          titleKey: 'EXPERIENCE.ACHIEVEMENTS.MAIL.TITLE',
+          descriptionKey: 'EXPERIENCE.ACHIEVEMENTS.MAIL.DESCRIPTION'
+        },
+        {
+          icon: '💰',
+          titleKey: 'EXPERIENCE.ACHIEVEMENTS.SAVINGS.TITLE',
+          descriptionKey: 'EXPERIENCE.ACHIEVEMENTS.SAVINGS.DESCRIPTION'
+        }
       ]
-    }    
+    }
   ];
 
   constructor(public theme: ThemeService) {}
 
   getTechStack(exp: Experience): string[] {
-    // Pass the whole object to make logic easier
-    if (exp.company.includes('MSIS')) return ['Java', 'Spring Boot', 'MySQL', 'REST APIs'];
+    if (exp.company.includes('MSIS')) {
+      return ['Java', 'Spring Boot', 'MySQL', 'REST APIs'];
+    }
     return ['Java', 'Spring Boot'];
   }
 }

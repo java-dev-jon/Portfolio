@@ -51,64 +51,78 @@
 
 .mobile-btn {
   display: none;
-  width: 44px;
-  height: 44px;
+  width: 46px;
+  height: 46px;
   padding: 0;
-  background: rgba(255, 255, 255, 0.55);
-  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  border-radius: 16px;
   cursor: pointer;
+  box-shadow: 0 10px 22px rgba(15, 23, 42, 0.14);
+  transition: transform 0.25s ease, background 0.25s ease, border-color 0.25s ease;
 }
 
 .dark-nav .mobile-btn {
   background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(148, 163, 184, 0.18);
 }
 
-.hamburger,
-.hamburger::before,
-.hamburger::after {
-  width: 22px;
-  height: 2px;
-  background: #172033;
-  border-radius: 999px;
-  transition: transform 0.3s ease, opacity 0.3s ease, background 0.3s ease;
+.mobile-btn:hover {
+  transform: translateY(-1px);
+  background: rgba(255, 255, 255, 0.14);
 }
 
-.dark-nav .hamburger,
-.dark-nav .hamburger::before,
-.dark-nav .hamburger::after {
-  background: #f8fafc;
+.mobile-btn:focus-visible {
+  outline: 2px solid rgba(125, 211, 252, 0.7);
+  outline-offset: 2px;
 }
 
-.hamburger {
+.mobile-icon {
   position: relative;
-  display: block;
+  width: 20px;
+  height: 14px;
+  display: inline-block;
   margin: 0 auto;
 }
 
-.hamburger::before,
-.hamburger::after {
-  content: "";
+.mobile-line {
   position: absolute;
   left: 0;
+  width: 100%;
+  height: 2px;
+  border-radius: 999px;
+  background: #f8fafc;
+  transform-origin: center;
+  transition: transform 0.25s ease, opacity 0.25s ease, top 0.25s ease, background 0.25s ease;
 }
 
-.hamburger::before {
-  transform: translateY(-7px);
+.mobile-line:nth-child(1) {
+  top: 0;
 }
 
-.hamburger::after {
-  transform: translateY(7px);
+.mobile-line:nth-child(2) {
+  top: 6px;
 }
 
-.hamburger.active {
-  background: transparent;
+.mobile-line:nth-child(3) {
+  top: 12px;
 }
 
-.hamburger.active::before {
+.navbar:not(.dark-nav) .mobile-line {
+  background: #172033;
+}
+
+.mobile-icon.active .mobile-line:nth-child(1) {
+  top: 6px;
   transform: rotate(45deg);
 }
 
-.hamburger.active::after {
+.mobile-icon.active .mobile-line:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-icon.active .mobile-line:nth-child(3) {
+  top: 6px;
   transform: rotate(-45deg);
 }
 

@@ -9,19 +9,19 @@
     <div class="projects-grid">
       <div class="project-card" *ngFor="let project of projects; let i = index">
         <div class="project-image-wrapper">
-          <img [src]="project.image" [alt]="project.name" class="project-image" 
+          <img [src]="project.image" [alt]="project.nameKey | translate" class="project-image"
                (error)="handleImageError($event)">
           <div class="project-overlay">
             <div class="project-tech">
-              <span class="tech-tag" *ngFor="let tech of getProjectTech(project.name)">{{ tech }}</span>
+              <span class="tech-tag" *ngFor="let tech of getProjectTech(project.nameKey)">{{ tech }}</span>
             </div>
           </div>
         </div>
 
         <div class="project-content">
-          <h3 class="project-title">{{ project.name }}</h3>
-          <p class="project-description">{{ project.description }}</p>
-          
+          <h3 class="project-title">{{ project.nameKey | translate }}</h3>
+          <p class="project-description">{{ project.descriptionKey | translate }}</p>
+
           <div class="project-links">
             <a [href]="project.githubLink" target="_blank" class="project-link github" rel="noopener noreferrer">
               <i class="fab fa-github"></i>
@@ -38,12 +38,10 @@
           </div>
         </div>
 
-        <!-- Project Number Badge -->
         <div class="project-number">{{ (i + 1).toString().padStart(2, '0') }}</div>
       </div>
     </div>
 
-    <!-- View More Button -->
     <div class="view-more">
       <a href="https://github.com/CallMe-JON" target="_blank" class="btn-view-more">
         <span>{{ 'PROJECTS.VIEW_ALL' | translate }}</span>

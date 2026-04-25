@@ -1,7 +1,7 @@
 import { Component, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { ThemeService } from '../theme.service';
 
 @Component({
@@ -23,7 +23,10 @@ export class FooterComponent {
     phone: '+95 9455477047'
   };
 
-  constructor(public theme: ThemeService) {}
+  constructor(
+    public theme: ThemeService,
+    private translate: TranslateService
+  ) {}
 
   @HostListener('window:scroll')
   onWindowScroll() {
@@ -44,8 +47,7 @@ export class FooterComponent {
   subscribeNewsletter() {
     if (this.newsletterEmail) {
       console.log('Newsletter subscription:', this.newsletterEmail);
-      // Add your newsletter subscription logic here
-      alert('Thank you for subscribing!');
+      alert(this.translate.instant('FOOTER.SUBSCRIBE_SUCCESS'));
       this.newsletterEmail = '';
     }
   }
