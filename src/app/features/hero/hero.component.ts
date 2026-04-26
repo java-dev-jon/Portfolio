@@ -149,11 +149,10 @@ export class HeroComponent {
     document.documentElement.style.touchAction = isLocked ? 'none' : 'pan-y pinch-zoom';
     document.body.scrollLeft = 0;
     document.documentElement.scrollLeft = 0;
-    window.scrollTo({ left: 0, top: window.scrollY, behavior: 'auto' });
     requestAnimationFrame(() => {
       document.body.scrollLeft = 0;
       document.documentElement.scrollLeft = 0;
-      window.scrollTo({ left: 0, top: window.scrollY, behavior: 'auto' });
+      window.scrollTo({ left: 0, behavior: 'auto' });
     });
   }
 

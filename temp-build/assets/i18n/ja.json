@@ -143,15 +143,15 @@
       "JUNIOR_3": "MySQLを用いたデータベース設計と最適化を支援しました。",
       "JUNIOR_4": "コードレビューに参加し、ソフトウェア開発のベストプラクティスを取り入れました。",
       "OPEN_SOURCE_1": "Javaを用いたオープンソースの金融テクノロジーソリューション開発に貢献しました。",
-      "OPEN_SOURCE_2": "新機能と性能改善のためにMifosデータベーススキーマを設計・最適化しました。",
-      "OPEN_SOURCE_3": "金融業務の重要な洞察を提供するMifosレポートを開発・保守しました。",
+      "OPEN_SOURCE_2": "新機能と性能改善のためにMicrofinance データベーススキーマを設計・最適化しました。",
+      "OPEN_SOURCE_3": "金融業務の重要な洞察を提供するMicrofinance レポートを開発・保守しました。",
       "OPEN_SOURCE_4": "グローバルチームと協力し、機能開発と不具合修正を進めました。",
       "OPEN_SOURCE_5": "オープンソース開発のワークフローとコミュニティ貢献の経験を積みました。"
     },
     "ACHIEVEMENTS": {
       "ODOO": {
         "TITLE": "Odoo連携",
-        "DESCRIPTION": "MifosとOdooのシームレスな連携を実装しました。"
+        "DESCRIPTION": "Microfinance とOdooのシームレスな連携を実装しました。"
       },
       "MAIL": {
         "TITLE": "メール連携",

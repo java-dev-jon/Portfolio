@@ -143,15 +143,15 @@
       "JUNIOR_3": "Assisted in database schema design and optimization with MySQL.",
       "JUNIOR_4": "Participated in code reviews and adopted best practices for software development.",
       "OPEN_SOURCE_1": "Contributed to the development of open-source financial technology solutions using Java.",
-      "OPEN_SOURCE_2": "Designed and optimized Mifos database schemas for new features and performance improvements.",
-      "OPEN_SOURCE_3": "Developed and maintained Mifos reports to provide key insights into financial operations.",
+      "OPEN_SOURCE_2": "Designed and optimized Microfinance  database schemas for new features and performance improvements.",
+      "OPEN_SOURCE_3": "Developed and maintained Microfinance  reports to provide key insights into financial operations.",
       "OPEN_SOURCE_4": "Collaborated with a global team on feature development and bug fixes.",
       "OPEN_SOURCE_5": "Gained experience in open-source development workflows and community contributions."
     },
     "ACHIEVEMENTS": {
       "ODOO": {
         "TITLE": "Odoo Integration",
-        "DESCRIPTION": "Implemented seamless integration between Mifos and Odoo."
+        "DESCRIPTION": "Implemented seamless integration between Microfinance  and Odoo."
       },
       "MAIL": {
         "TITLE": "Mail Integration",
