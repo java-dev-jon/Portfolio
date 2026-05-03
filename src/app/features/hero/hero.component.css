@@ -162,9 +162,9 @@
   transform: translateY(-3px);
 }
 
-.btn-primary:hover {
+/* .btn-primary:hover {
   box-shadow: 0 20px 36px rgba(37, 99, 235, 0.28);
-}
+} */
 
 .btn-icon {
   width: 18px;

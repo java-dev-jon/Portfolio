@@ -101,7 +101,7 @@
 .tab-btn.active {
   background: linear-gradient(135deg, #2563eb, #06b6d4);
   color: #ffffff;
-  box-shadow: 0 18px 32px rgba(37, 99, 235, 0.24);
+  /* box-shadow: 0 18px 32px rgba(37, 99, 235, 0.24); */
 }
 
 .tab-icon,
@@ -175,13 +175,13 @@
 
 .skill-bubble:hover {
   transform: translateY(-4px);
-  box-shadow: 0 22px 36px rgba(37, 99, 235, 0.16);
-  background: linear-gradient(135deg, #2563eb, #06b6d4);
+  /* box-shadow: 0 22px 36px rgba(37, 99, 235, 0.16);
+  background: linear-gradient(135deg, #2563eb, #06b6d4); */
 }
 
-.dark-skills .skill-bubble:hover {
+/* .dark-skills .skill-bubble:hover {
   box-shadow: 0 22px 36px rgba(59, 130, 246, 0.22);
-}
+} */
 
 .bubble-icon,
 .bubble-name {
@@ -211,7 +211,7 @@
   position: absolute;
   inset: auto -20% -110%;
   height: 180%;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.26), transparent 70%);
+  /* background: radial-gradient(circle, rgba(255, 255, 255, 0.26), transparent 70%); */
   opacity: 0;
   transition: opacity 0.25s ease;
 }

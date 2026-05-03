@@ -187,9 +187,9 @@
   /* box-shadow: 0 18px 32px rgba(59, 130, 246, 0.24); */
 }
 
-.dark-about .btn-download:hover {
-  /* box-shadow: 0 22px 38px rgba(59, 130, 246, 0.3); */
-}
+/* .dark-about .btn-download:hover {
+  box-shadow: 0 22px 38px rgba(59, 130, 246, 0.3);
+} */
 
 .footer-title {
   margin: 0 0 1rem;
