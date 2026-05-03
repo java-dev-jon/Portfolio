@@ -8,10 +8,10 @@
 }
 
 .projects.dark-projects {
-  background:
-    radial-gradient(circle at 12% 20%, rgba(249, 115, 22, 0.22), transparent 24%),
-    radial-gradient(circle at 88% 80%, rgba(239, 68, 68, 0.18), transparent 22%),
-    linear-gradient(180deg, #1a120f 0%, #241715 52%, #2a1b18 100%);
+  /* background: var(--dark-page-elevated); */
+  background: var(--dark-page);
+  border-top: 1px solid rgba(255, 255, 255, 0.02);
+  border-bottom: 1px solid var(--dark-section-divider);
 }
 
 .projects-container {
@@ -35,7 +35,7 @@
 }
 
 .dark-projects .section-title {
-  color: #fff7f2;
+  color: var(--dark-text);
 }
 
 .section-subtitle {
@@ -46,7 +46,11 @@
 }
 
 .dark-projects .section-subtitle {
-  color: #e7d8ce;
+  color: var(--dark-text-muted);
+}
+
+.dark-projects .title-decoration {
+  background: linear-gradient(135deg, #3b82f6, #06b6d4);
 }
 
 .title-decoration {
@@ -77,13 +81,14 @@
 }
 
 .dark-projects .project-card {
-  background: rgba(255, 255, 255, 0.06);
-  border-color: rgba(251, 146, 60, 0.14);
+  background: var(--dark-surface);
+  border-color: var(--dark-line);
+  box-shadow: var(--dark-shadow-card);
 }
 
 .project-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 24px 42px rgba(239, 68, 68, 0.14);
+  box-shadow: 0 24px 42px rgba(59, 130, 246, 0.16);
 }
 
 .project-image-wrapper {
@@ -133,6 +138,11 @@
   font-weight: 700;
 }
 
+.dark-projects .tech-tag {
+  background: rgba(59, 130, 246, 0.14);
+  color: #bfdbfe;
+}
+
 .project-content {
   display: flex;
   flex: 1;
@@ -148,7 +158,7 @@
 }
 
 .dark-projects .project-title {
-  color: #fff7f2;
+  color: var(--dark-text);
 }
 
 .project-description {
@@ -158,7 +168,7 @@
 }
 
 .dark-projects .project-description {
-  color: #e7d8ce;
+  color: var(--dark-text-muted);
 }
 
 .project-links {
@@ -187,7 +197,7 @@
 }
 
 .project-link.live {
-  background: linear-gradient(135deg, #f97316, #ef4444);
+  background: linear-gradient(135deg, #3b82f6, #06b6d4);
   color: #ffffff;
 }
 
@@ -212,7 +222,7 @@
 }
 
 .dark-projects .project-number {
-  color: rgba(253, 186, 116, 0.2);
+  color: rgba(96, 165, 250, 0.22);
 }
 
 .view-more {
@@ -237,9 +247,16 @@
   transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease;
 }
 
+.dark-projects .btn-view-more {
+  background: var(--dark-surface);
+  border-color: var(--dark-line);
+  color: #93c5fd;
+  box-shadow: var(--dark-shadow-card);
+}
+
 .btn-view-more:hover {
   transform: translateY(-3px);
-  background: linear-gradient(135deg, #f97316, #ef4444);
+  background: linear-gradient(135deg, #3b82f6, #06b6d4);
   color: #ffffff;
 }
 

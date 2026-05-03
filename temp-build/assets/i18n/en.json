@@ -17,7 +17,7 @@
     "GREETING": "Hi",
     "I_AM": "I'm",
     "NAME": "Khant Si Thu Hlaing",
-    "SUBTITLE": "A passionate Fullstack Developer And Problem Solver from Yangon, Myanmar",
+    "SUBTITLE": "Full-Stack Developer building scalable financial applications with Java, Spring Boot, and Angular.",
     "DESCRIPTION": "I craft beautiful digital experiences that make a difference. Specialized in building exceptional websites and applications.",
     "CONTACT_ME": "Contact Me",
     "VIEW_WORK": "View Work",
@@ -87,7 +87,7 @@
   },
   "PROJECTS": {
     "TITLE": "My Own Projects",
-    "SUBTITLE": "My Own Projects and Experiments",
+    "SUBTITLE": "A collection of projects demonstrating my technical abilities and problem-solving approach",
     "VIEW_GITHUB": "View GitHub",
     "LIVE_DEMO": "Live Demo",
     "COMING_SOON": "Coming Soon",

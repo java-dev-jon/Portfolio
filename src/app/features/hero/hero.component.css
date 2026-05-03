@@ -4,18 +4,27 @@
   align-items: center;
   padding: clamp(6rem, 10vw, 8rem) 0 clamp(3rem, 7vw, 5rem);
   isolation: auto;
-  background:
+  /* background:
     radial-gradient(circle at 10% 18%, rgba(37, 99, 235, 0.16), transparent 28%),
     radial-gradient(circle at 86% 22%, rgba(6, 182, 212, 0.14), transparent 24%),
-    linear-gradient(180deg, #f8fbff 0%, #eef5ff 52%, #f8fafc 100%);
+    linear-gradient(180deg, #f8fbff 0%, #eef5ff 52%, #f8fafc 100%); */
   overflow: hidden;
 }
 
 .hero.dark-hero {
-  background:
-    radial-gradient(circle at 12% 18%, rgba(37, 99, 235, 0.24), transparent 28%),
-    radial-gradient(circle at 82% 22%, rgba(6, 182, 212, 0.18), transparent 24%),
-    linear-gradient(180deg, #07101e 0%, #0d172a 52%, #111c31 100%);
+  /* background:
+    radial-gradient(circle at 78% 18%, rgba(59, 130, 246, 0.12), transparent 20%),
+    radial-gradient(circle at 18% 24%, rgba(6, 182, 212, 0.08), transparent 18%),
+    var(--dark-page);
+  border-bottom: 1px solid var(--dark-section-divider); */
+  background: var(--dark-page);
+  border-top: 1px solid rgba(255, 255, 255, 0.02);
+  border-bottom: 1px solid var(--dark-section-divider);
+}
+
+.dark-hero::before,
+.dark-hero::after {
+  display: none;
 }
 
 .hero::before,
@@ -88,7 +97,7 @@
 }
 
 .dark-hero .hero-subtitle {
-  color: #c5d2e7;
+  color: var(--dark-text-muted);
 }
 
 .typewriter {
@@ -100,7 +109,7 @@
 }
 
 .dark-hero .typewriter {
-  color: #7dd3fc;
+  color: #93c5fd;
 }
 
 .blinking-cursor {
@@ -142,9 +151,10 @@
 }
 
 .dark-hero .btn-secondary {
-  background: rgba(255, 255, 255, 0.08);
-  color: #f8fafc;
-  border-color: rgba(125, 211, 252, 0.2);
+  background: var(--dark-surface);
+  color: var(--dark-text);
+  border-color: var(--dark-line);
+  box-shadow: var(--dark-shadow-card);
 }
 
 .btn-primary:hover,
@@ -181,7 +191,7 @@
   align-items: flex-start;
   justify-content: center;
   padding: calc(5.5rem + env(safe-area-inset-top)) 1.5rem 1.5rem;
-  background: rgba(2, 8, 23, 0.58);
+  background: rgba(2, 6, 23, 0.72);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   overflow-y: auto;
@@ -196,16 +206,16 @@
   margin: auto 0;
   padding: 1.5rem 1.6rem 1.75rem;
   border-radius: 1.6rem;
-  background: rgba(6, 12, 20, 0.96);
-  border: 1px solid rgba(34, 211, 238, 0.78);
-  box-shadow: 0 30px 80px rgba(2, 8, 23, 0.42);
+  background: var(--dark-surface);
+  border: 1px solid var(--dark-line-strong);
+  box-shadow: 0 30px 80px rgba(2, 6, 23, 0.5);
   overflow-y: visible;
   overscroll-behavior: contain;
   touch-action: auto;
 }
 
 .contact-dialog.dark-dialog {
-  background: rgba(5, 10, 18, 0.98);
+  background: var(--dark-surface);
 }
 
 .contact-dialog-header {
@@ -221,7 +231,7 @@
   font-size: clamp(1.8rem, 4vw, 2.6rem);
   line-height: 1;
   letter-spacing: -0.03em;
-  color: #67e8f9;
+  color: var(--dark-text);
   text-transform: uppercase;
 }
 
@@ -229,9 +239,9 @@
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(103, 232, 249, 0.24);
-  color: #e0f2fe;
+  background: rgba(15, 23, 42, 0.88);
+  border: 1px solid var(--dark-line);
+  color: var(--dark-text);
   font-size: 1rem;
   cursor: pointer;
   transition: transform 0.25s ease, background 0.25s ease;
@@ -239,7 +249,7 @@
 
 .contact-dialog-close:hover {
   transform: rotate(90deg);
-  background: rgba(103, 232, 249, 0.12);
+  background: rgba(59, 130, 246, 0.14);
 }
 
 .contact-dialog-form {
@@ -256,9 +266,9 @@
   width: 100%;
   padding: 1rem 0.5rem 0.9rem;
   border: 0;
-  border-bottom: 1px solid rgba(34, 211, 238, 0.78);
+  border-bottom: 1px solid rgba(59, 130, 246, 0.55);
   background: transparent;
-  color: #e0f2fe;
+  color: var(--dark-text);
   font-size: 1rem;
   outline: none;
   transition: border-color 0.25s ease, box-shadow 0.25s ease;
@@ -271,13 +281,13 @@
 
 .contact-field input::placeholder,
 .contact-field textarea::placeholder {
-  color: rgba(191, 219, 254, 0.6);
+  color: rgba(148, 163, 184, 0.9);
 }
 
 .contact-field input:focus,
 .contact-field textarea:focus {
-  border-bottom-color: #67e8f9;
-  box-shadow: 0 10px 30px rgba(34, 211, 238, 0.12);
+  border-bottom-color: #60a5fa;
+  box-shadow: 0 12px 28px rgba(59, 130, 246, 0.16);
 }
 
 .contact-submit {
@@ -287,9 +297,9 @@
   margin-top: 0.5rem;
   padding: 0.85rem 1.5rem;
   border-radius: 0.8rem;
-  border: 1px solid rgba(103, 232, 249, 0.8);
-  background: transparent;
-  color: #f8fafc;
+  border: 1px solid transparent;
+  background: linear-gradient(135deg, #3b82f6, #06b6d4);
+  color: #ffffff;
   font-weight: 700;
   cursor: pointer;
   transition: transform 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
@@ -297,8 +307,7 @@
 
 .contact-submit:hover:not(:disabled) {
   transform: translateY(-2px);
-  background: rgba(103, 232, 249, 0.12);
-  box-shadow: 0 18px 32px rgba(34, 211, 238, 0.12);
+  box-shadow: 0 18px 32px rgba(59, 130, 246, 0.28);
 }
 
 .contact-submit:disabled {
@@ -333,8 +342,9 @@
 }
 
 .image-container.dark-image {
-  background: rgba(255, 255, 255, 0.06);
-  border-color: rgba(125, 211, 252, 0.14);
+  background: var(--dark-surface);
+  border-color: var(--dark-line);
+  box-shadow: var(--dark-shadow-soft);
 }
 
 .profile-pic {
@@ -371,7 +381,7 @@
 }
 
 .dark-hero .image-decoration {
-  border-color: rgba(125, 211, 252, 0.28);
+  border-color: rgba(59, 130, 246, 0.24);
 }
 
 .scroll-indicator {
@@ -402,7 +412,7 @@
 }
 
 .dark-hero .mouse {
-  border-color: #7dd3fc;
+  border-color: #60a5fa;
 }
 
 .wheel {
@@ -418,7 +428,7 @@
 }
 
 .dark-hero .wheel {
-  background: #7dd3fc;
+  background: #60a5fa;
 }
 
 .arrow {
@@ -437,7 +447,7 @@
 }
 
 .dark-hero .arrow span {
-  border-color: #7dd3fc;
+  border-color: #60a5fa;
 }
 
 .arrow span:nth-child(2) {

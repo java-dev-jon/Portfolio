@@ -47,12 +47,12 @@ export class ExperienceComponent {
           icon: '📧',
           titleKey: 'EXPERIENCE.ACHIEVEMENTS.MAIL.TITLE',
           descriptionKey: 'EXPERIENCE.ACHIEVEMENTS.MAIL.DESCRIPTION'
-        },
-        {
-          icon: '💰',
-          titleKey: 'EXPERIENCE.ACHIEVEMENTS.SAVINGS.TITLE',
-          descriptionKey: 'EXPERIENCE.ACHIEVEMENTS.SAVINGS.DESCRIPTION'
         }
+        // {
+        //   icon: '💰',
+        //   titleKey: 'EXPERIENCE.ACHIEVEMENTS.SAVINGS.TITLE',
+        //   descriptionKey: 'EXPERIENCE.ACHIEVEMENTS.SAVINGS.DESCRIPTION'
+        // }
       ]
     },
     {
@@ -84,7 +84,7 @@ export class ExperienceComponent {
 
   getTechStack(exp: Experience): string[] {
     if (exp.company.includes('MSIS')) {
-      return ['Java', 'Spring Boot', 'MySQL', 'REST APIs'];
+      return ['Java', 'Spring Boot', 'MySQL', 'REST APIs', 'Type Script', 'Angular', 'Operation & Finicial Report'];
     }
     return ['Java', 'Spring Boot'];
   }

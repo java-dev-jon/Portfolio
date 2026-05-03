@@ -1,16 +1,19 @@
 .footer {
-  background:
+  /* background:
     radial-gradient(circle at 15% 20%, rgba(37, 99, 235, 0.18), transparent 28%),
     radial-gradient(circle at 86% 82%, rgba(249, 115, 22, 0.16), transparent 24%),
-    linear-gradient(180deg, #0a1323 0%, #0d172a 100%);
+    linear-gradient(180deg, #0a1323 0%, #0d172a 100%); */
+  background: var(--dark-page-elevated);
   color: #f8fafc;
 }
 
 .footer.dark-footer {
-  background:
-    radial-gradient(circle at 15% 20%, rgba(37, 99, 235, 0.22), transparent 28%),
-    radial-gradient(circle at 86% 82%, rgba(249, 115, 22, 0.18), transparent 24%),
-    linear-gradient(180deg, #060d18 0%, #09111f 100%);
+  /* background:
+    radial-gradient(circle at 82% 18%, rgba(59, 130, 246, 0.1), transparent 18%),
+    #0b1220; */
+  background: var(--dark-page);
+  border-top: 1px solid var(--dark-section-divider);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
 }
 
 .footer-container {
@@ -32,6 +35,12 @@
   background: rgba(255, 255, 255, 0.06);
   border: 1px solid rgba(148, 163, 184, 0.14);
   backdrop-filter: blur(14px);
+}
+
+.dark-footer .footer-bottom-content {
+  background: #111827;
+  border-color: var(--dark-line);
+  box-shadow: var(--dark-shadow-card);
 }
 
 .copyright {

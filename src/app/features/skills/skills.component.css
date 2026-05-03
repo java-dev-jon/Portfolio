@@ -7,10 +7,9 @@
 }
 
 .skills.dark-skills {
-  background:
-    radial-gradient(circle at 84% 18%, rgba(37, 99, 235, 0.22), transparent 24%),
-    radial-gradient(circle at 12% 78%, rgba(6, 182, 212, 0.18), transparent 22%),
-    linear-gradient(180deg, #09111f 0%, #0f1a2c 52%, #13223a 100%);
+  background: var(--dark-page);
+  border-top: 1px solid rgba(255, 255, 255, 0.02);
+  border-bottom: 1px solid var(--dark-section-divider);
 }
 
 .skills-container {
@@ -32,7 +31,7 @@
 }
 
 .dark-skills .section-title {
-  color: #f8fbff;
+  color: var(--dark-text);
 }
 
 .section-description {
@@ -43,7 +42,7 @@
 }
 
 .dark-skills .section-description {
-  color: #c5d2e7;
+  color: var(--dark-text-muted);
 }
 
 .highlight {
@@ -52,7 +51,7 @@
 }
 
 .dark-skills .highlight {
-  color: #7dd3fc;
+  color: #93c5fd;
 }
 
 .title-decoration {
@@ -88,10 +87,10 @@
 }
 
 .dark-skills .tab-btn {
-  background: rgba(255, 255, 255, 0.06);
-  border-color: rgba(125, 211, 252, 0.14);
-  color: #f8fbff;
-  box-shadow: none;
+  background: var(--dark-surface);
+  border-color: var(--dark-line);
+  color: var(--dark-text);
+  box-shadow: var(--dark-shadow-card);
 }
 
 .tab-btn:hover,
@@ -169,9 +168,9 @@
 }
 
 .dark-skills .skill-bubble {
-  background: rgba(255, 255, 255, 0.06);
-  border-color: rgba(125, 211, 252, 0.14);
-  box-shadow: none;
+  background: var(--dark-surface);
+  border-color: var(--dark-line);
+  box-shadow: var(--dark-shadow-card);
 }
 
 .skill-bubble:hover {
@@ -181,7 +180,7 @@
 }
 
 .dark-skills .skill-bubble:hover {
-  box-shadow: 0 22px 36px rgba(2, 132, 199, 0.14);
+  box-shadow: 0 22px 36px rgba(59, 130, 246, 0.22);
 }
 
 .bubble-icon,
@@ -200,7 +199,7 @@
 }
 
 .dark-skills .bubble-name {
-  color: #f8fbff;
+  color: var(--dark-text);
 }
 
 .skill-bubble:hover .bubble-name,

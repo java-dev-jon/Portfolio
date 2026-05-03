@@ -157,7 +157,18 @@ export class HeroComponent {
   }
 
   scrollTo(sectionId: string) {
-    document.getElementById(sectionId)?.scrollIntoView({
+    const target = document.getElementById(sectionId);
+    if (!target) {
+      return;
+    }
+
+    const navbar = document.querySelector('.navbar') as HTMLElement | null;
+    const offset = (navbar?.offsetHeight ?? 0) + 12;
+    const top = target.getBoundingClientRect().top + window.scrollY - offset;
+
+    window.scrollTo({
+      top: Math.max(top, 0),
+      left: 0,
       behavior: 'smooth'
     });
   }

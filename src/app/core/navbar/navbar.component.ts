@@ -54,13 +54,22 @@ export class NavbarComponent {
   scrollTo(id: string) {
     this.mobileOpen = false;
     this.setPageScrollLock(false);
+    const target = document.getElementById(id);
+    if (!target) {
+      return;
+    }
 
-    setTimeout(() => {
-      document.getElementById(id)?.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
+    requestAnimationFrame(() => {
+      const navbar = document.querySelector('.navbar') as HTMLElement | null;
+      const offset = (navbar?.offsetHeight ?? 0) + 12;
+      const top = target.getBoundingClientRect().top + window.scrollY - offset;
+
+      window.scrollTo({
+        top: Math.max(top, 0),
+        left: 0,
+        behavior: 'smooth'
       });
-    }, 50);
+    });
   }
 
   @HostListener('window:scroll')
@@ -86,7 +95,7 @@ export class NavbarComponent {
     requestAnimationFrame(() => {
       document.body.scrollLeft = 0;
       document.documentElement.scrollLeft = 0;
-      window.scrollTo({ left: 0, top: window.scrollY, behavior: 'auto' });
+      window.scrollTo({ left: 0, behavior: 'auto' });
     });
   }
 }

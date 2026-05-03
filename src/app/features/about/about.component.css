@@ -7,10 +7,10 @@
 }
 
 .about.dark-about {
-  background:
-    radial-gradient(circle at 18% 18%, rgba(249, 115, 22, 0.22), transparent 24%),
-    radial-gradient(circle at 82% 84%, rgba(239, 68, 68, 0.18), transparent 22%),
-    linear-gradient(180deg, #1d1210 0%, #261613 52%, #2a1915 100%);
+  /* background: var(--dark-page-elevated); */
+  background: var(--dark-page);
+  border-top: 1px solid rgba(255, 255, 255, 0.02);
+  border-bottom: 1px solid var(--dark-section-divider);
 }
 
 .about-container {
@@ -32,7 +32,11 @@
 }
 
 .dark-about .section-title {
-  color: #fff7f2;
+  color: var(--dark-text);
+}
+
+.dark-about .title-decoration {
+  background: linear-gradient(135deg, #3b82f6, #06b6d4);
 }
 
 .title-decoration {
@@ -61,8 +65,9 @@
 
 .dark-about .about-text,
 .dark-about .about-image {
-  background: rgba(255, 255, 255, 0.06);
-  border-color: rgba(251, 146, 60, 0.14);
+  background: var(--dark-surface);
+  border-color: var(--dark-line);
+  box-shadow: var(--dark-shadow-card);
 }
 
 .about-text {
@@ -85,7 +90,7 @@
 }
 
 .dark-about .description-text {
-  color: #e7d8ce;
+  color: var(--dark-text-muted);
 }
 
 .highlight {
@@ -94,7 +99,7 @@
 }
 
 .dark-about .highlight {
-  color: #fdba74;
+  color: #93c5fd;
 }
 
 .about-cta {
@@ -113,13 +118,13 @@
   color: #ffffff;
   font-weight: 700;
   cursor: pointer;
-  box-shadow: 0 18px 32px rgba(249, 115, 22, 0.24);
+  /* box-shadow: 0 18px 32px rgba(249, 115, 22, 0.24); */
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .btn-download:hover {
   transform: translateY(-3px);
-  box-shadow: 0 22px 38px rgba(249, 115, 22, 0.3);
+  /* box-shadow: 0 22px 38px rgba(249, 115, 22, 0.3); */
 }
 
 .btn-icon {
@@ -154,8 +159,13 @@
 }
 
 .dark-about .social-link {
-  background: rgba(255, 255, 255, 0.08);
-  color: #fdba74;
+  background: rgba(59, 130, 246, 0.1);
+  color: #93c5fd;
+}
+
+.dark-about .social-link:hover {
+  background: linear-gradient(135deg, #3b82f6, #06b6d4);
+  color: #ffffff;
 }
 
 .footer-section {
@@ -167,7 +177,18 @@
 }
 
 .dark-about .footer-section {
+  background: var(--dark-surface-alt);
+  border: 1px solid var(--dark-line);
   box-shadow: none;
+}
+
+.dark-about .btn-download {
+  background: linear-gradient(135deg, #3b82f6, #06b6d4);
+  /* box-shadow: 0 18px 32px rgba(59, 130, 246, 0.24); */
+}
+
+.dark-about .btn-download:hover {
+  /* box-shadow: 0 22px 38px rgba(59, 130, 246, 0.3); */
 }
 
 .footer-title {

@@ -36,7 +36,10 @@
         <div class="skills-grid">
           <div class="skill-bubble" *ngFor="let skill of technicalSkills; let i = index"
                [style.animation-delay]="i * 0.05 + 's'">
-            <div class="bubble-icon">{{ getSkillEmoji(skill) }}</div>
+            <!-- <div class="bubble-icon">{{ getSkillEmoji(skill) }}</div> -->
+             <div class="bubble-icon">
+              <i [class]="getSkillIcon(skill)"></i>
+            </div>
             <div class="bubble-name">{{ skill }}</div>
             <div class="bubble-glow"></div>
           </div>
@@ -47,7 +50,10 @@
         <div class="skills-grid">
           <div class="skill-bubble" *ngFor="let language of languages; let i = index"
                [style.animation-delay]="i * 0.1 + 's'">
-            <div class="bubble-icon">{{ getLanguageEmoji(language) }}</div>
+            <!-- <div class="bubble-icon">{{ getLanguageEmoji(language) }}</div> -->
+             <div class="bubble-icon">
+              <i [class]="getLanguageIcon(language)"></i>
+            </div>
             <div class="bubble-name">{{ language.nameKey | translate }}</div>
             <div class="bubble-glow"></div>
           </div>
@@ -58,7 +64,10 @@
         <div class="skills-grid">
           <div class="skill-bubble" *ngFor="let skill of softSkills; let i = index"
                [style.animation-delay]="i * 0.1 + 's'">
-            <div class="bubble-icon">{{ skill.emoji }}</div>
+            <!-- <div class="bubble-icon">{{ skill.emoji }}</div> -->
+             <div class="bubble-icon">
+              <i [class]="skill.icon"></i>
+            </div>
             <div class="bubble-name">{{ skill.nameKey | translate }}</div>
             <div class="bubble-glow"></div>
           </div>
