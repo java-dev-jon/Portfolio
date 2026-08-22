@@ -1,14 +1,17 @@
-import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component, Inject, OnDestroy } from '@angular/core';
+import { CommonModule, DOCUMENT } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
 import { ThemeService } from 'src/app/core/theme.service';
 
 interface Project {
   nameKey: string;
   descriptionKey: string;
-  githubLink: string;
-  liveDemoLink: string;
+  githubLink?: string;
+  liveDemoLink?: string;
   image: string;
+  tech: string[];
+  isProfessional?: boolean;
+  detailsKey?: string;
 }
 
 @Component({
@@ -18,33 +21,61 @@ interface Project {
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.css']
 })
-export class ProjectsComponent {
+export class ProjectsComponent implements OnDestroy {
+  selectedProject: Project | null = null;
+
   projects: Project[] = [
     {
-      nameKey: 'PROJECTS.ITEMS.MOVIE_WEBSITE.NAME',
-      descriptionKey: 'PROJECTS.ITEMS.MOVIE_WEBSITE.DESCRIPTION',
-      githubLink: 'https://github.com/CallMe-JON/movie-website',
-      liveDemoLink: '',
-      image: 'assets/img/movie-website.jpg'
+      nameKey: 'PROJECTS.ITEMS.HAYMAN.NAME',
+      descriptionKey: 'PROJECTS.ITEMS.HAYMAN.DESCRIPTION',
+      image: 'assets/img/hayman-capital.png',
+      tech: ['Java', 'Spring Boot', 'Angular', 'AWS', 'Amazon S3'],
+      isProfessional: true,
+      detailsKey: 'PROJECTS.ITEMS.HAYMAN.DETAILS'
     },
     {
-      nameKey: 'PROJECTS.ITEMS.ECOMMERCE.NAME',
-      descriptionKey: 'PROJECTS.ITEMS.ECOMMERCE.DESCRIPTION',
-      githubLink: 'https://github.com/CallMe-JON/E-commerce-Platform',
-      liveDemoLink: '',
-      image: 'assets/img/ecommerce-platform.jpg'
+      nameKey: 'PROJECTS.ITEMS.ZEGA.NAME',
+      descriptionKey: 'PROJECTS.ITEMS.ZEGA.DESCRIPTION',
+      image: 'assets/img/zega-finance.png',
+      tech: ['Java', 'Spring Boot', 'Angular', 'MySQL'],
+      isProfessional: true,
+      detailsKey: 'PROJECTS.ITEMS.ZEGA.DETAILS'
+    },
+    {
+      nameKey: 'PROJECTS.ITEMS.MICRO.NAME',
+      descriptionKey: 'PROJECTS.ITEMS.MICRO.DESCRIPTION',
+      image: 'assets/img/micro-platform.png',
+      tech: ['Java', 'Spring Boot', 'Angular', 'AWS', 'Excel Import'],
+      isProfessional: true,
+      detailsKey: 'PROJECTS.ITEMS.MICRO.DETAILS'
     }
   ];
 
-  constructor(public theme: ThemeService) {}
+  constructor(
+    public theme: ThemeService,
+    @Inject(DOCUMENT) private document: Document
+  ) {}
 
-  getProjectTech(projectNameKey: string): string[] {
-    if (projectNameKey.includes('MOVIE')) {
-      return ['Java', 'Spring Boot', 'AngularJS', 'MySQL'];
-    } else if (projectNameKey.includes('ECOMMERCE')) {
-      return ['Java', 'Spring Boot', 'AngularJS', 'MySQL', 'REST API'];
+  openProjectDetails(project: Project): void {
+    if (project.detailsKey) {
+      this.selectedProject = project;
+      this.setScrollLock(true);
     }
-    return ['Java', 'Spring Boot', 'AngularJS'];
+  }
+
+  closeProjectDetails(): void {
+    this.selectedProject = null;
+    this.setScrollLock(false);
+  }
+
+  ngOnDestroy(): void {
+    this.setScrollLock(false);
+  }
+
+  private setScrollLock(isLocked: boolean): void {
+    this.document.body.classList.toggle('is-scroll-locked', isLocked);
+    this.document.documentElement.classList.toggle('is-scroll-locked', isLocked);
+    this.document.body.style.touchAction = isLocked ? 'none' : 'pan-y pinch-zoom';
   }
 
   handleImageError(event: any) {

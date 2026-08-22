@@ -7,46 +7,43 @@
     </div>
 
     <div class="projects-grid">
-      <div class="project-card" *ngFor="let project of projects; let i = index">
-        <div class="project-image-wrapper">
+      <div class="project-card" *ngFor="let project of projects; let i = index" [class.has-details]="project.detailsKey">
+        <button class="project-image-wrapper" type="button" [disabled]="!project.detailsKey" (click)="openProjectDetails(project)" [attr.aria-label]="project.detailsKey ? ('PROJECTS.VIEW_DETAILS' | translate) : null">
           <img [src]="project.image" [alt]="project.nameKey | translate" class="project-image"
                (error)="handleImageError($event)">
           <div class="project-overlay">
             <div class="project-tech">
-              <span class="tech-tag" *ngFor="let tech of getProjectTech(project.nameKey)">{{ tech }}</span>
+              <span class="tech-tag" *ngFor="let tech of project.tech">{{ tech }}</span>
             </div>
           </div>
-        </div>
+        </button>
 
         <div class="project-content">
           <h3 class="project-title">{{ project.nameKey | translate }}</h3>
           <p class="project-description">{{ project.descriptionKey | translate }}</p>
 
-          <div class="project-links">
-            <a [href]="project.githubLink" target="_blank" class="project-link github" rel="noopener noreferrer">
-              <i class="fab fa-github"></i>
-              <span>{{ 'PROJECTS.VIEW_GITHUB' | translate }}</span>
-            </a>
-            <a *ngIf="project.liveDemoLink" [href]="project.liveDemoLink" target="_blank" class="project-link live" rel="noopener noreferrer">
-              <i class="fas fa-external-link-alt"></i>
-              <span>{{ 'PROJECTS.LIVE_DEMO' | translate }}</span>
-            </a>
-            <a *ngIf="!project.liveDemoLink" class="project-link live disabled">
-              <i class="fas fa-external-link-alt"></i>
-              <span>{{ 'PROJECTS.COMING_SOON' | translate }}</span>
-            </a>
-          </div>
+          <button *ngIf="project.detailsKey" type="button" class="project-link details-button" (click)="openProjectDetails(project)">
+            <i class="fas fa-list-check"></i><span>{{ 'PROJECTS.VIEW_DETAILS' | translate }}</span>
+          </button>
         </div>
 
         <div class="project-number">{{ (i + 1).toString().padStart(2, '0') }}</div>
       </div>
     </div>
-
-    <div class="view-more">
-      <a href="https://github.com/CallMe-JON" target="_blank" class="btn-view-more">
-        <span>{{ 'PROJECTS.VIEW_ALL' | translate }}</span>
-        <i class="fas fa-arrow-right"></i>
-      </a>
-    </div>
   </div>
 </section>
+
+<div class="project-modal-backdrop" *ngIf="selectedProject" (click)="closeProjectDetails()">
+  <section class="project-modal" role="dialog" aria-modal="true" [attr.aria-label]="selectedProject.nameKey | translate" (click)="$event.stopPropagation()">
+    <button type="button" class="modal-close" (click)="closeProjectDetails()" [attr.aria-label]="'PROJECTS.CLOSE_DETAILS' | translate"><i class="fas fa-times"></i></button>
+    <img [src]="selectedProject.image" [alt]="selectedProject.nameKey | translate" class="modal-logo">
+    <p class="project-status">{{ 'PROJECTS.PROFESSIONAL_PROJECT' | translate }}</p>
+    <h3>{{ selectedProject.nameKey | translate }}</h3>
+    <p class="modal-description">{{ selectedProject.descriptionKey | translate }}</p>
+    <h4>{{ 'PROJECTS.MY_CONTRIBUTIONS' | translate }}</h4>
+    <ul>
+      <li *ngFor="let detail of (selectedProject.detailsKey | translate)">{{ detail }}</li>
+    </ul>
+    <div class="modal-tech"><span *ngFor="let tech of selectedProject.tech">{{ tech }}</span></div>
+  </section>
+</div>

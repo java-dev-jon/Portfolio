@@ -86,13 +86,52 @@
     "AVAILABLE": "Available for work"
   },
   "PROJECTS": {
-    "TITLE": "My Own Projects",
-    "SUBTITLE": "A collection of projects demonstrating my technical abilities and problem-solving approach",
+    "TITLE": "Real-World Projects",
+    "SUBTITLE": "Real-world experience developing and supporting financial systems, specializing in microfinance and core banking solutions, cloud deployment, server administration, and production maintenance.",
     "VIEW_GITHUB": "View GitHub",
     "LIVE_DEMO": "Live Demo",
     "COMING_SOON": "Coming Soon",
+    "VIEW_DETAILS": "View Details",
+    "CLOSE_DETAILS": "Close project details",
+    "PROFESSIONAL_PROJECT": "Professional Project",
+    "MY_CONTRIBUTIONS": "What I contributed",
     "VIEW_ALL": "View All Projects",
     "ITEMS": {
+      "HAYMAN": {
+        "NAME": "Hayman Microfinance",
+        "DESCRIPTION": "Core development for a microfinance platform, improving financial operations, reporting, automation, and the day-to-day experience for users.",
+        "DETAILS": [
+          "Built dynamic data tables and reusable document-export templates.",
+          "Developed operational and accounting reports, including scheduled report-email jobs.",
+          "Implemented savings and fixed-deposit accruals, payable calculations, and interest posting.",
+          "Developed loan accrual functionality and financial opening-balance setup.",
+          "Created scheduler and COB (close-of-business) jobs to automate operational processes.",
+          "Configured Amazon S3 and deployed server-code updates to AWS.",
+          "Built dashboard features and integrated Email and Odoo workflows.",
+          "Migrated data from the legacy system to the new platform.",
+          "Resolved customer issues and improved features to reduce user errors."
+        ]
+      },
+      "ZEGA": {
+        "NAME": "Zega Finance",
+        "DESCRIPTION": "Feature development for a finance platform, focused on flexible data management, document exports, and business reporting.",
+        "DETAILS": [
+          "Built dynamic data tables to make financial data easier to manage and review.",
+          "Created dynamic templates for exporting business documents.",
+          "Developed operational and accounting reports to support daily financial workflows and decision-making."
+        ]
+      },
+      "MICRO": {
+        "NAME": "MICRO-X Digital Microfinance Platform",
+        "DESCRIPTION": "A product built for Myanmar's microfinance environment, supporting reliable operations, lending decisions, and system migration.",
+        "DETAILS": [
+          "Led server maintenance and application deployments to keep the platform reliable.",
+          "Built a loan credit-score feature to support lending decisions.",
+          "Created dynamic templates for exporting business documents.",
+          "Implemented Excel bulk import to support data migration into the system.",
+          "Developed a Path Tracker feature for clearer process tracking."
+        ]
+      },
       "MOVIE_WEBSITE": {
         "NAME": "Movie Website",
         "DESCRIPTION": "A comprehensive movie management system featuring user authentication, role-based access control, and dynamic content presentation. Developed with Spring Boot for robust backend services and AngularJS for an interactive frontend."
