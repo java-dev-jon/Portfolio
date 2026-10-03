@@ -5,7 +5,7 @@
     "SKILLS": "Skills",
     "PROJECTS": "Projects",
     "CONTACT": "Contact",
-    "EXPERIENCES": "Experiences",
+    "EXPERIENCES": "Experience",
     "OPEN_MENU": "Open menu",
     "CLOSE_MENU": "Close menu",
     "CHANGE_LANGUAGE": "Change language",
@@ -13,16 +13,17 @@
     "LIGHT_MODE": "Light",
     "DARK_MODE": "Dark"
   },
+
   "HERO": {
     "GREETING": "Hi",
     "I_AM": "I'm",
     "NAME": "Khant Si Thu Hlaing",
-    "SUBTITLE": "Full-Stack Developer building scalable financial applications with Java, Spring Boot, and Angular.",
-    "DESCRIPTION": "I craft beautiful digital experiences that make a difference. Specialized in building exceptional websites and applications.",
+    "SUBTITLE": "Java Full-Stack Engineer | Core Banking & Financial Systems",
+    "DESCRIPTION": "Building reliable financial applications with Java, Spring Boot, Angular, and MySQL, with hands-on experience in core banking, microfinance, production support, and system maintenance.",
     "CONTACT_ME": "Contact Me",
     "VIEW_WORK": "View Work",
-    "ROLE_FULL_STACK": "Full Stack Developer",
-    "ROLE_PROBLEM_SOLVER": "Problem Solver",
+    "ROLE_FULL_STACK": "Java Full-Stack Engineer",
+    "ROLE_PROBLEM_SOLVER": "Financial Systems Engineer",
     "PROFILE_ALT": "Profile picture",
     "CONTACT_DIALOG_TITLE": "Contact Me",
     "CONTACT_NAME_LABEL": "Name",
@@ -34,34 +35,41 @@
     "CONTACT_DEFAULT_NAME": "a visitor",
     "CLOSE_CONTACT": "Close contact dialog"
   },
+
   "SKILLS": {
-    "TITLE": "My Skills",
-    "SUBTITLE": "Technologies I work with",
+    "TITLE": "Technical Expertise",
+    "SUBTITLE": "Technologies and domains I work with",
     "YEARS_EXP": "Years Experience",
     "TECHNOLOGIES": "Technologies",
     "PROJECTS": "Projects",
     "PASSION": "Passion",
+
     "DESCRIPTION_START": "Specializing in",
-    "DESCRIPTION_MIDDLE": "open-source banking and financial technology solutions, building robust backend systems with",
-    "DESCRIPTION_END": "and creating responsive frontend interfaces with",
-    "HIGHLIGHT_MICROFINANCE": "Microfinance",
+    "DESCRIPTION_MIDDLE": "and financial technology solutions, building reliable backend systems with",
+    "DESCRIPTION_END": "and developing responsive frontend applications with",
+
+    "HIGHLIGHT_MICROFINANCE": "Core Banking & Microfinance",
     "HIGHLIGHT_BACKEND": "Java / Spring Boot",
     "HIGHLIGHT_FRONTEND": "Angular",
+
     "TAB_TECHNICAL": "Technical",
     "TAB_LANGUAGE": "Language",
     "TAB_SOFT": "Soft Skills",
+
     "LANGUAGE_MYANMAR": "Myanmar",
     "LANGUAGE_ENGLISH": "English",
     "LANGUAGE_JAPANESE": "Japanese",
+
     "SOFT_PROBLEM_SOLVING": "Problem Solving",
     "SOFT_TEAM_COLLABORATION": "Team Collaboration",
-    "SOFT_COMMUNICATION": "Communication",
+    "SOFT_COMMUNICATION": "Technical Communication",
     "SOFT_TIME_MANAGEMENT": "Time Management",
     "SOFT_ADAPTABILITY": "Adaptability",
     "SOFT_CRITICAL_THINKING": "Critical Thinking",
     "SOFT_CREATIVITY": "Creativity",
-    "SOFT_LEADERSHIP": "Leadership"
+    "SOFT_LEADERSHIP": "Technical Leadership"
   },
+
   "ABOUT": {
     "TITLE": "About Me",
     "HELLO": "Hello, I'm",
@@ -70,81 +78,108 @@
     "CLIENTS": "Clients",
     "YEARS_EXP": "Years Experience",
     "DOWNLOAD_CV": "Download CV",
-    "DESCRIPTION_1_START": "As a Java Fullstack Developer, I specialize in full-cycle application development from architecting",
-    "DESCRIPTION_1_HIGHLIGHT_1": "resilient backend systems",
-    "DESCRIPTION_1_MIDDLE": "using Java, Spring Boot, and Hibernate, to creating",
-    "DESCRIPTION_1_HIGHLIGHT_2": "responsive and engaging user interfaces",
-    "DESCRIPTION_1_END": "with AngularJS, HTML, and CSS.",
-    "DESCRIPTION_2_START": "I have hands-on experience building robust",
-    "DESCRIPTION_2_HIGHLIGHT_1": "RESTful APIs",
-    "DESCRIPTION_2_MIDDLE_1": "managing relational databases like",
-    "DESCRIPTION_2_HIGHLIGHT_2": "MySQL",
-    "DESCRIPTION_2_MIDDLE_2": "and maintaining clean code with",
-    "DESCRIPTION_2_HIGHLIGHT_3": "Git version control",
-    "DESCRIPTION_3": "My strength lies in bridging backend logic with frontend experience, ensuring seamless integration and performance. I'm passionate about solving real-world problems through code, constantly learning new technologies, and contributing to innovative solutions that align with business goals while enhancing user satisfaction.",
+
+    "DESCRIPTION_1_START": "I'm a Java Full-Stack Engineer specializing in",
+    "DESCRIPTION_1_HIGHLIGHT_1": "core banking, microfinance, and financial technology systems",
+    "DESCRIPTION_1_MIDDLE": "with hands-on experience across",
+    "DESCRIPTION_1_HIGHLIGHT_2": "development, system maintenance, and production support",
+    "DESCRIPTION_1_END": "using Java, Spring Boot, Hibernate, Angular, and MySQL.",
+
+    "DESCRIPTION_2_START": "My experience includes building and maintaining",
+    "DESCRIPTION_2_HIGHLIGHT_1": "RESTful APIs and backend services",
+    "DESCRIPTION_2_MIDDLE_1": "working with",
+    "DESCRIPTION_2_HIGHLIGHT_2": "financial databases and transaction workflows",
+    "DESCRIPTION_2_MIDDLE_2": "and implementing",
+    "DESCRIPTION_2_HIGHLIGHT_3": "financial reports, scheduled jobs, and system integrations",
+    
+    "DESCRIPTION_3": "I enjoy understanding existing system behavior, identifying the right place to implement changes, and turning business requirements into reliable technical solutions. I also troubleshoot production issues, analyze root causes, support system deployments, and provide technical guidance to developers and functional consultants.",
+
     "LOCATION": "Yangon, Myanmar",
-    "AVAILABLE": "Available for work"
+    "AVAILABLE": "Open to international opportunities and relocation"
   },
+
   "PROJECTS": {
     "TITLE": "Real-World Projects",
-    "SUBTITLE": "Real-world experience developing and supporting financial systems, specializing in microfinance and core banking solutions, cloud deployment, server administration, and production maintenance.",
+    "SUBTITLE": "Hands-on experience developing, customizing, deploying, and supporting financial systems across microfinance and core banking environments.",
+
     "VIEW_GITHUB": "View GitHub",
     "LIVE_DEMO": "Live Demo",
     "COMING_SOON": "Coming Soon",
     "VIEW_DETAILS": "View Details",
     "CLOSE_DETAILS": "Close project details",
     "PROFESSIONAL_PROJECT": "Professional Project",
-    "MY_CONTRIBUTIONS": "What I contributed",
+    "MY_CONTRIBUTIONS": "My Contributions",
     "VIEW_ALL": "View All Projects",
+
     "ITEMS": {
+
       "HAYMAN": {
         "NAME": "Hayman Microfinance",
-        "DESCRIPTION": "Core development for a microfinance platform, improving financial operations, reporting, automation, and the day-to-day experience for users.",
+
+        "DESCRIPTION": "A production microfinance and core banking platform supporting lending, savings, financial transactions, reporting, accounting workflows, automation, and daily operations.",
+
         "DETAILS": [
-          "Built dynamic data tables and reusable document-export templates.",
-          "Developed operational and accounting reports, including scheduled report-email jobs.",
-          "Implemented savings and fixed-deposit accruals, payable calculations, and interest posting.",
-          "Developed loan accrual functionality and financial opening-balance setup.",
-          "Created scheduler and COB (close-of-business) jobs to automate operational processes.",
-          "Configured Amazon S3 and deployed server-code updates to AWS.",
-          "Built dashboard features and integrated Email and Odoo workflows.",
-          "Migrated data from the legacy system to the new platform.",
-          "Resolved customer issues and improved features to reduce user errors."
+          "Developed and customized core banking features using Java, Spring Boot, Hibernate, Angular, and MySQL.",
+          "Implemented savings and fixed-deposit accruals, payable calculations, and interest-posting workflows.",
+          "Developed loan accrual functionality and financial opening-balance processes.",
+          "Built operational and accounting reports, including scheduled report-email jobs.",
+          "Created scheduler and COB (Close of Business) jobs to automate operational processes.",
+          "Designed database changes and optimized queries for new financial features.",
+          "Built reusable data tables and document-export templates for operational workflows.",
+          "Integrated Microfinance workflows with Email and Odoo services.",
+          "Configured Amazon S3 and supported application deployments in AWS environments.",
+          "Migrated data from a legacy system to the new financial platform.",
+          "Investigated and resolved production issues while considering transaction integrity and existing system behavior.",
+          "Supported ongoing production maintenance and feature improvements to reduce operational errors."
         ]
       },
+
       "ZEGA": {
         "NAME": "Zega Finance",
-        "DESCRIPTION": "Feature development for a finance platform, focused on flexible data management, document exports, and business reporting.",
+
+        "DESCRIPTION": "A financial platform focused on operational data management, document generation, financial reporting, and business workflow improvements.",
+
         "DETAILS": [
-          "Built dynamic data tables to make financial data easier to manage and review.",
-          "Created dynamic templates for exporting business documents.",
-          "Developed operational and accounting reports to support daily financial workflows and decision-making."
+          "Developed backend features using Java and Spring Boot.",
+          "Built dynamic data tables to improve financial data management and review.",
+          "Created reusable templates for exporting business documents.",
+          "Developed operational and accounting reports supporting daily financial workflows.",
+          "Worked with database structures and business logic to implement new requirements.",
+          "Investigated and resolved application issues during development and support."
         ]
       },
+
       "MICRO": {
         "NAME": "MICRO-X Digital Microfinance Platform",
-        "DESCRIPTION": "A product built for Myanmar's microfinance environment, supporting reliable operations, lending decisions, and system migration.",
+
+        "DESCRIPTION": "A digital microfinance platform designed for Myanmar's financial environment, supporting lending operations, credit decisions, process tracking, data migration, and reliable system operations.",
+
         "DETAILS": [
-          "Led server maintenance and application deployments to keep the platform reliable.",
-          "Built a loan credit-score feature to support lending decisions.",
-          "Created dynamic templates for exporting business documents.",
-          "Implemented Excel bulk import to support data migration into the system.",
-          "Developed a Path Tracker feature for clearer process tracking."
+          "Developed and maintained features for a digital microfinance platform.",
+          "Built a loan credit-scoring feature to support lending decisions.",
+          "Implemented Excel bulk-import functionality for large-scale data migration.",
+          "Created reusable document-export templates for business workflows.",
+          "Developed a Path Tracker feature to improve process visibility and operational tracking.",
+          "Supported server maintenance, application deployment, and production operations.",
+          "Worked with backend services, databases, and frontend components across the application."
         ]
       },
+
       "MOVIE_WEBSITE": {
         "NAME": "Movie Website",
-        "DESCRIPTION": "A comprehensive movie management system featuring user authentication, role-based access control, and dynamic content presentation. Developed with Spring Boot for robust backend services and AngularJS for an interactive frontend."
+        "DESCRIPTION": "A full-stack movie management application featuring user authentication, role-based access control, dynamic content management, and RESTful backend services built with Spring Boot and Angular."
       },
+
       "ECOMMERCE": {
         "NAME": "E-Commerce Platform",
-        "DESCRIPTION": "An intuitive e-commerce solution with product listings, shopping cart functionality, and secure checkout processes. Built using Spring Boot for scalable backend operations and AngularJS for a seamless user experience."
+        "DESCRIPTION": "A full-stack e-commerce application featuring product management, shopping cart functionality, secure checkout workflows, and RESTful backend services built with Spring Boot and Angular."
       }
     }
   },
+
   "CONTACT": {
-    "TITLE": "Contact Me",
-    "SUBTITLE": "Get in touch with me",
+    "TITLE": "Let's Connect",
+    "SUBTITLE": "Interested in working together or discussing a project?",
     "GITHUB": "GitHub",
     "LINKEDIN": "LinkedIn",
     "EMAIL": "Email",
@@ -159,51 +194,62 @@
     "SENDING": "Sending...",
     "MESSAGE_SENT": "Message sent successfully!"
   },
+
   "EXPERIENCE": {
     "TITLE": "Experience",
-    "SUBTITLE": "My professional journey",
+    "SUBTITLE": "Professional experience in financial software development and production systems",
+
     "ROLES": {
       "JAVA_INTERN": "Java Development Intern",
       "JUNIOR_JAVA_DEVELOPER": "Junior Java Developer"
     },
+
     "DURATIONS": {
       "APR_2025_JUN_2025": "April 2025 - June 2025",
       "JUN_2025_AUG_2025": "June 2025 - August 2025",
       "AUG_2025_PRESENT": "August 2025 - Present"
     },
+
     "RESPONSIBILITIES": {
-      "INTERN_1": "Built responsive front-end interfaces using HTML, CSS, and JavaScript.",
-      "INTERN_2": "Assisted in integrating AngularJS components with backend services.",
-      "INTERN_3": "Learned Git for version control and collaborative development.",
+
+      "INTERN_1": "Built responsive frontend interfaces using HTML, CSS, and JavaScript.",
+      "INTERN_2": "Assisted in integrating Angular components with backend services.",
+      "INTERN_3": "Used Git for version control and collaborative development.",
       "INTERN_4": "Developed and maintained RESTful APIs using Spring Boot and Java.",
-      "INTERN_5": "Contributed to client projects under supervision.",
-      "JUNIOR_1": "Developed and maintained RESTful APIs using Spring Boot and Java.",
-      "JUNIOR_2": "Collaborated with senior developers on system design and implementation.",
-      "JUNIOR_3": "Assisted in database schema design and optimization with MySQL.",
-      "JUNIOR_4": "Participated in code reviews and adopted best practices for software development.",
-      "OPEN_SOURCE_1": "Contributed to the development of open-source financial technology solutions using Java.",
-      "OPEN_SOURCE_2": "Designed and optimized Microfinance  database schemas for new features and performance improvements.",
-      "OPEN_SOURCE_3": "Developed and maintained Microfinance  reports to provide key insights into financial operations.",
-      "OPEN_SOURCE_4": "Collaborated with a global team on feature development and bug fixes.",
-      "OPEN_SOURCE_5": "Gained experience in open-source development workflows and community contributions."
+      "INTERN_5": "Contributed to client projects while working under the guidance of senior developers.",
+
+      "JUNIOR_1": "Developed and maintained RESTful APIs using Java and Spring Boot.",
+      "JUNIOR_2": "Implemented backend features and business logic for microfinance applications.",
+      "JUNIOR_3": "Designed and optimized MySQL database structures for new features.",
+      "JUNIOR_4": "Participated in code reviews, debugging, testing, and feature implementation.",
+
+      "OPEN_SOURCE_1": "Developed and customized open-source financial technology solutions using Java and Spring Boot.",
+      "OPEN_SOURCE_2": "Designed and optimized microfinance database schemas for new financial features and performance improvements.",
+      "OPEN_SOURCE_3": "Developed and maintained operational and financial reports supporting daily business processes.",
+      "OPEN_SOURCE_4": "Maintained production systems, investigated issues, and implemented solutions based on existing system behavior.",
+      "OPEN_SOURCE_5": "Provided technical solutions and implementation guidance to junior developers and collaborated with functional consultants to translate business requirements into technical solutions."
     },
+
     "ACHIEVEMENTS": {
       "ODOO": {
         "TITLE": "Odoo Integration",
-        "DESCRIPTION": "Implemented seamless integration between Microfinance  and Odoo."
+        "DESCRIPTION": "Implemented integration between microfinance workflows and Odoo to support business operations."
       },
+
       "MAIL": {
         "TITLE": "Mail Integration",
-        "DESCRIPTION": "Developed email reporting jobs and verification systems."
+        "DESCRIPTION": "Developed scheduled email reporting jobs and verification workflows for financial operations."
       },
+
       "SAVINGS": {
         "TITLE": "Savings Module",
-        "DESCRIPTION": "Implemented month-end accrue and interest posting."
+        "DESCRIPTION": "Implemented month-end accrual and interest-posting workflows for savings products."
       }
     }
   },
+
   "FOOTER": {
-    "DESCRIPTION": "Building innovative solutions with modern technologies",
+    "DESCRIPTION": "Building reliable software for real-world financial operations",
     "QUICK_LINKS": "Quick Links",
     "CONTACT": "Contact Info",
     "NEWSLETTER": "Newsletter",
