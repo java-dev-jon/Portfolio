@@ -1,46 +1,31 @@
 <section id="experience" class="experience" [ngClass]="{ 'dark-mode': theme.darkMode() }">
   <div class="container">
-    <div class="section-header">
+    <div class="section-header" appScrollReveal>
       <h2 class="gradient-text">{{ 'EXPERIENCE.TITLE' | translate }}</h2>
       <div class="header-line"></div>
     </div>
 
     <div class="timeline-wrapper">
-      <div class="experience-card" *ngFor="let exp of experienceData; let i = index">
+      <div class="experience-card" *ngFor="let exp of experienceData; let i = index" appScrollReveal [appScrollRevealDelay]="i * 100">
+        <div class="timeline-date">
+          <span class="date-badge">{{ exp.durationKey | translate }}</span>
+        </div>
+
         <div class="timeline-marker">
           <div class="dot"></div>
           <div class="line"></div>
         </div>
 
-        <div class="card-content">
-          <div class="card-header">
-            <div>
-              <h3 class="role">{{ exp.titleKey | translate }}</h3>
-              <p class="company-name"><i class="fas fa-building"></i> {{ exp.company }}</p>
-            </div>
-            <span class="date-badge">{{ exp.durationKey | translate }}</span>
-          </div>
+        <article class="card-content">
+          <h3 class="role">{{ exp.titleKey | translate }}</h3>
+          <p class="company-name"><i class="fas fa-building"></i> {{ exp.company }}</p>
 
           <div class="card-body">
             <ul class="task-list" *ngIf="exp.responsibilities">
               <li *ngFor="let resp of exp.responsibilities">{{ resp | translate }}</li>
             </ul>
-
-            <div class="achievements-grid" *ngIf="exp.achievements">
-              <div class="achievement-item" *ngFor="let ach of exp.achievements">
-                <span class="ach-icon">{{ ach.icon }}</span>
-                <div class="ach-text">
-                  <strong>{{ ach.titleKey | translate }}</strong>
-                  <p>{{ ach.descriptionKey | translate }}</p>
-                </div>
-              </div>
-            </div>
           </div>
-
-          <div class="card-footer">
-            <span class="tag" *ngFor="let tech of getTechStack(exp)">{{ tech }}</span>
-          </div>
-        </div>
+        </article>
       </div>
     </div>
   </div>

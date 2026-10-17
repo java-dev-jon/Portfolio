@@ -1,38 +1,38 @@
 :root {
-  --app-bg: #f5f7fb;
-  --app-surface: rgba(255, 255, 255, 0.72);
-  --app-surface-strong: #ffffff;
-  --app-surface-dark: rgba(14, 21, 35, 0.88);
-  --app-text: #172033;
-  --app-text-muted: #5c6982;
-  --app-line: rgba(23, 32, 51, 0.08);
-  --app-line-strong: rgba(23, 32, 51, 0.14);
-  --shadow-soft: 0 20px 60px rgba(15, 23, 42, 0.08);
-  --shadow-card: 0 18px 38px rgba(15, 23, 42, 0.1);
+  --app-bg: #050505;
+  --app-surface: rgba(20, 20, 23, 0.82);
+  --app-surface-strong: #121214;
+  --app-surface-dark: rgba(12, 12, 14, 0.92);
+  --app-text: #f8fafc;
+  --app-text-muted: #a1a1aa;
+  --app-line: rgba(255, 255, 255, 0.08);
+  --app-line-strong: rgba(255, 255, 255, 0.14);
+  --shadow-soft: 0 20px 60px rgba(0, 0, 0, 0.36);
+  --shadow-card: 0 18px 38px rgba(0, 0, 0, 0.3);
   --radius-xl: 32px;
   --radius-lg: 24px;
   --content-width: min(1160px, calc(100% - 2rem));
   --section-space: clamp(4.5rem, 7vw, 7rem);
   --section-space-compact: clamp(3.5rem, 6vw, 5.5rem);
-  --accent-a-1: #2563eb;
-  --accent-a-2: #06b6d4;
-  --accent-b-1: #f97316;
-  --accent-b-2: #ef4444;
-  --dark-page: #0f172a;
-  --dark-page-elevated: #101b31;
-  --dark-page-deep: #0b1220;
-  --dark-surface: #111827;
-  --dark-surface-alt: #162033;
-  --dark-text: #e5e7eb;
-  --dark-text-muted: #94a3b8;
-  --dark-line: rgba(59, 130, 246, 0.18);
-  --dark-line-strong: rgba(59, 130, 246, 0.3);
-  --dark-shadow-soft: 0 24px 50px rgba(2, 6, 23, 0.32);
-  --dark-shadow-card: 0 18px 38px rgba(2, 6, 23, 0.28);
+  --accent-a-1: #8b5cf6;
+  --accent-a-2: #22d3ee;
+  --accent-b-1: #ec4899;
+  --accent-b-2: #a78bfa;
+  --dark-page: #050505;
+  --dark-page-elevated: #09090b;
+  --dark-page-deep: #000000;
+  --dark-surface: #121214;
+  --dark-surface-alt: #19191d;
+  --dark-text: #fafafa;
+  --dark-text-muted: #a1a1aa;
+  --dark-line: rgba(255, 255, 255, 0.1);
+  --dark-line-strong: rgba(139, 92, 246, 0.48);
+  --dark-shadow-soft: 0 24px 50px rgba(0, 0, 0, 0.5);
+  --dark-shadow-card: 0 18px 38px rgba(0, 0, 0, 0.44);
   --dark-highlight:
-    radial-gradient(circle at 18% 16%, rgba(59, 130, 246, 0.14), transparent 26%),
-    radial-gradient(circle at 82% 20%, rgba(6, 182, 212, 0.1), transparent 20%);
-  --dark-section-divider: rgba(148, 163, 184, 0.12);
+    radial-gradient(circle at 18% 16%, rgba(139, 92, 246, 0.16), transparent 26%),
+    radial-gradient(circle at 82% 20%, rgba(34, 211, 238, 0.1), transparent 20%);
+  --dark-section-divider: rgba(255, 255, 255, 0.08);
 }
 
 *,
@@ -58,8 +58,8 @@ body {
   touch-action: pan-y pinch-zoom;
   font-family: "Inter", "Segoe UI Variable", "Segoe UI", "Trebuchet MS", sans-serif;
   background:
-    radial-gradient(circle at top left, rgba(37, 99, 235, 0.05), transparent 32%),
-    radial-gradient(circle at bottom right, rgba(249, 115, 22, 0.06), transparent 30%),
+    radial-gradient(circle at top left, rgba(139, 92, 246, 0.11), transparent 30%),
+    radial-gradient(circle at bottom right, rgba(34, 211, 238, 0.07), transparent 28%),
     var(--app-bg);
   color: var(--app-text);
   line-height: 1.6;
@@ -83,6 +83,8 @@ section {
   position: relative;
   isolation: isolate;
   overflow-x: hidden;
+  border-top-color: transparent !important;
+  border-bottom-color: transparent !important;
 }
 
 img {
@@ -132,4 +134,71 @@ button {
 .dark {
   background: var(--dark-page);
   color: var(--dark-text);
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--accent-a-2);
+  outline-offset: 3px;
+}
+
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 620ms cubic-bezier(0.22, 1, 0.36, 1), transform 620ms cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--reveal-delay, 0ms);
+  will-change: opacity, transform;
+}
+
+.scroll-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* Shared modern controls for the black portfolio theme. */
+.dark .btn-primary,
+.dark .btn-download,
+.dark .contact-submit,
+.dark .lang-btn,
+.dark .tab-btn.active,
+.dark .project-link.live,
+.dark .details-button {
+  background: linear-gradient(135deg, var(--accent-a-1), var(--accent-a-2));
+  box-shadow: 0 14px 30px rgba(139, 92, 246, 0.24);
+}
+
+.dark .btn-primary:hover,
+.dark .btn-download:hover,
+.dark .contact-submit:hover:not(:disabled),
+.dark .lang-btn:hover,
+.dark .tab-btn.active:hover,
+.dark .project-link.live:hover,
+.dark .details-button:hover {
+  box-shadow: 0 20px 40px rgba(34, 211, 238, 0.22);
+}
+
+.dark .btn-secondary,
+.dark .theme-btn,
+.dark .btn-view-more {
+  background: rgba(18, 18, 20, 0.9);
+  border-color: var(--dark-line-strong);
+  color: var(--dark-text);
+}
+
+.dark .navbar.dark-nav {
+  background: rgba(5, 5, 5, 0.86);
+  border-bottom-color: var(--dark-line);
 }

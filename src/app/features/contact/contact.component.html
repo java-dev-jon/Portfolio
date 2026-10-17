@@ -1,6 +1,6 @@
 <section id="contact" class="contact" [ngClass]="{ 'dark-contact': theme.darkMode() }">
   <div class="contact-container">
-    <div class="section-header">
+    <div class="section-header" appScrollReveal>
       <h2 class="section-title">
         <i class="fas fa-envelope"></i>
         {{ 'CONTACT.TITLE' | translate }}
@@ -11,7 +11,7 @@
 
     <div class="contact-content">
       <div class="contact-info">
-        <div class="info-card" *ngFor="let contact of contactMethods">
+        <div class="info-card" *ngFor="let contact of contactMethods; let i = index" appScrollReveal [appScrollRevealDelay]="i * 90">
           <div class="info-icon" [ngClass]="contact.iconClass">
             <i [class]="contact.icon"></i>
           </div>
@@ -23,7 +23,7 @@
           </div>
         </div>
 
-        <div class="social-section">
+        <div class="social-section" appScrollReveal [appScrollRevealDelay]="140">
           <h3 class="social-title">{{ 'CONTACT.FOLLOW_ME' | translate }}</h3>
           <div class="social-grid">
             <a [href]="social.github" target="_blank" class="social-card github">

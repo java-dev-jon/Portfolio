@@ -3,11 +3,12 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { ThemeService } from 'src/app/core/theme.service';
+import { ScrollRevealDirective } from 'src/app/shared/scroll-reveal.directive';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [CommonModule, FormsModule, TranslateModule],
+  imports: [CommonModule, FormsModule, TranslateModule, ScrollRevealDirective],
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.css']
 })

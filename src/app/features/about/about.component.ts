@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ThemeService } from 'src/app/core/theme.service';
 import { TranslateModule } from '@ngx-translate/core';
+import { ScrollRevealDirective } from 'src/app/shared/scroll-reveal.directive';
 
 @Component({
   selector: 'app-about',
   standalone: true,
-  imports: [CommonModule, TranslateModule],
+  imports: [CommonModule, TranslateModule, ScrollRevealDirective],
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.css']
 })

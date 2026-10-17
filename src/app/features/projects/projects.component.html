@@ -1,34 +1,40 @@
 <section id="projects" class="projects" [ngClass]="{ 'dark-projects': theme.darkMode() }">
   <div class="projects-container">
-    <div class="section-header">
+    <div class="section-header" appScrollReveal>
       <h2 class="section-title">{{ 'PROJECTS.TITLE' | translate }}</h2>
       <div class="section-subtitle">{{ 'PROJECTS.SUBTITLE' | translate }}</div>
       <div class="title-decoration"></div>
     </div>
 
-    <div class="projects-grid">
-      <div class="project-card" *ngFor="let project of projects; let i = index" [class.has-details]="project.detailsKey">
-        <button class="project-image-wrapper" type="button" [disabled]="!project.detailsKey" (click)="openProjectDetails(project)" [attr.aria-label]="project.detailsKey ? ('PROJECTS.VIEW_DETAILS' | translate) : null">
-          <img [src]="project.image" [alt]="project.nameKey | translate" class="project-image"
-               (error)="handleImageError($event)">
-          <div class="project-overlay">
+    <div class="project-showcase">
+      <article class="project-feature" *ngFor="let project of projects; let i = index" appScrollReveal [appScrollRevealDelay]="i * 100">
+        <button class="project-media" type="button" (click)="openProjectDetails(project)" [attr.aria-label]="'PROJECTS.VIEW_DETAILS' | translate">
+          <span class="media-grid"></span>
+          <span class="media-glow"></span>
+          <span class="logo-stage">
+            <img [src]="project.image" [alt]="project.nameKey | translate" class="project-logo" (error)="handleImageError($event)">
+          </span>
+          <span class="media-index">0{{ i + 1 }}</span>
+        </button>
+
+        <div class="project-content">
+          <p class="project-kicker">{{ 'PROJECTS.PROFESSIONAL_PROJECT' | translate }}</p>
+          <h3 class="project-title">{{ project.nameKey | translate }}</h3>
+          <p class="project-description">{{ project.descriptionKey | translate }}</p>
+          <ul class="project-highlights">
+            <li *ngFor="let detail of (project.detailsKey | translate | slice:0:4)">{{ detail }}</li>
+          </ul>
+          <div class="project-actions">
+            <button type="button" class="project-link details-button" (click)="openProjectDetails(project)">
+              <i class="fas fa-arrow-up-right-from-square"></i>
+              <span>{{ 'PROJECTS.VIEW_DETAILS' | translate }}</span>
+            </button>
             <div class="project-tech">
               <span class="tech-tag" *ngFor="let tech of project.tech">{{ tech }}</span>
             </div>
           </div>
-        </button>
-
-        <div class="project-content">
-          <h3 class="project-title">{{ project.nameKey | translate }}</h3>
-          <p class="project-description">{{ project.descriptionKey | translate }}</p>
-
-          <button *ngIf="project.detailsKey" type="button" class="project-link details-button" (click)="openProjectDetails(project)">
-            <i class="fas fa-list-check"></i><span>{{ 'PROJECTS.VIEW_DETAILS' | translate }}</span>
-          </button>
         </div>
-
-        <div class="project-number">{{ (i + 1).toString().padStart(2, '0') }}</div>
-      </div>
+      </article>
     </div>
   </div>
 </section>

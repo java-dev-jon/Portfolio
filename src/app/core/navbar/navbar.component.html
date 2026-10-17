@@ -1,34 +1,35 @@
 <nav class="navbar" [ngClass]="{ 'scrolled': scrolled, 'dark-nav': theme.darkMode() }">
-  <div class="logo">
-    <img src="assets/img/jon-logo.jpg" alt="Profile" class="logo-pic">
-  </div>
+  <div class="navbar-inner">
+    <div class="logo">
+      <img src="assets/img/jon-logo.jpg" alt="Profile" class="logo-pic">
+    </div>
 
-  <button
-    class="mobile-btn"
-    (click)="toggleMobile()"
-    [attr.aria-label]="(mobileOpen ? 'NAV.CLOSE_MENU' : 'NAV.OPEN_MENU') | translate"
-    [attr.aria-expanded]="mobileOpen"
-  >
-    <span class="mobile-icon" [ngClass]="{ 'active': mobileOpen }">
-      <span class="mobile-line"></span>
-      <span class="mobile-line"></span>
-      <span class="mobile-line"></span>
-    </span>
-  </button>
+    <button
+      class="mobile-btn"
+      (click)="toggleMobile()"
+      [attr.aria-label]="(mobileOpen ? 'NAV.CLOSE_MENU' : 'NAV.OPEN_MENU') | translate"
+      [attr.aria-expanded]="mobileOpen"
+    >
+      <span class="mobile-icon" [ngClass]="{ 'active': mobileOpen }">
+        <span class="mobile-line"></span>
+        <span class="mobile-line"></span>
+        <span class="mobile-line"></span>
+      </span>
+    </button>
 
-  <ul class="nav-menu" [ngClass]="{ 'open': mobileOpen }">
+    <ul class="nav-menu" [ngClass]="{ 'open': mobileOpen }">
     <li class="nav-item" *ngFor="let section of sections">
       <a class="nav-link" (click)="scrollTo(section.id)">
         {{ section.label | translate }}
       </a>
     </li>
 
-    <li class="nav-item">
+    <!-- <li class="nav-item">
       <button class="lang-btn" (click)="toggleLang()" [attr.aria-label]="'NAV.CHANGE_LANGUAGE' | translate">
         <span class="globe-icon">🌐</span>
         <span class="lang-code">{{ translate.currentLang | uppercase }}</span>
       </button>
-    </li>
+    </li> -->
 
     <!-- <li class="nav-item">
       <button class="theme-btn" (click)="theme.toggle()" [attr.aria-label]="'NAV.TOGGLE_THEME' | translate">
@@ -36,5 +37,6 @@
         <span class="theme-text">{{ (theme.darkMode() ? 'NAV.LIGHT_MODE' : 'NAV.DARK_MODE') | translate }}</span>
       </button>
     </li> -->
-  </ul>
+    </ul>
+  </div>
 </nav>

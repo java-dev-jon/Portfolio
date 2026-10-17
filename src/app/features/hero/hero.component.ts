@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { ThemeService } from 'src/app/core/theme.service';
+import { ScrollRevealDirective } from 'src/app/shared/scroll-reveal.directive';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { Subscription } from 'rxjs';
 import emailjs from 'emailjs-com';
@@ -9,7 +10,7 @@ import emailjs from 'emailjs-com';
 @Component({
   selector: 'app-hero',
   standalone: true,
-  imports: [CommonModule, FormsModule, TranslateModule],
+  imports: [CommonModule, FormsModule, TranslateModule, ScrollRevealDirective],
   templateUrl: './hero.component.html',
   styleUrls: ['./hero.component.css']
 })

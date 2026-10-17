@@ -1,26 +1,10 @@
 <footer class="footer" [ngClass]="{ 'dark-footer': theme.darkMode() }">
   <div class="footer-container">
     <div class="footer-bottom">
-      <div class="footer-bottom-content">
+      <div class="footer-bottom-content" appScrollReveal>
         <p class="copyright">
           © {{ currentYear }} <span class="highlight">Handcrafted by Khant Si Thu Hlaing</span>.
-          <!-- {{ 'FOOTER.RIGHTS_RESERVED' | translate }} -->
         </p>
-
-        <div class="footer-social">
-          <a [href]="social.github" target="_blank" class="social-link" aria-label="GitHub">
-            <i class="fab fa-github"></i>
-          </a>
-          <a [href]="social.linkedin" target="_blank" class="social-link" aria-label="LinkedIn">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a [href]="'mailto:' + social.email" class="social-link" aria-label="Email">
-            <i class="fas fa-envelope"></i>
-          </a>
-          <a [href]="'tel:' + social.phone" class="social-link" aria-label="Phone">
-            <i class="fas fa-phone"></i>
-          </a>
-        </div>
       </div>
     </div>
   </div>

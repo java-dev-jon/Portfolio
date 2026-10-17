@@ -23,7 +23,7 @@
     "CONTACT_ME": "Contact Me",
     "VIEW_WORK": "View Work",
     "ROLE_FULL_STACK": "Java Full-Stack Engineer",
-    "ROLE_PROBLEM_SOLVER": "Financial Systems Engineer",
+    "ROLE_PROBLEM_SOLVER": "Core Banking & Financial Systems Engineer",
     "PROFILE_ALT": "Profile picture",
     "CONTACT_DIALOG_TITLE": "Contact Me",
     "CONTACT_NAME_LABEL": "Name",
@@ -201,33 +201,35 @@
 
     "ROLES": {
       "JAVA_INTERN": "Java Development Intern",
-      "JUNIOR_JAVA_DEVELOPER": "Junior Java Developer"
+      "JUNIOR_JAVA_DEVELOPER": "Junior Java Developer",
+      "SENIOR_JAVA_DEVELOPER": "Senior Java Developer"
     },
 
     "DURATIONS": {
       "APR_2025_JUN_2025": "April 2025 - June 2025",
-      "JUN_2025_AUG_2025": "June 2025 - August 2025",
-      "AUG_2025_PRESENT": "August 2025 - Present"
+      "JUN_2025_OCT_2026": "June 2025 - October 2026",
+      "OCT_2026_PRESENT": "October 2026 - Present"
     },
 
     "RESPONSIBILITIES": {
 
-      "INTERN_1": "Built responsive frontend interfaces using HTML, CSS, and JavaScript.",
-      "INTERN_2": "Assisted in integrating Angular components with backend services.",
-      "INTERN_3": "Used Git for version control and collaborative development.",
-      "INTERN_4": "Developed and maintained RESTful APIs using Spring Boot and Java.",
-      "INTERN_5": "Contributed to client projects while working under the guidance of senior developers.",
+      "INTERN_1": "Learned real-world software development workflows.",
+      "INTERN_2": "Built a foundation in Java and Spring Boot.",
+      "INTERN_3": "Explored databases, APIs, and application logic.",
+      "INTERN_4": "Collaborated with developers on team tasks.",
+      "INTERN_5": "Turned theoretical knowledge into practical skills.",
 
-      "JUNIOR_1": "Developed and maintained RESTful APIs using Java and Spring Boot.",
-      "JUNIOR_2": "Implemented backend features and business logic for microfinance applications.",
-      "JUNIOR_3": "Designed and optimized MySQL database structures for new features.",
-      "JUNIOR_4": "Participated in code reviews, debugging, testing, and feature implementation.",
+      "JUNIOR_1": "Developed features for real-world financial systems.",
+      "JUNIOR_2": "Customized APIs and business logic with Java.",
+      "JUNIOR_3": "Built and maintained Angular application features.",
+      "JUNIOR_4": "Resolved bugs and supported production systems.",
+      "JUNIOR_5": "Took ownership of assigned tasks and deliverables.",
 
-      "OPEN_SOURCE_1": "Developed and customized open-source financial technology solutions using Java and Spring Boot.",
-      "OPEN_SOURCE_2": "Designed and optimized microfinance database schemas for new financial features and performance improvements.",
-      "OPEN_SOURCE_3": "Developed and maintained operational and financial reports supporting daily business processes.",
-      "OPEN_SOURCE_4": "Maintained production systems, investigated issues, and implemented solutions based on existing system behavior.",
-      "OPEN_SOURCE_5": "Provided technical solutions and implementation guidance to junior developers and collaborated with functional consultants to translate business requirements into technical solutions."
+      "SENIOR_1": "Maintain and improve production banking systems.",
+      "SENIOR_2": "Develop advanced features for core banking workflows.",
+      "SENIOR_3": "Troubleshoot complex issues across system layers.",
+      "SENIOR_4": "Support junior developers and collaborate across teams.",
+      "SENIOR_5": "Drive reliable solutions with a focus on quality."
     },
 
     "ACHIEVEMENTS": {

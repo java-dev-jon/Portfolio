@@ -5,10 +5,9 @@ export class ThemeService {
   darkMode = signal(true);
 
   constructor() {
-    const saved = localStorage.getItem('darkMode');
-    if (saved === 'true') {
-      this.enableDark();
-    }
+    // The portfolio now intentionally opens with its black visual system.
+    // Visitors can still use the existing theme toggle if they prefer light mode.
+    this.enableDark();
   }
 
   toggle() {

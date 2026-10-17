@@ -2,68 +2,46 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
 import { ThemeService } from 'src/app/core/theme.service';
-
-interface Achievement {
-  icon: string;
-  titleKey: string;
-  descriptionKey: string;
-}
+import { ScrollRevealDirective } from 'src/app/shared/scroll-reveal.directive';
 
 interface Experience {
   titleKey: string;
   company: string;
   durationKey: string;
   responsibilities?: string[];
-  achievements?: Achievement[];
 }
 
 @Component({
   selector: 'app-experience',
   standalone: true,
-  imports: [CommonModule, TranslateModule],
+  imports: [CommonModule, TranslateModule, ScrollRevealDirective],
   templateUrl: './experience.component.html',
   styleUrls: ['./experience.component.css']
 })
 export class ExperienceComponent {
   experienceData: Experience[] = [
-    {
-      titleKey: 'EXPERIENCE.ROLES.JUNIOR_JAVA_DEVELOPER',
+        {
+      titleKey: 'EXPERIENCE.ROLES.SENIOR_JAVA_DEVELOPER',
       company: 'Myanmar Software Integrated Solutions (MSIS)',
-      durationKey: 'EXPERIENCE.DURATIONS.AUG_2025_PRESENT',
+      durationKey: 'EXPERIENCE.DURATIONS.OCT_2026_PRESENT',
       responsibilities: [
-        'EXPERIENCE.RESPONSIBILITIES.OPEN_SOURCE_1',
-        'EXPERIENCE.RESPONSIBILITIES.OPEN_SOURCE_2',
-        'EXPERIENCE.RESPONSIBILITIES.OPEN_SOURCE_3',
-        'EXPERIENCE.RESPONSIBILITIES.OPEN_SOURCE_4',
-        'EXPERIENCE.RESPONSIBILITIES.OPEN_SOURCE_5'
-      ],
-      achievements: [
-        {
-          icon: '🔄',
-          titleKey: 'EXPERIENCE.ACHIEVEMENTS.ODOO.TITLE',
-          descriptionKey: 'EXPERIENCE.ACHIEVEMENTS.ODOO.DESCRIPTION'
-        },
-        {
-          icon: '📧',
-          titleKey: 'EXPERIENCE.ACHIEVEMENTS.MAIL.TITLE',
-          descriptionKey: 'EXPERIENCE.ACHIEVEMENTS.MAIL.DESCRIPTION'
-        }
-        // {
-        //   icon: '💰',
-        //   titleKey: 'EXPERIENCE.ACHIEVEMENTS.SAVINGS.TITLE',
-        //   descriptionKey: 'EXPERIENCE.ACHIEVEMENTS.SAVINGS.DESCRIPTION'
-        // }
+        'EXPERIENCE.RESPONSIBILITIES.SENIOR_1',
+        'EXPERIENCE.RESPONSIBILITIES.SENIOR_2',
+        'EXPERIENCE.RESPONSIBILITIES.SENIOR_3',
+        'EXPERIENCE.RESPONSIBILITIES.SENIOR_4',
+        'EXPERIENCE.RESPONSIBILITIES.SENIOR_5'
       ]
     },
     {
       titleKey: 'EXPERIENCE.ROLES.JUNIOR_JAVA_DEVELOPER',
       company: 'Myanmar Software Integrated Solutions (MSIS)',
-      durationKey: 'EXPERIENCE.DURATIONS.JUN_2025_AUG_2025',
+      durationKey: 'EXPERIENCE.DURATIONS.JUN_2025_OCT_2026',
       responsibilities: [
         'EXPERIENCE.RESPONSIBILITIES.JUNIOR_1',
         'EXPERIENCE.RESPONSIBILITIES.JUNIOR_2',
         'EXPERIENCE.RESPONSIBILITIES.JUNIOR_3',
-        'EXPERIENCE.RESPONSIBILITIES.JUNIOR_4'
+        'EXPERIENCE.RESPONSIBILITIES.JUNIOR_4',
+        'EXPERIENCE.RESPONSIBILITIES.JUNIOR_5'
       ]
     },
     {
@@ -81,11 +59,4 @@ export class ExperienceComponent {
   ];
 
   constructor(public theme: ThemeService) {}
-
-  getTechStack(exp: Experience): string[] {
-    if (exp.company.includes('MSIS')) {
-      return ['Java', 'Spring Boot', 'MySQL', 'REST APIs', 'Type Script', 'Angular', 'Operation & Finicial Report'];
-    }
-    return ['Java', 'Spring Boot'];
-  }
 }

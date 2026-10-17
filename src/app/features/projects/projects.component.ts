@@ -2,6 +2,7 @@ import { Component, Inject, OnDestroy } from '@angular/core';
 import { CommonModule, DOCUMENT } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
 import { ThemeService } from 'src/app/core/theme.service';
+import { ScrollRevealDirective } from 'src/app/shared/scroll-reveal.directive';
 
 interface Project {
   nameKey: string;
@@ -17,7 +18,7 @@ interface Project {
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [CommonModule, TranslateModule],
+  imports: [CommonModule, TranslateModule, ScrollRevealDirective],
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.css']
 })

@@ -99,7 +99,7 @@
 }
 
 .dark-about .highlight {
-  color: #93c5fd;
+  color: #06b6d4;
 }
 
 .about-cta {
@@ -183,7 +183,7 @@
 }
 
 .dark-about .btn-download {
-  background: linear-gradient(135deg, #3b82f6, #06b6d4);
+  background: linear-gradient(135deg, #0f766e, #06b6d4);
   /* box-shadow: 0 18px 32px rgba(59, 130, 246, 0.24); */
 }
 

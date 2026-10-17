@@ -1,6 +1,6 @@
 <section id="skills" class="skills" [ngClass]="{ 'dark-skills': theme.darkMode() }">
   <div class="skills-container">
-    <div class="section-header">
+    <div class="section-header" appScrollReveal>
       <h2 class="section-title">{{ 'SKILLS.TITLE' | translate }}</h2>
       <p class="section-description">
         {{ 'SKILLS.DESCRIPTION_START' | translate }}
@@ -13,7 +13,7 @@
       <div class="title-decoration"></div>
     </div>
 
-    <div class="skills-tabs">
+    <div class="skills-tabs" appScrollReveal [appScrollRevealDelay]="100">
       <button class="tab-btn" [ngClass]="{ 'active': activeTab === 'technical' }" (click)="switchTab('technical')">
         <span class="tab-icon">💻</span>
         <span class="tab-label">{{ 'SKILLS.TAB_TECHNICAL' | translate }}</span>
@@ -31,7 +31,7 @@
       </button>
     </div>
 
-    <div class="tab-content">
+    <div class="tab-content" appScrollReveal [appScrollRevealDelay]="180">
       <div class="tab-pane" [ngClass]="{ 'active': activeTab === 'technical' }">
         <div class="skills-grid">
           <div class="skill-bubble" *ngFor="let skill of technicalSkills; let i = index"

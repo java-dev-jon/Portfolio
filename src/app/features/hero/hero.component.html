@@ -1,13 +1,13 @@
 <section id="hero" class="hero" [ngClass]="{ 'dark-hero': theme.darkMode() }">
   <div class="hero-container">
     <div class="hero-content">
-      <div class="hero-text">
+      <div class="hero-text" appScrollReveal>
         <h1 class="hero-name">
           <span class="accent">{{ 'HERO.NAME' | translate }}</span>
         </h1>
         <h3 class="hero-subtitle">{{ 'HERO.SUBTITLE' | translate }}</h3>
         <h2 class="typewriter">
-          {{ typedText }}<span class="blinking-cursor">|</span>
+          <!-- {{ typedText }}<span class="blinking-cursor">|</span> -->
         </h2>
 
         <div class="hero-buttons">
@@ -26,7 +26,7 @@
         </div>
       </div>
 
-      <div class="hero-image">
+      <div class="hero-image" appScrollReveal [appScrollRevealDelay]="140">
         <div class="image-container" [ngClass]="{ 'dark-image': theme.darkMode() }">
           <img src="assets/img/pic.jpg" [alt]="'HERO.PROFILE_ALT' | translate" class="profile-pic">
           <div class="image-backdrop"></div>
