@@ -44,8 +44,11 @@ export class NavbarComponent {
   }
 
   scrollTo(id: string) {
+    const shouldUnlockPage = this.mobileOpen;
     this.mobileOpen = false;
-    this.setPageScrollLock(false);
+    if (shouldUnlockPage) {
+      this.setPageScrollLock(false);
+    }
     const target = document.getElementById(id);
     if (!target) {
       return;
@@ -80,14 +83,5 @@ export class NavbarComponent {
   private setPageScrollLock(isLocked: boolean) {
     document.body.classList.toggle('is-scroll-locked', isLocked);
     document.documentElement.classList.toggle('is-scroll-locked', isLocked);
-    document.body.style.touchAction = isLocked ? 'none' : 'pan-y pinch-zoom';
-    document.documentElement.style.touchAction = isLocked ? 'none' : 'pan-y pinch-zoom';
-    document.body.scrollLeft = 0;
-    document.documentElement.scrollLeft = 0;
-    requestAnimationFrame(() => {
-      document.body.scrollLeft = 0;
-      document.documentElement.scrollLeft = 0;
-      window.scrollTo({ left: 0, behavior: 'auto' });
-    });
   }
 }

@@ -36,7 +36,6 @@
 <div class="project-modal-backdrop" *ngIf="selectedProject" (click)="closeProjectDetails()">
   <section class="project-modal" role="dialog" aria-modal="true" [attr.aria-label]="selectedProject.nameKey | translate" (click)="$event.stopPropagation()">
     <button type="button" class="modal-close" (click)="closeProjectDetails()" [attr.aria-label]="'PROJECTS.CLOSE_DETAILS' | translate"><i class="fas fa-times"></i></button>
-    <img [src]="selectedProject.image" [alt]="selectedProject.nameKey | translate" class="modal-logo">
     <p class="project-status">{{ 'PROJECTS.PROFESSIONAL_PROJECT' | translate }}</p>
     <h3>{{ selectedProject.nameKey | translate }}</h3>
     <p class="modal-description">{{ selectedProject.descriptionKey | translate }}</p>

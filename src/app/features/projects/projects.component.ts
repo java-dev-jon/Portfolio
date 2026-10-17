@@ -64,7 +64,6 @@ export class ProjectsComponent implements OnDestroy {
   private setScrollLock(isLocked: boolean): void {
     this.document.body.classList.toggle('is-scroll-locked', isLocked);
     this.document.documentElement.classList.toggle('is-scroll-locked', isLocked);
-    this.document.body.style.touchAction = isLocked ? 'none' : 'pan-y pinch-zoom';
   }
 
   handleImageError(event: any) {
