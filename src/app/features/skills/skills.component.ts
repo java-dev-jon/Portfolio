@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
-import { ThemeService } from 'src/app/core/theme.service';
 import { ScrollRevealDirective } from 'src/app/shared/scroll-reveal.directive';
 
 @Component({
@@ -19,10 +18,10 @@ export class SkillsComponent {
     'JavaScript', 'TypeScript', 'AngularJS', 'Angular', 'Git', 'Bootstrap'
   ];
 
-  languages: { name: string; nameKey: string; level: string }[] = [
-    { name: 'Myanmar', nameKey: 'SKILLS.LANGUAGE_MYANMAR', level: 'Native' },
-    { name: 'English', nameKey: 'SKILLS.LANGUAGE_ENGLISH', level: 'Professional' },
-    { name: 'Japanese', nameKey: 'SKILLS.LANGUAGE_JAPANESE', level: 'Intermediate' }
+  languages: { name: string; nameKey: string }[] = [
+    { name: 'Myanmar', nameKey: 'SKILLS.LANGUAGE_MYANMAR' },
+    { name: 'English', nameKey: 'SKILLS.LANGUAGE_ENGLISH' },
+    { name: 'Japanese', nameKey: 'SKILLS.LANGUAGE_JAPANESE' }
   ];
 
   softSkills: { nameKey: string; icon: string }[] = [
@@ -35,8 +34,6 @@ export class SkillsComponent {
     { nameKey: 'SKILLS.SOFT_CREATIVITY', icon: 'fas fa-paint-brush' },
     { nameKey: 'SKILLS.SOFT_LEADERSHIP', icon: 'fas fa-crown' }
   ];
-
-  constructor(public theme: ThemeService) {}
 
   switchTab(tab: string) {
     this.activeTab = tab;
@@ -68,12 +65,4 @@ export class SkillsComponent {
     return iconMap[language.name] || 'fas fa-globe';
   }
 
-  getLanguageLevel(language: { name: string; nameKey: string; level: string }): string {
-    const levelMap: { [key: string]: string } = {
-      Native: '100%',
-      Professional: '85%',
-      Intermediate: '60%'
-    };
-    return levelMap[language.level] || '70%';
-  }
 }

@@ -1,7 +1,7 @@
-<nav class="navbar" [ngClass]="{ 'scrolled': scrolled, 'dark-nav': theme.darkMode() }">
+<nav class="navbar" [class.scrolled]="scrolled">
   <div class="navbar-inner">
     <div class="logo">
-      <img src="assets/img/jon-logo.jpg" alt="Profile" class="logo-pic">
+      <span class="logo-font" aria-label="JON">JON</span>
     </div>
 
     <button
@@ -28,13 +28,6 @@
       <button class="lang-btn" (click)="toggleLang()" [attr.aria-label]="'NAV.CHANGE_LANGUAGE' | translate">
         <span class="globe-icon">🌐</span>
         <span class="lang-code">{{ translate.currentLang | uppercase }}</span>
-      </button>
-    </li> -->
-
-    <!-- <li class="nav-item">
-      <button class="theme-btn" (click)="theme.toggle()" [attr.aria-label]="'NAV.TOGGLE_THEME' | translate">
-        <span class="theme-icon">{{ theme.darkMode() ? '☀️' : '🌙' }}</span>
-        <span class="theme-text">{{ (theme.darkMode() ? 'NAV.LIGHT_MODE' : 'NAV.DARK_MODE') | translate }}</span>
       </button>
     </li> -->
     </ul>

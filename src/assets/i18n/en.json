@@ -4,26 +4,17 @@
     "ABOUT": "About",
     "SKILLS": "Skills",
     "PROJECTS": "Projects",
-    "CONTACT": "Contact",
     "EXPERIENCES": "Experience",
     "OPEN_MENU": "Open menu",
     "CLOSE_MENU": "Close menu",
-    "CHANGE_LANGUAGE": "Change language",
-    "TOGGLE_THEME": "Toggle theme",
-    "LIGHT_MODE": "Light",
-    "DARK_MODE": "Dark"
+    "CHANGE_LANGUAGE": "Change language"
   },
 
   "HERO": {
-    "GREETING": "Hi",
-    "I_AM": "I'm",
     "NAME": "Khant Si Thu Hlaing",
     "SUBTITLE": "Java Full-Stack Engineer | Core Banking & Financial Systems",
-    "DESCRIPTION": "Building reliable financial applications with Java, Spring Boot, Angular, and MySQL, with hands-on experience in core banking, microfinance, production support, and system maintenance.",
     "CONTACT_ME": "Contact Me",
     "VIEW_WORK": "View Work",
-    "ROLE_FULL_STACK": "Java Full-Stack Engineer",
-    "ROLE_PROBLEM_SOLVER": "Core Banking & Financial Systems Engineer",
     "PROFILE_ALT": "Profile picture",
     "CONTACT_DIALOG_TITLE": "Contact Me",
     "CONTACT_NAME_LABEL": "Name",
@@ -31,19 +22,11 @@
     "CONTACT_PHONE_LABEL": "Phone",
     "CONTACT_MESSAGE_LABEL": "Message",
     "CONTACT_SEND": "Let's Connect",
-    "CONTACT_SUBJECT": "Portfolio contact from {{name}}",
-    "CONTACT_DEFAULT_NAME": "a visitor",
     "CLOSE_CONTACT": "Close contact dialog"
   },
 
   "SKILLS": {
     "TITLE": "Technical Expertise",
-    "SUBTITLE": "Technologies and domains I work with",
-    "YEARS_EXP": "Years Experience",
-    "TECHNOLOGIES": "Technologies",
-    "PROJECTS": "Projects",
-    "PASSION": "Passion",
-
     "DESCRIPTION_START": "Specializing in",
     "DESCRIPTION_MIDDLE": "and financial technology solutions, building reliable backend systems with",
     "DESCRIPTION_END": "and developing responsive frontend applications with",
@@ -72,11 +55,6 @@
 
   "ABOUT": {
     "TITLE": "About Me",
-    "HELLO": "Hello, I'm",
-    "YEARS": "Years",
-    "PROJECTS": "Projects",
-    "CLIENTS": "Clients",
-    "YEARS_EXP": "Years Experience",
     "DOWNLOAD_CV": "Download CV",
 
     "DESCRIPTION_1_START": "I'm a Java Full-Stack Engineer specializing in",
@@ -102,17 +80,12 @@
     "TITLE": "Real-World Projects",
     "SUBTITLE": "Hands-on experience developing, customizing, deploying, and supporting financial systems across microfinance and core banking environments.",
 
-    "VIEW_GITHUB": "View GitHub",
-    "LIVE_DEMO": "Live Demo",
-    "COMING_SOON": "Coming Soon",
     "VIEW_DETAILS": "View Details",
     "CLOSE_DETAILS": "Close project details",
     "PROFESSIONAL_PROJECT": "Professional Project",
     "MY_CONTRIBUTIONS": "My Contributions",
-    "VIEW_ALL": "View All Projects",
 
     "ITEMS": {
-
       "HAYMAN": {
         "NAME": "Hayman Microfinance",
 
@@ -150,9 +123,9 @@
       },
 
       "MICRO": {
-        "NAME": "MICRO-X Digital Microfinance Platform",
+      "NAME": "MICRO-X By MSIS",
 
-        "DESCRIPTION": "A digital microfinance platform designed for Myanmar's financial environment, supporting lending operations, credit decisions, process tracking, data migration, and reliable system operations.",
+      "DESCRIPTION": "A digital microfinance platform built for Myanmar’s financial sector, supporting end-to-end lending and savings operations, financial transactions, credit management, accounting, and reporting. Designed to streamline business workflows and support reliable financial system operations.",
 
         "DETAILS": [
           "Developed and maintained features for a digital microfinance platform.",
@@ -163,16 +136,6 @@
           "Supported server maintenance, application deployment, and production operations.",
           "Worked with backend services, databases, and frontend components across the application."
         ]
-      },
-
-      "MOVIE_WEBSITE": {
-        "NAME": "Movie Website",
-        "DESCRIPTION": "A full-stack movie management application featuring user authentication, role-based access control, dynamic content management, and RESTful backend services built with Spring Boot and Angular."
-      },
-
-      "ECOMMERCE": {
-        "NAME": "E-Commerce Platform",
-        "DESCRIPTION": "A full-stack e-commerce application featuring product management, shopping cart functionality, secure checkout workflows, and RESTful backend services built with Spring Boot and Angular."
       }
     }
   },
@@ -185,20 +148,12 @@
     "EMAIL": "Email",
     "PHONE": "Phone",
     "CALL": "Call",
-    "FOLLOW_ME": "Follow Me",
-    "NAME_PLACEHOLDER": "Your Name",
-    "EMAIL_PLACEHOLDER": "Your Email",
-    "SUBJECT_PLACEHOLDER": "Subject",
-    "MESSAGE_PLACEHOLDER": "Your Message",
-    "SEND_MESSAGE": "Send Message",
-    "SENDING": "Sending...",
-    "MESSAGE_SENT": "Message sent successfully!"
+    "FOLLOW_ME": "Follow Me"
   },
 
   "EXPERIENCE": {
     "TITLE": "Experience",
-    "SUBTITLE": "Professional experience in financial software development and production systems",
-
+    "SUBTITLE": "My journey from learning software development to building, maintaining, and improving real-world core banking and microfinance systems.",
     "ROLES": {
       "JAVA_INTERN": "Java Development Intern",
       "JUNIOR_JAVA_DEVELOPER": "Junior Java Developer",
@@ -213,54 +168,28 @@
 
     "RESPONSIBILITIES": {
 
-      "INTERN_1": "Learned real-world software development workflows.",
-      "INTERN_2": "Built a foundation in Java and Spring Boot.",
-      "INTERN_3": "Explored databases, APIs, and application logic.",
-      "INTERN_4": "Collaborated with developers on team tasks.",
-      "INTERN_5": "Turned theoretical knowledge into practical skills.",
+      "INTERN_1": "Learned real-world software development workflows and team practices.",
+      "INTERN_2": "Built foundational skills in Java and Spring Boot.",
+      "INTERN_3": "Learned database design, REST APIs, and application logic.",
+      "INTERN_4": "Collaborated with developers to complete assigned tasks.",
+      "INTERN_5": "Applied programming fundamentals to practical development tasks.",
 
-      "JUNIOR_1": "Developed features for real-world financial systems.",
-      "JUNIOR_2": "Customized APIs and business logic with Java.",
-      "JUNIOR_3": "Built and maintained Angular application features.",
-      "JUNIOR_4": "Resolved bugs and supported production systems.",
-      "JUNIOR_5": "Took ownership of assigned tasks and deliverables.",
+      "JUNIOR_1": "Developed and customized features for core banking and microfinance systems.",
+      "JUNIOR_2": "Implemented loan and savings workflows, financial calculations, and REST APIs using Java and Spring Boot.",
+      "JUNIOR_3": "Built Angular features, financial reports, scheduled jobs, and database enhancements.",
+      "JUNIOR_4": "Deployed applications in Linux/AWS environments and integrated Amazon S3 for document storage.",
+      "JUNIOR_5": "Integrated external services, supported production systems, and resolved complex technical issues.",
 
-      "SENIOR_1": "Maintain and improve production banking systems.",
-      "SENIOR_2": "Develop advanced features for core banking workflows.",
-      "SENIOR_3": "Troubleshoot complex issues across system layers.",
-      "SENIOR_4": "Support junior developers and collaborate across teams.",
-      "SENIOR_5": "Drive reliable solutions with a focus on quality."
-    },
-
-    "ACHIEVEMENTS": {
-      "ODOO": {
-        "TITLE": "Odoo Integration",
-        "DESCRIPTION": "Implemented integration between microfinance workflows and Odoo to support business operations."
-      },
-
-      "MAIL": {
-        "TITLE": "Mail Integration",
-        "DESCRIPTION": "Developed scheduled email reporting jobs and verification workflows for financial operations."
-      },
-
-      "SAVINGS": {
-        "TITLE": "Savings Module",
-        "DESCRIPTION": "Implemented month-end accrual and interest-posting workflows for savings products."
-      }
+      "SENIOR_1": "Take greater ownership of core banking system maintenance and enhancements.",
+      "SENIOR_2": "Design reliable solutions for complex financial business requirements.",
+      "SENIOR_3": "Investigate root causes and resolve cross-layer production issues.",
+      "SENIOR_4": "Support junior developers and collaborate with functional consultants.",
+      "SENIOR_5": "Drive improvements in system reliability, maintainability, and operational efficiency."
     }
+
   },
 
   "FOOTER": {
-    "DESCRIPTION": "Building reliable software for real-world financial operations",
-    "QUICK_LINKS": "Quick Links",
-    "CONTACT": "Contact Info",
-    "NEWSLETTER": "Newsletter",
-    "NEWSLETTER_TEXT": "Subscribe to get updates on new projects",
-    "EMAIL_PLACEHOLDER": "Your email",
-    "RIGHTS_RESERVED": "All rights reserved",
-    "PRIVACY": "Privacy Policy",
-    "TERMS": "Terms of Service",
-    "COOKIES": "Cookies",
-    "SUBSCRIBE_SUCCESS": "Thank you for subscribing!"
+    "CONTACT": "Contact Info"
   }
 }

@@ -1,20 +1,16 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
-import { TranslateModule, TranslateService } from '@ngx-translate/core';
-import { ThemeService } from 'src/app/core/theme.service';
+import { TranslateModule } from '@ngx-translate/core';
 import { ScrollRevealDirective } from 'src/app/shared/scroll-reveal.directive';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [CommonModule, FormsModule, TranslateModule, ScrollRevealDirective],
+  imports: [CommonModule, TranslateModule, ScrollRevealDirective],
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent {
-  isSubmitting = false;
-
   social = {
     github: 'https://github.com/CallMe-JON',
     linkedin: 'https://linkedin.com/in/khant-si-thu-hlaing-5a97893a1',
@@ -57,31 +53,4 @@ export class ContactComponent {
     }
   ];
 
-  formData = {
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
-  };
-
-  constructor(
-    public theme: ThemeService,
-    private translate: TranslateService
-  ) {}
-
-  onSubmit() {
-    this.isSubmitting = true;
-
-    setTimeout(() => {
-      console.log('Form submitted:', this.formData);
-      this.isSubmitting = false;
-      this.formData = {
-        name: '',
-        email: '',
-        subject: '',
-        message: ''
-      };
-      alert(this.translate.instant('CONTACT.MESSAGE_SENT'));
-    }, 1500);
-  }
 }

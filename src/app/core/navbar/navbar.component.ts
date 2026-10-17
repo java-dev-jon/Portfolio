@@ -1,7 +1,6 @@
 import { Component, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
-import { ThemeService } from '../theme.service';
 
 @Component({
   selector: 'app-navbar',
@@ -12,7 +11,6 @@ import { ThemeService } from '../theme.service';
 })
 export class NavbarComponent {
   mobileOpen = false;
-  langOpen = false;
   scrolled = false;
 
   sections = [
@@ -24,7 +22,6 @@ export class NavbarComponent {
   ];
 
   constructor(
-    public theme: ThemeService,
     public translate: TranslateService
   ) {
     translate.setFallbackLang('en');
@@ -44,11 +41,6 @@ export class NavbarComponent {
       this.mobileOpen = false;
       this.setPageScrollLock(false);
     }
-  }
-
-  changeLang(lang: string) {
-    this.translate.use(lang);
-    this.langOpen = false;
   }
 
   scrollTo(id: string) {

@@ -1,17 +1,12 @@
 import { Component, Inject, OnDestroy } from '@angular/core';
 import { CommonModule, DOCUMENT } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
-import { ThemeService } from 'src/app/core/theme.service';
 import { ScrollRevealDirective } from 'src/app/shared/scroll-reveal.directive';
 
 interface Project {
   nameKey: string;
   descriptionKey: string;
-  githubLink?: string;
-  liveDemoLink?: string;
   image: string;
-  tech: string[];
-  isProfessional?: boolean;
   detailsKey?: string;
 }
 
@@ -30,30 +25,23 @@ export class ProjectsComponent implements OnDestroy {
       nameKey: 'PROJECTS.ITEMS.HAYMAN.NAME',
       descriptionKey: 'PROJECTS.ITEMS.HAYMAN.DESCRIPTION',
       image: 'assets/img/hayman-capital.png',
-      tech: ['Java', 'Spring Boot', 'Angular', 'AWS', 'Amazon S3'],
-      isProfessional: true,
       detailsKey: 'PROJECTS.ITEMS.HAYMAN.DETAILS'
     },
     {
       nameKey: 'PROJECTS.ITEMS.ZEGA.NAME',
       descriptionKey: 'PROJECTS.ITEMS.ZEGA.DESCRIPTION',
       image: 'assets/img/zega-finance.png',
-      tech: ['Java', 'Spring Boot', 'Angular', 'MySQL'],
-      isProfessional: true,
       detailsKey: 'PROJECTS.ITEMS.ZEGA.DETAILS'
     },
     {
       nameKey: 'PROJECTS.ITEMS.MICRO.NAME',
       descriptionKey: 'PROJECTS.ITEMS.MICRO.DESCRIPTION',
       image: 'assets/img/micro-platform.png',
-      tech: ['Java', 'Spring Boot', 'Angular', 'AWS', 'Excel Import'],
-      isProfessional: true,
       detailsKey: 'PROJECTS.ITEMS.MICRO.DETAILS'
     }
   ];
 
   constructor(
-    public theme: ThemeService,
     @Inject(DOCUMENT) private document: Document
   ) {}
 

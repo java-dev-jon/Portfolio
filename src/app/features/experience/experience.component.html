@@ -1,7 +1,8 @@
-<section id="experience" class="experience" [ngClass]="{ 'dark-mode': theme.darkMode() }">
+<section id="experience" class="experience">
   <div class="container">
     <div class="section-header" appScrollReveal>
-      <h2 class="gradient-text">{{ 'EXPERIENCE.TITLE' | translate }}</h2>
+      <h2 class="section-title">{{ 'EXPERIENCE.TITLE' | translate }}</h2>
+      <div class="section-subtitle">{{ 'PROJECTS.SUBTITLE' | translate }}</div>
       <div class="header-line"></div>
     </div>
 
@@ -13,7 +14,6 @@
 
         <div class="timeline-marker">
           <div class="dot"></div>
-          <div class="line"></div>
         </div>
 
         <article class="card-content">

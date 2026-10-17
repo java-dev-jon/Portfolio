@@ -1,4 +1,4 @@
-<section id="hero" class="hero" [ngClass]="{ 'dark-hero': theme.darkMode() }">
+<section id="hero" class="hero">
   <div class="hero-container">
     <div class="hero-content">
       <div class="hero-text" appScrollReveal>
@@ -6,10 +6,6 @@
           <span class="accent">{{ 'HERO.NAME' | translate }}</span>
         </h1>
         <h3 class="hero-subtitle">{{ 'HERO.SUBTITLE' | translate }}</h3>
-        <h2 class="typewriter">
-          <!-- {{ typedText }}<span class="blinking-cursor">|</span> -->
-        </h2>
-
         <div class="hero-buttons">
           <button class="btn-primary" type="button" (click)="openContactDialog()">
             <span>{{ 'HERO.CONTACT_ME' | translate }}</span>
@@ -27,7 +23,7 @@
       </div>
 
       <div class="hero-image" appScrollReveal [appScrollRevealDelay]="140">
-        <div class="image-container" [ngClass]="{ 'dark-image': theme.darkMode() }">
+        <div class="image-container">
           <img src="assets/img/pic.jpg" [alt]="'HERO.PROFILE_ALT' | translate" class="profile-pic">
           <div class="image-backdrop"></div>
           <div class="image-decoration"></div>
@@ -48,11 +44,7 @@
   </div>
 
   <div class="contact-overlay" *ngIf="isContactDialogOpen" (click)="closeContactDialog()">
-    <div
-      class="contact-dialog"
-      [ngClass]="{ 'dark-dialog': theme.darkMode() }"
-      (click)="$event.stopPropagation()"
-    >
+    <div class="contact-dialog" (click)="$event.stopPropagation()">
       <div class="contact-dialog-header">
         <h3 class="contact-dialog-title">{{ 'HERO.CONTACT_DIALOG_TITLE' | translate }}</h3>
         <button

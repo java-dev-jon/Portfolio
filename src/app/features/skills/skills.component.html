@@ -1,4 +1,4 @@
-<section id="skills" class="skills" [ngClass]="{ 'dark-skills': theme.darkMode() }">
+<section id="skills" class="skills">
   <div class="skills-container">
     <div class="section-header" appScrollReveal>
       <h2 class="section-title">{{ 'SKILLS.TITLE' | translate }}</h2>
@@ -36,8 +36,7 @@
         <div class="skills-grid">
           <div class="skill-bubble" *ngFor="let skill of technicalSkills; let i = index"
                [style.animation-delay]="i * 0.05 + 's'">
-            <!-- <div class="bubble-icon">{{ getSkillEmoji(skill) }}</div> -->
-             <div class="bubble-icon">
+            <div class="bubble-icon">
               <i [class]="getSkillIcon(skill)"></i>
             </div>
             <div class="bubble-name">{{ skill }}</div>
@@ -50,8 +49,7 @@
         <div class="skills-grid">
           <div class="skill-bubble" *ngFor="let language of languages; let i = index"
                [style.animation-delay]="i * 0.1 + 's'">
-            <!-- <div class="bubble-icon">{{ getLanguageEmoji(language) }}</div> -->
-             <div class="bubble-icon">
+            <div class="bubble-icon">
               <i [class]="getLanguageIcon(language)"></i>
             </div>
             <div class="bubble-name">{{ language.nameKey | translate }}</div>
@@ -64,8 +62,7 @@
         <div class="skills-grid">
           <div class="skill-bubble" *ngFor="let skill of softSkills; let i = index"
                [style.animation-delay]="i * 0.1 + 's'">
-            <!-- <div class="bubble-icon">{{ skill.emoji }}</div> -->
-             <div class="bubble-icon">
+            <div class="bubble-icon">
               <i [class]="skill.icon"></i>
             </div>
             <div class="bubble-name">{{ skill.nameKey | translate }}</div>

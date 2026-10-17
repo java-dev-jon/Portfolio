@@ -29,7 +29,7 @@
               "polyfills": ["zone.js"],
               "tsConfig": "tsconfig.app.json",
               "assets": [
-                "src/assets/img/jon-logo.jpg",
+                "src/assets/img/jon-mark.svg",
                 "src/assets",
                   {
                     "glob": "_redirects",
@@ -104,7 +104,7 @@
             ],
             "tsConfig": "tsconfig.spec.json",
             "assets": [
-              "src/assets/img/jon-logo.jpg",
+              "src/assets/img/jon-mark.svg",
               "src/assets",
                 "src/_redirects",
                 "src/robots.txt",

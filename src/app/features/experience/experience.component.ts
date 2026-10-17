@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
-import { ThemeService } from 'src/app/core/theme.service';
 import { ScrollRevealDirective } from 'src/app/shared/scroll-reveal.directive';
 
 interface Experience {
@@ -58,5 +57,4 @@ export class ExperienceComponent {
     },
   ];
 
-  constructor(public theme: ThemeService) {}
 }

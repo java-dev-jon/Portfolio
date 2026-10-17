@@ -4,26 +4,17 @@
   "ABOUT": "自己紹介",
   "SKILLS": "スキル",
   "PROJECTS": "プロジェクト",
-  "CONTACT": "お問い合わせ",
   "EXPERIENCES": "職務経歴",
   "OPEN_MENU": "メニューを開く",
   "CLOSE_MENU": "メニューを閉じる",
-  "CHANGE_LANGUAGE": "言語を変更",
-  "TOGGLE_THEME": "テーマを切り替える",
-  "LIGHT_MODE": "ライト",
-  "DARK_MODE": "ダーク"
+  "CHANGE_LANGUAGE": "言語を変更"
   },
 
   "HERO": {
-  "GREETING": "こんにちは",
-  "I_AM": "私は",
   "NAME": "Khant Si Thu Hlaing",
   "SUBTITLE": "Javaフルスタックエンジニア | コアバンキング・金融システム",
-  "DESCRIPTION": "Java、Spring Boot、Angular、MySQLを活用し、コアバンキング、マイクロファイナンス、本番環境のサポート、システム保守などの実務経験をもとに、信頼性の高い金融アプリケーションを開発しています。",
   "CONTACT_ME": "お問い合わせ",
   "VIEW_WORK": "実績を見る",
-  "ROLE_FULL_STACK": "Javaフルスタックエンジニア",
-  "ROLE_PROBLEM_SOLVER": "金融システムエンジニア",
   "PROFILE_ALT": "プロフィール画像",
   "CONTACT_DIALOG_TITLE": "お問い合わせ",
   "CONTACT_NAME_LABEL": "お名前",
@@ -31,19 +22,11 @@
   "CONTACT_PHONE_LABEL": "電話番号",
   "CONTACT_MESSAGE_LABEL": "メッセージ",
   "CONTACT_SEND": "お問い合わせを送信",
-  "CONTACT_SUBJECT": "{{name}}さんからのポートフォリオへのお問い合わせ",
-  "CONTACT_DEFAULT_NAME": "訪問者",
   "CLOSE_CONTACT": "お問い合わせフォームを閉じる"
   },
 
   "SKILLS": {
   "TITLE": "技術スキル",
-  "SUBTITLE": "使用している技術と専門分野",
-  "YEARS_EXP": "経験年数",
-  "TECHNOLOGIES": "技術",
-  "PROJECTS": "プロジェクト",
-  "PASSION": "情熱",
-
   "DESCRIPTION_START": "専門分野は",
   "DESCRIPTION_MIDDLE": "および金融テクノロジーソリューションで、",
   "DESCRIPTION_END": "を使用した信頼性の高いバックエンドシステムの構築と、",
@@ -73,11 +56,6 @@
 
   "ABOUT": {
   "TITLE": "自己紹介",
-  "HELLO": "こんにちは、",
-  "YEARS": "年",
-  "PROJECTS": "プロジェクト",
-  "CLIENTS": "クライアント",
-  "YEARS_EXP": "経験年数",
   "DOWNLOAD_CV": "履歴書をダウンロード",
 
   "DESCRIPTION_1_START": "私は",
@@ -103,14 +81,10 @@
   "TITLE": "実務プロジェクト",
   "SUBTITLE": "マイクロファイナンスおよびコアバンキング環境における金融システムの開発、カスタマイズ、デプロイ、保守・サポートの実務経験。",
 
-  "VIEW_GITHUB": "GitHubを見る",
-  "LIVE_DEMO": "デモを見る",
-  "COMING_SOON": "近日公開",
   "VIEW_DETAILS": "詳細を見る",
   "CLOSE_DETAILS": "プロジェクト詳細を閉じる",
   "PROFESSIONAL_PROJECT": "業務プロジェクト",
   "MY_CONTRIBUTIONS": "担当内容",
-  "VIEW_ALL": "すべてのプロジェクトを見る",
 
   "ITEMS": {
 
@@ -164,16 +138,6 @@
         "サーバー保守、アプリケーションデプロイ、本番環境の運用をサポートしました。",
         "アプリケーション全体のバックエンドサービス、データベース、フロントエンドコンポーネントを担当しました。"
       ]
-    },
-
-    "MOVIE_WEBSITE": {
-      "NAME": "Movie Website",
-      "DESCRIPTION": "ユーザー認証、ロールベースアクセス制御、動的なコンテンツ管理、RESTfulバックエンドサービスを備えたフルスタック映画管理アプリケーション。Spring BootとAngularを使用して開発しました。"
-    },
-
-    "ECOMMERCE": {
-      "NAME": "E-Commerce Platform",
-      "DESCRIPTION": "商品管理、ショッピングカート、セキュアな決済フロー、RESTfulバックエンドサービスを備えたフルスタックECサイト。Spring BootとAngularを使用して開発しました。"
     }
   }
 
@@ -187,29 +151,18 @@
   "EMAIL": "メール",
   "PHONE": "電話",
   "CALL": "電話をかける",
-  "FOLLOW_ME": "フォローする",
-  "NAME_PLACEHOLDER": "お名前",
-  "EMAIL_PLACEHOLDER": "メールアドレス",
-  "SUBJECT_PLACEHOLDER": "件名",
-  "MESSAGE_PLACEHOLDER": "メッセージ",
-  "SEND_MESSAGE": "メッセージを送信",
-  "SENDING": "送信中...",
-  "MESSAGE_SENT": "メッセージを正常に送信しました！"
+  "FOLLOW_ME": "フォローする"
   },
 
   "EXPERIENCE": {
   "TITLE": "職務経歴",
-  "SUBTITLE": "金融ソフトウェア開発および本番システムにおける実務経験",
-
   "ROLES": {
     "JAVA_INTERN": "Java開発インターン",
     "JUNIOR_JAVA_DEVELOPER": "ジュニアJava開発エンジニア"
   },
 
   "DURATIONS": {
-    "APR_2025_JUN_2025": "2025年4月 - 2025年6月",
-    "JUN_2025_AUG_2025": "2025年6月 - 2025年8月",
-    "AUG_2025_PRESENT": "2025年8月 - 現在"
+    "APR_2025_JUN_2025": "2025年4月 - 2025年6月"
   },
 
   "RESPONSIBILITIES": {
@@ -223,44 +176,13 @@
     "JUNIOR_1": "JavaおよびSpring Bootを使用してRESTful APIの開発・保守を行いました。",
     "JUNIOR_2": "マイクロファイナンスアプリケーションのバックエンド機能およびビジネスロジックを実装しました。",
     "JUNIOR_3": "新機能に対応するため、MySQLデータベースの構造設計および最適化を行いました。",
-    "JUNIOR_4": "コードレビュー、デバッグ、テスト、機能実装に参加しました。",
+    "JUNIOR_4": "コードレビュー、デバッグ、テスト、機能実装に参加しました。"
 
-    "OPEN_SOURCE_1": "JavaおよびSpring Bootを使用して、オープンソースの金融テクノロジーソリューションの開発・カスタマイズを行いました。",
-    "OPEN_SOURCE_2": "新しい金融機能およびパフォーマンス改善に対応するため、マイクロファイナンスのデータベーススキーマを設計・最適化しました。",
-    "OPEN_SOURCE_3": "日常業務を支援する業務レポートおよび財務レポートの開発・保守を行いました。",
-    "OPEN_SOURCE_4": "本番システムを保守し、問題を調査したうえで、既存システムの動作を考慮した解決策を実装しました。",
-    "OPEN_SOURCE_5": "ジュニア開発者に技術的な解決策や実装方法を共有し、機能コンサルタントと連携してビジネス要件を技術的なソリューションへ落とし込みました。"
-  },
-
-  "ACHIEVEMENTS": {
-    "ODOO": {
-      "TITLE": "Odoo連携",
-      "DESCRIPTION": "業務運用を支援するため、マイクロファイナンス業務とOdooの連携を実装しました。"
-    },
-
-    "MAIL": {
-      "TITLE": "メール連携",
-      "DESCRIPTION": "金融業務向けの定期レポートメール送信処理および確認ワークフローを開発しました。"
-    },
-
-    "SAVINGS": {
-      "TITLE": "貯蓄モジュール",
-      "DESCRIPTION": "貯蓄商品向けの月末利息計算および利息計上処理を実装しました。"
-    }
   }
+
   },
 
   "FOOTER": {
-  "DESCRIPTION": "実際の金融業務を支える、信頼性の高いソフトウェアを開発しています",
-  "QUICK_LINKS": "クイックリンク",
-  "CONTACT": "お問い合わせ",
-  "NEWSLETTER": "ニュースレター",
-  "NEWSLETTER_TEXT": "新しいプロジェクトに関する最新情報を受け取る",
-  "EMAIL_PLACEHOLDER": "メールアドレス",
-  "RIGHTS_RESERVED": "All rights reserved",
-  "PRIVACY": "プライバシーポリシー",
-  "TERMS": "利用規約",
-  "COOKIES": "Cookieポリシー",
-  "SUBSCRIBE_SUCCESS": "購読ありがとうございます！"
+  "CONTACT": "お問い合わせ"
   }
 }

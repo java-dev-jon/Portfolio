@@ -1,4 +1,4 @@
-<section id="projects" class="projects" [ngClass]="{ 'dark-projects': theme.darkMode() }">
+<section id="projects" class="projects">
   <div class="projects-container">
     <div class="section-header" appScrollReveal>
       <h2 class="section-title">{{ 'PROJECTS.TITLE' | translate }}</h2>
@@ -21,17 +21,11 @@
           <p class="project-kicker">{{ 'PROJECTS.PROFESSIONAL_PROJECT' | translate }}</p>
           <h3 class="project-title">{{ project.nameKey | translate }}</h3>
           <p class="project-description">{{ project.descriptionKey | translate }}</p>
-          <ul class="project-highlights">
-            <li *ngFor="let detail of (project.detailsKey | translate | slice:0:4)">{{ detail }}</li>
-          </ul>
           <div class="project-actions">
             <button type="button" class="project-link details-button" (click)="openProjectDetails(project)">
               <i class="fas fa-arrow-up-right-from-square"></i>
               <span>{{ 'PROJECTS.VIEW_DETAILS' | translate }}</span>
             </button>
-            <div class="project-tech">
-              <span class="tech-tag" *ngFor="let tech of project.tech">{{ tech }}</span>
-            </div>
           </div>
         </div>
       </article>
@@ -50,6 +44,5 @@
     <ul>
       <li *ngFor="let detail of (selectedProject.detailsKey | translate)">{{ detail }}</li>
     </ul>
-    <div class="modal-tech"><span *ngFor="let tech of selectedProject.tech">{{ tech }}</span></div>
   </section>
 </div>
