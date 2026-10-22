@@ -27,7 +27,7 @@
 }
 
 .highlight {
-  color: #7dd3fc;
+  color: var(--accent-gold);
   font-weight: 700;
 }
 

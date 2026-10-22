@@ -22,6 +22,12 @@ export class ProjectsComponent implements OnDestroy {
 
   projects: Project[] = [
     {
+      nameKey: 'PROJECTS.ITEMS.MICRO.NAME',
+      descriptionKey: 'PROJECTS.ITEMS.MICRO.DESCRIPTION',
+      image: 'assets/img/micro-platform.png',
+      detailsKey: 'PROJECTS.ITEMS.MICRO.DETAILS'
+    },
+    {
       nameKey: 'PROJECTS.ITEMS.HAYMAN.NAME',
       descriptionKey: 'PROJECTS.ITEMS.HAYMAN.DESCRIPTION',
       image: 'assets/img/hayman-capital.png',
@@ -34,10 +40,10 @@ export class ProjectsComponent implements OnDestroy {
       detailsKey: 'PROJECTS.ITEMS.ZEGA.DETAILS'
     },
     {
-      nameKey: 'PROJECTS.ITEMS.MICRO.NAME',
-      descriptionKey: 'PROJECTS.ITEMS.MICRO.DESCRIPTION',
-      image: 'assets/img/micro-platform.png',
-      detailsKey: 'PROJECTS.ITEMS.MICRO.DETAILS'
+      nameKey: 'PROJECTS.ITEMS.MFIL.NAME',
+      descriptionKey: 'PROJECTS.ITEMS.MFIL.DESCRIPTION',
+      image: 'assets/img/mfil.png',
+      detailsKey: 'PROJECTS.ITEMS.MFIL.DETAILS'
     }
   ];
 

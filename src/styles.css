@@ -6,8 +6,10 @@
   --content-width: min(1160px, calc(100% - 2rem));
   --section-space: clamp(4.5rem, 7vw, 7rem);
   --section-space-compact: clamp(3.5rem, 6vw, 5.5rem);
-  --accent-a-1: #8b5cf6;
-  --accent-a-2: #22d3ee;
+  --accent-gold-dark: #f59e0b;
+  --accent-gold: #FFD700;
+  --accent-gold-dark-rgb: 245, 158, 11;
+  --accent-gold-rgb: 255, 215, 0;
   --accent-b-1: #ec4899;
   --accent-b-2: #a78bfa;
   --dark-page: #000000;
@@ -17,7 +19,7 @@
   --dark-text: #fafafa;
   --dark-text-muted: #a1a1aa;
   --dark-line: rgba(255, 255, 255, 0.1);
-  --dark-line-strong: rgba(139, 92, 246, 0.48);
+  --dark-line-strong: rgba(255, 215, 0, 0.48);
   --dark-shadow-soft: 0 24px 50px rgba(0, 0, 0, 0.5);
   --dark-shadow-card: 0 18px 38px rgba(0, 0, 0, 0.44);
   --dark-section-divider: rgba(255, 255, 255, 0.08);
@@ -109,7 +111,7 @@ a {
 
 button:focus-visible,
 a:focus-visible {
-  outline: 2px solid var(--accent-a-2);
+  outline: 2px solid var(--accent-gold);
   outline-offset: 3px;
 }
 
@@ -140,17 +142,8 @@ a:focus-visible {
 .lang-btn,
 .tab-btn.active,
 .details-button {
-  background: linear-gradient(135deg, var(--accent-a-1), var(--accent-a-2));
-  box-shadow: 0 14px 30px rgba(139, 92, 246, 0.24);
-}
-
-.btn-primary:hover,
-.btn-download:hover,
-.contact-submit:hover:not(:disabled),
-.lang-btn:hover,
-.tab-btn.active:hover,
-.details-button:hover {
-  box-shadow: 0 20px 40px rgba(34, 211, 238, 0.22);
+  background: linear-gradient(135deg, var(--accent-gold-dark), var(--accent-gold));
+  /* box-shadow: 0 14px 30px rgba(139, 92, 246, 0.24); */
 }
 
 .btn-secondary {

@@ -29,7 +29,7 @@ export class ScrollRevealDirective implements AfterViewInit, OnDestroy {
       ([entry]) => {
         target.classList.toggle('is-visible', entry.isIntersecting);
       },
-      { threshold: 0.14, rootMargin: '0px 0px -40px' }
+      { threshold: 0.10, rootMargin: '0px 0px -20px' }
     );
 
     this.observer.observe(target);

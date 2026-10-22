@@ -1,5 +1,4 @@
 .experience {
-  --accent: #06b6d4;
   padding: var(--section-space) 0 var(--section-space-compact);
   background: var(--dark-page);
   border-top: 1px solid rgba(255, 255, 255, 0.02);
@@ -38,7 +37,7 @@
   height: 0.3rem;
   margin: 0 auto;
   border-radius: 999px;
-  background: linear-gradient(135deg, #3b82f6, #06b6d4);
+  background: linear-gradient(135deg, var(--accent-gold-dark), var(--accent-gold));
 }
 
 .timeline-wrapper {
@@ -58,8 +57,8 @@
   width: 1.15rem;
   height: 1.15rem;
   border-radius: 50%;
-  background: var(--accent);
-  box-shadow: 0 0 0 0.4rem #050505, 0 0 24px rgba(34, 211, 238, 0.65);
+  background: var(--accent-gold);
+  box-shadow: 0 0 0 0.4rem #050505, 0 0 24px rgba(var(--accent-gold-rgb), 0.65);
 }
 
 .card-content {
@@ -75,12 +74,12 @@
 
 .card-content:hover {
   transform: translateY(-4px);
-  box-shadow: 0 24px 42px rgba(59, 130, 246, 0.16);
+  box-shadow: 0 24px 42px rgba(var(--accent-gold-dark-rgb), 0.16);
 }
 
 .role {
   margin: 0;
-  color: #22d3ee;
+  color: var(--accent-gold);
   font-size: 1.3rem;
   font-weight: 700;
 }
@@ -150,7 +149,7 @@
   z-index: 0;
   left: 50%;
   width: 2px;
-  background: linear-gradient(180deg, rgba(6, 182, 212, 0.2), #06b6d4 12%, #8b5cf6 88%, rgba(139, 92, 246, 0.2));
+  background: linear-gradient(180deg, rgba(var(--accent-gold-rgb), 0.2), var(--accent-gold) 12%, var(--accent-gold-dark) 88%, rgba(var(--accent-gold-dark-rgb), 0.2));
   pointer-events: none;
   transform: translateX(-50%);
 }

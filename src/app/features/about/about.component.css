@@ -28,7 +28,7 @@
   height: 0.3rem;
   margin: 0 auto;
   border-radius: 999px;
-  background: linear-gradient(135deg, #3b82f6, #06b6d4);
+  background: linear-gradient(135deg, var(--accent-gold-dark), var(--accent-gold));
 }
 
 .about-content {
@@ -67,7 +67,7 @@
 }
 
 .highlight {
-  color: #06b6d4;
+  color: var(--accent-gold);
   font-weight: 700;
 }
 
@@ -83,8 +83,8 @@
   min-height: 3.5rem;
   padding: 0.95rem 1.5rem;
   border-radius: 999px;
-  background: linear-gradient(135deg, #0f766e, #06b6d4);
-  color: #ffffff;
+  background: linear-gradient(135deg, var(--accent-gold-dark), var(--accent-gold));
+  color: #09090b;
   font-weight: 700;
   cursor: pointer;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
@@ -113,23 +113,22 @@
   align-items: center;
   justify-content: center;
   border-radius: 999px;
-  background: rgba(59, 130, 246, 0.1);
-  color: #93c5fd;
+  background: rgba(var(--accent-gold-rgb), 0.1);
+  color: var(--accent-gold);
   text-decoration: none;
   transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease;
 }
 
 .social-link:hover {
   transform: translateY(-3px);
-  background: linear-gradient(135deg, #3b82f6, #06b6d4);
-  color: #ffffff;
+  background: linear-gradient(135deg, var(--accent-gold-dark), var(--accent-gold));
+  color: #09090b;
 }
 
 .footer-section {
   padding: clamp(1.25rem, 4vw, 1.75rem);
   border-radius: var(--radius-lg);
   background: var(--dark-surface-alt);
-  color: #ffffff;
   border: 1px solid var(--dark-line);
   box-shadow: none;
 }

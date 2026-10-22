@@ -78,63 +78,71 @@
 
   "PROJECTS": {
     "TITLE": "Real-World Projects",
-    "SUBTITLE": "Hands-on experience developing, customizing, deploying, and supporting financial systems across microfinance and core banking environments.",
-
+    "SUBTITLE": "Hands-on experience designing, developing, customizing, integrating, migrating, deploying, and supporting financial systems across microfinance and core banking environments.",
     "VIEW_DETAILS": "View Details",
     "CLOSE_DETAILS": "Close project details",
     "PROFESSIONAL_PROJECT": "Professional Project",
     "MY_CONTRIBUTIONS": "My Contributions",
-
     "ITEMS": {
       "HAYMAN": {
         "NAME": "Hayman Microfinance",
-
-        "DESCRIPTION": "A production microfinance and core banking platform supporting lending, savings, financial transactions, reporting, accounting workflows, automation, and daily operations.",
-
+        "DESCRIPTION": "Contributed to the development, customization, integration, and maintenance of a production microfinance and core banking platform, delivering financial features, automated workflows, legacy data migration, operational and accounting reports, API documentation, and production support.",
         "DETAILS": [
-          "Developed and customized core banking features using Java, Spring Boot, Hibernate, Angular, and MySQL.",
-          "Implemented savings and fixed-deposit accruals, payable calculations, and interest-posting workflows.",
+          "Developed and customized core microfinance and banking features using Java, Spring Boot, Hibernate, Angular, and MySQL.",
+          "Implemented savings and fixed-deposit interest accrual, interest posting, payable calculations, and financial transaction workflows.",
+          "Customized fixed-deposit premature closure rules and related interest-processing validations.",
           "Developed loan accrual functionality and financial opening-balance processes.",
-          "Built operational and accounting reports, including scheduled report-email jobs.",
-          "Created scheduler and COB (Close of Business) jobs to automate operational processes.",
-          "Designed database changes and optimized queries for new financial features.",
-          "Built reusable data tables and document-export templates for operational workflows.",
-          "Integrated Microfinance workflows with Email and Odoo services.",
-          "Configured Amazon S3 and supported application deployments in AWS environments.",
-          "Migrated data from a legacy system to the new financial platform.",
-          "Investigated and resolved production issues while considering transaction integrity and existing system behavior.",
-          "Supported ongoing production maintenance and feature improvements to reduce operational errors."
+          "Designed and implemented scheduled jobs and Close of Business (COB) workflows to automate operational processes.",
+          "Built operational and accounting reports to support financial operations and reconciliation.",
+          "Developed scheduled report-email jobs to automate report distribution.",
+          "Integrated microfinance workflows with external services, including Odoo authentication and related system integrations.",
+          "Configured Amazon S3 integration and supported application deployment and maintenance in AWS environments.",
+          "Migrated data from legacy systems to the new financial platform.",
+          "Designed database schema changes, implemented Liquibase migrations, and optimized SQL queries for new business requirements.",
+          "Developed reusable data tables and document-export templates for operational workflows.",
+          "Investigated and resolved production issues involving financial calculations, transaction processing, and application behavior.",
+          "Supported ongoing production maintenance, defect resolution, and enhancements to existing financial workflows.",
+          "Implementing REST API changes, request validation, response fields, and Swagger/OpenAPI documentation."
+
         ]
       },
-
       "ZEGA": {
         "NAME": "Zega Finance",
-
-        "DESCRIPTION": "A financial platform focused on operational data management, document generation, financial reporting, and business workflow improvements.",
-
+        "DESCRIPTION": "Developed and enhanced financial data management, document generation, and reporting capabilities while implementing database and business logic requirements and resolving application issues during development and production support.",
         "DETAILS": [
-          "Developed backend features using Java and Spring Boot.",
-          "Built dynamic data tables to improve financial data management and review.",
-          "Created reusable templates for exporting business documents.",
-          "Developed operational and accounting reports supporting daily financial workflows.",
-          "Worked with database structures and business logic to implement new requirements.",
-          "Investigated and resolved application issues during development and support."
+          "Built dynamic data tables to improve financial data management, review, and operational workflows.",
+          "Created reusable document-export templates for consistent business documentation.",
+          "Developed operational and accounting reports supporting daily financial activities.",
+          "Investigated, diagnosed, and resolved application issues during development and support."
         ]
       },
-
       "MICRO": {
-      "NAME": "MICRO-X By MSIS",
-
-      "DESCRIPTION": "A digital microfinance platform built for Myanmar’s financial sector, supporting end-to-end lending and savings operations, financial transactions, credit management, accounting, and reporting. Designed to streamline business workflows and support reliable financial system operations.",
-
+        "NAME": "MICRO-X By MSIS",
+        "DESCRIPTION": "Contributed to the development of MICRO-X, a new digital microfinance product built by MSIS for Myanmar Microfinance based on customer requirements, delivering customized lending features, bulk data-import capabilities, document generation, process tracking, and application support.",
         "DETAILS": [
-          "Developed and maintained features for a digital microfinance platform.",
+          "Developed and enhanced features for a new digital microfinance product based on customer and business requirements.",
           "Built a loan credit-scoring feature to support lending decisions.",
-          "Implemented Excel bulk-import functionality for large-scale data migration.",
+          "Implemented Excel-based bulk-import functionality to support large-scale data migration.",
           "Created reusable document-export templates for business workflows.",
           "Developed a Path Tracker feature to improve process visibility and operational tracking.",
-          "Supported server maintenance, application deployment, and production operations.",
-          "Worked with backend services, databases, and frontend components across the application."
+          "Implemented backend services, frontend components, database logic, and application workflows.",
+          "Worked across application layers to deliver customized functionality for business requirements.",
+          "Supported server maintenance, application deployment, troubleshooting, and production operations."
+        ]
+      },
+      "MFIL": {
+        "NAME": "MFIL",
+        "DESCRIPTION": "Developing and customizing core microfinance and banking functionality to meet business requirements, with a focus on financial workflows, client lifecycle management, bulk operations, system automation, reporting, and reliable transaction processing.",
+        "DETAILS": [
+          "Developing and customizing financial system features using Java, Spring Boot, Angular, MySQL, and Apache Fineract.",
+          "Implementing a client-stage lifecycle feature to classify clients based on loan activity, repayment history, and business rules.",
+          "Customizing bulk client and group transfer workflows, including proposal, acceptance, undo operations, and transfer validation.",
+          "Implementing office-to-product mapping rules to control which loan products are available to specific offices.",
+          "Customizing General Ledger (GL) closure workflows to support head-office and branch-level operations.",
+          "Enhancing savings and fixed-deposit interest processing, including manual interest posting, accrual handling, and closing-date validations.",
+          "Customizing fixed-deposit premature closure behavior and related interest-rate and transaction rules.",
+          "Customizing Angular forms, data tables, validation rules, and frontend workflows to meet business requirements.",
+          "Developing scheduled jobs and batch-processing workflows with configurable batch sizes and thread-pool settings."
         ]
       }
     }

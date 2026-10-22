@@ -31,7 +31,7 @@
 }
 
 .highlight {
-  color: #06b6d4;
+  color: var(--accent-gold);
   font-weight: 700;
 }
 
@@ -40,7 +40,7 @@
   height: 0.3rem;
   margin: 0 auto;
   border-radius: 999px;
-  background: linear-gradient(135deg, #06b6d4, #06b6d4);
+  background: linear-gradient(135deg, var(--accent-gold-dark), var(--accent-gold));
 }
 
 .skills-tabs {
@@ -73,8 +73,8 @@
 }
 
 .tab-btn.active {
-  background: linear-gradient(135deg, #06b6d4, #06b6d4);
-  color: #ffffff;
+  background: linear-gradient(135deg, var(--accent-gold-dark), var(--accent-gold));
+  color: #09090b;
 }
 
 .tab-icon,
