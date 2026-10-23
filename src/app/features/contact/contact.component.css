@@ -24,7 +24,7 @@
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  background: linear-gradient(135deg, var(--accent-gold-dark), var(--accent-gold));
+  background: linear-gradient(135deg, var(--accent-secondary), var(--accent-primary));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -36,8 +36,8 @@
 
 .section-title i {
   font-size: 2.2rem;
-  color: var(--accent-gold-dark);
-  -webkit-text-fill-color: var(--accent-gold-dark);
+  color: var(--accent-primary);
+  -webkit-text-fill-color: var(--accent-primary);
 }
 
 .section-subtitle {
@@ -49,7 +49,7 @@
 .title-decoration {
   width: 80px;
   height: 4px;
-  background: linear-gradient(135deg, var(--accent-gold-dark), var(--accent-gold));
+  background: linear-gradient(135deg, var(--accent-secondary), var(--accent-primary));
   margin: 0 auto;
   border-radius: 2px;
   animation: expandWidth 1s ease;
@@ -93,7 +93,7 @@
 
 .info-card:hover {
   transform: translateX(10px);
-  box-shadow: 0 15px 40px rgba(var(--accent-gold-dark-rgb), 0.18);
+  box-shadow: 0 15px 40px rgba(var(--accent-secondary-rgb), 0.18);
 }
 
 .info-icon {
@@ -162,12 +162,12 @@
   left: 0;
   width: 0;
   height: 2px;
-  background: linear-gradient(135deg, var(--accent-gold-dark), var(--accent-gold));
+  background: linear-gradient(135deg, var(--accent-secondary), var(--accent-primary));
   transition: width 0.3s ease;
 }
 
 .info-value:hover {
-  color: var(--accent-gold);
+  color: var(--accent-primary);
 }
 
 .info-value:hover::after {

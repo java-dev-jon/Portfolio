@@ -38,7 +38,7 @@
 }
 
 .accent {
-  color: var(--accent-gold);
+  color: var(--accent-primary);
 }
 
 .hero-subtitle {
@@ -70,7 +70,7 @@
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--accent-gold-dark), var(--accent-gold));
+  background: linear-gradient(135deg, var(--accent-secondary), var(--accent-primary));
   color: #09090b;
 }
 
@@ -165,7 +165,7 @@
 
 .contact-dialog-close:hover {
   transform: rotate(90deg);
-  background: rgba(var(--accent-gold-rgb), 0.14);
+  background: rgba(var(--accent-primary-rgb), 0.14);
 }
 
 .contact-dialog-form {
@@ -182,7 +182,7 @@
   width: 100%;
   padding: 1rem 0.5rem 0.9rem;
   border: 0;
-  border-bottom: 1px solid rgba(var(--accent-gold-rgb), 0.55);
+  border-bottom: 1px solid rgba(var(--accent-primary-rgb), 0.55);
   background: transparent;
   color: var(--dark-text);
   font-size: 1rem;
@@ -202,8 +202,8 @@
 
 .contact-field input:focus,
 .contact-field textarea:focus {
-  border-bottom-color: var(--accent-gold);
-  box-shadow: 0 12px 28px rgba(var(--accent-gold-dark-rgb), 0.16);
+  border-bottom-color: var(--accent-primary);
+  box-shadow: 0 12px 28px rgba(var(--accent-secondary-rgb), 0.16);
 }
 
 .contact-submit {
@@ -214,7 +214,7 @@
   padding: 0.85rem 1.5rem;
   border-radius: 0.8rem;
   border: 1px solid transparent;
-  background: linear-gradient(135deg, var(--accent-gold-dark), var(--accent-gold));
+  background: linear-gradient(135deg, var(--accent-secondary), var(--accent-primary));
   color: #09090b;
   font-weight: 700;
   cursor: pointer;
@@ -223,7 +223,7 @@
 
 .contact-submit:hover:not(:disabled) {
   transform: translateY(-2px);
-  box-shadow: 0 18px 32px rgba(var(--accent-gold-dark-rgb), 0.28);
+  box-shadow: 0 18px 32px rgba(var(--accent-secondary-rgb), 0.28);
 }
 
 .contact-submit:disabled {
@@ -276,7 +276,7 @@
 
 .image-backdrop {
   inset: 0;
-  background: linear-gradient(135deg, rgba(var(--accent-gold-rgb), 0.28), rgba(var(--accent-gold-rgb), 0.2));
+  background: linear-gradient(135deg, rgba(var(--accent-primary-rgb), 0.28), rgba(var(--accent-primary-rgb), 0.2));
   z-index: 1;
   transform: translate(-0.9rem, 0.9rem);
 }
@@ -285,7 +285,7 @@
   inset: auto 0 0 auto;
   width: 8rem;
   height: 8rem;
-  border: 1px dashed rgba(var(--accent-gold-rgb), 0.35);
+  border: 1px dashed rgba(var(--accent-primary-rgb), 0.35);
   z-index: 3;
   transform: translate(0.85rem, 0.85rem);
 }
@@ -312,7 +312,7 @@
 .mouse {
   width: 1.7rem;
   height: 2.7rem;
-  border: 2px solid var(--accent-gold);
+  border: 2px solid var(--accent-primary);
   border-radius: 999px;
   position: relative;
 }
@@ -324,7 +324,7 @@
   width: 0.25rem;
   height: 0.55rem;
   border-radius: 999px;
-  background: var(--accent-gold);
+  background: var(--accent-primary);
   transform: translateX(-50%);
   animation: scroll 1.8s infinite;
 }
@@ -337,8 +337,8 @@
 .arrow span {
   width: 0.6rem;
   height: 0.6rem;
-  border-right: 2px solid var(--accent-gold);
-  border-bottom: 2px solid var(--accent-gold);
+  border-right: 2px solid var(--accent-primary);
+  border-bottom: 2px solid var(--accent-primary);
   transform: rotate(45deg);
   animation: arrow 1.8s infinite;
   opacity: 0;

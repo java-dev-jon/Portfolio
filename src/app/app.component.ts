@@ -23,9 +23,9 @@ import { ExperienceComponent } from './features/experience/experience.component'
     <app-navbar></app-navbar>
     <app-hero></app-hero>
     <app-about></app-about>
-    <app-skills></app-skills>
     <app-projects></app-projects>
     <app-experience></app-experience>
+    <app-skills></app-skills>    
     <app-footer></app-footer>
   `
 })

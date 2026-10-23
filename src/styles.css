@@ -6,10 +6,10 @@
   --content-width: min(1160px, calc(100% - 2rem));
   --section-space: clamp(4.5rem, 7vw, 7rem);
   --section-space-compact: clamp(3.5rem, 6vw, 5.5rem);
-  --accent-gold-dark: #f59e0b;
-  --accent-gold: #FFD700;
-  --accent-gold-dark-rgb: 245, 158, 11;
-  --accent-gold-rgb: 255, 215, 0;
+  --accent-primary: #22d3ee;
+  --accent-secondary: #3b82f6;
+  --accent-primary-rgb: 34, 211, 238;
+  --accent-secondary-rgb: 59, 130, 246;
   --accent-b-1: #ec4899;
   --accent-b-2: #a78bfa;
   --dark-page: #000000;
@@ -19,7 +19,7 @@
   --dark-text: #fafafa;
   --dark-text-muted: #a1a1aa;
   --dark-line: rgba(255, 255, 255, 0.1);
-  --dark-line-strong: rgba(255, 215, 0, 0.48);
+  --dark-line-strong: rgba(var(--accent-primary-rgb), 0.48);
   --dark-shadow-soft: 0 24px 50px rgba(0, 0, 0, 0.5);
   --dark-shadow-card: 0 18px 38px rgba(0, 0, 0, 0.44);
   --dark-section-divider: rgba(255, 255, 255, 0.08);
@@ -111,7 +111,7 @@ a {
 
 button:focus-visible,
 a:focus-visible {
-  outline: 2px solid var(--accent-gold);
+  outline: 2px solid var(--accent-primary);
   outline-offset: 3px;
 }
 
@@ -142,7 +142,7 @@ a:focus-visible {
 .lang-btn,
 .tab-btn.active,
 .details-button {
-  background: linear-gradient(135deg, var(--accent-gold-dark), var(--accent-gold));
+  background: linear-gradient(135deg, var(--accent-secondary), var(--accent-primary));
   /* box-shadow: 0 14px 30px rgba(139, 92, 246, 0.24); */
 }
 

@@ -86,7 +86,11 @@
     "ITEMS": {
       "HAYMAN": {
         "NAME": "Hayman Microfinance",
-        "DESCRIPTION": "Contributed to the development, customization, integration, and maintenance of a production microfinance and core banking platform, delivering financial features, automated workflows, legacy data migration, operational and accounting reports, API documentation, and production support.",
+        "DESCRIPTION": [
+          "Developed and customized core banking features, including savings, fixed deposits, loan processing, and financial transaction workflows.",
+          "Automated operational processes through scheduled jobs, Close of Business (COB) workflows, and reporting solutions.",
+          "Handled legacy data migration, external system integrations, AWS deployment support, and production issue resolution."
+        ],
         "DETAILS": [
           "Developed and customized core microfinance and banking features using Java, Spring Boot, Hibernate, Angular, and MySQL.",
           "Implemented savings and fixed-deposit interest accrual, interest posting, payable calculations, and financial transaction workflows.",
@@ -108,7 +112,11 @@
       },
       "ZEGA": {
         "NAME": "Zega Finance",
-        "DESCRIPTION": "Developed and enhanced financial data management, document generation, and reporting capabilities while implementing database and business logic requirements and resolving application issues during development and production support.",
+        "DESCRIPTION": [
+          "Developed reusable data tables and document-generation templates to improve financial data management.",
+          "Built operational and accounting reports to support daily business activities and financial operations.",
+          "Implemented database and business logic requirements while troubleshooting application issues."
+        ],
         "DETAILS": [
           "Built dynamic data tables to improve financial data management, review, and operational workflows.",
           "Created reusable document-export templates for consistent business documentation.",
@@ -118,7 +126,11 @@
       },
       "MICRO": {
         "NAME": "MICRO-X By MSIS",
-        "DESCRIPTION": "Contributed to the development of MICRO-X, a new digital microfinance product built by MSIS for Myanmar Microfinance based on customer requirements, delivering customized lending features, bulk data-import capabilities, document generation, process tracking, and application support.",
+        "DESCRIPTION": [
+          "Developed and customized digital microfinance features based on customer and business requirements.",
+          "Implemented loan credit scoring, Excel-based bulk data import, document generation, and process tracking.",
+          "Contributed to backend services, frontend development, database logic, deployment, and server maintenance."
+        ],
         "DETAILS": [
           "Developed and enhanced features for a new digital microfinance product based on customer and business requirements.",
           "Built a loan credit-scoring feature to support lending decisions.",
@@ -132,7 +144,11 @@
       },
       "MFIL": {
         "NAME": "MFIL",
-        "DESCRIPTION": "Developing and customizing core microfinance and banking functionality to meet business requirements, with a focus on financial workflows, client lifecycle management, bulk operations, system automation, reporting, and reliable transaction processing.",
+        "DESCRIPTION": [
+          "Developing and customizing core microfinance functionality using Java, Spring Boot, Angular, MySQL, and Apache Fineract.",
+          "Implementing financial workflows, including savings and fixed-deposit interest processing, GL closure, and client lifecycle management.",
+          "Enhancing bulk client transfers, office-to-product mapping, scheduled jobs, batch processing, and API documentation."
+        ],
         "DETAILS": [
           "Developing and customizing financial system features using Java, Spring Boot, Angular, MySQL, and Apache Fineract.",
           "Implementing a client-stage lifecycle feature to classify clients based on loan activity, repayment history, and business rules.",

@@ -8,7 +8,7 @@
 
     <div class="project-showcase">
       <article class="project-feature" *ngFor="let project of projects; let i = index" appScrollReveal [appScrollRevealDelay]="i * 100">
-        <button class="project-media" type="button" (click)="openProjectDetails(project)" [attr.aria-label]="'PROJECTS.VIEW_DETAILS' | translate">
+        <button class="project-media" type="button" [attr.aria-label]="'PROJECTS.VIEW_DETAILS' | translate">
           <span class="media-grid"></span>
           <span class="media-glow"></span>
           <span class="logo-stage">
@@ -22,10 +22,10 @@
           <h3 class="project-title">{{ project.nameKey | translate }}</h3>
           <p class="project-description">{{ project.descriptionKey | translate }}</p>
           <div class="project-actions">
-            <button type="button" class="project-link details-button" (click)="openProjectDetails(project)">
+            <!-- <button type="button" class="project-link details-button" (click)="openProjectDetails(project)">
               <i class="fas fa-arrow-up-right-from-square"></i>
               <span>{{ 'PROJECTS.VIEW_DETAILS' | translate }}</span>
-            </button>
+            </button> -->
           </div>
         </div>
       </article>
