@@ -3,7 +3,6 @@
   "name": "portfolio",
   "compatibility_date": "2026-10-23",
   "assets": {
-    "directory": "./dist/neo-portfolio",
-    "not_found_handling": "single-page-application"
+    "directory": "./dist/neo-portfolio"
   }
 }
