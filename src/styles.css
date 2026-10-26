@@ -6,12 +6,12 @@
   --content-width: min(1160px, calc(100% - 2rem));
   --section-space: clamp(4.5rem, 7vw, 7rem);
   --section-space-compact: clamp(3.5rem, 6vw, 5.5rem);
-  --accent-primary: #22d3ee;
-  --accent-secondary: #3b82f6;
-  --accent-primary-rgb: 34, 211, 238;
-  --accent-secondary-rgb: 59, 130, 246;
-  --accent-b-1: #ec4899;
-  --accent-b-2: #a78bfa;
+  --accent-primary: #a3e635;
+  --accent-secondary: #16a34a;
+  --accent-primary-rgb: 163, 230, 53;
+  --accent-secondary-rgb: 22, 163, 74;
+  --accent-b-1: #bef264;
+  --accent-b-2: #4d7c0f;
   --dark-page: #000000;
   --dark-page-elevated: #000000;
   --dark-surface: #121214;

@@ -93,7 +93,7 @@
   font-weight: 700;
 }
 
-.company-name i { color: #a78bfa; }
+.company-name i { color: var(--accent-primary); }
 
 .date-badge {
   display: inline-flex;
@@ -102,11 +102,11 @@
   min-height: 2.3rem;
   padding: 0.55rem 1rem;
   border-radius: 999px;
-  background: linear-gradient(135deg, #9f2f3a, #d14a35);
+  background: linear-gradient(135deg, var(--accent-secondary), var(--accent-primary));
   color: #ffffff;
   font-size: 0.86rem;
   font-weight: 700;
-  box-shadow: 0 10px 20px rgba(209, 74, 53, 0.2);
+  box-shadow: 0 10px 20px rgba(var(--accent-secondary-rgb), 0.2);
 }
 
 .card-body {

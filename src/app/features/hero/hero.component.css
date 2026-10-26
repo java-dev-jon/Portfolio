@@ -38,7 +38,8 @@
 }
 
 .accent {
-  color: var(--accent-primary);
+  /* color: var(--accent-primary); */
+  color: white;
 }
 
 .hero-subtitle {
