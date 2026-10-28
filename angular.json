@@ -31,6 +31,7 @@
               "assets": [
                 "src/assets/img/jon-mark.svg",
                 "src/favicon.ico",
+                "src/google14e37880ae2f432c.html",
                 "src/assets",
                   {
                     "glob": "_redirects",
