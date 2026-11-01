@@ -102,10 +102,11 @@
   min-height: 2.3rem;
   padding: 0.55rem 1rem;
   border-radius: 999px;
-  background: linear-gradient(135deg, var(--accent-secondary), var(--accent-primary));
+  /* background: linear-gradient(135deg, var(--accent-secondary), var(--accent-primary)); */
+  background: purple;
   color: #ffffff;
   font-size: 0.86rem;
-  font-weight: 700;
+  font-weight: 500;
   box-shadow: 0 10px 20px rgba(var(--accent-secondary-rgb), 0.2);
 }
 
