@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://khantsithuhlaing.netlify.app/sitemap.xml
+Sitemap: https://khantsithuhlaing.vercel.app/sitemap.xml
